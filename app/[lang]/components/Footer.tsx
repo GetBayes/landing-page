@@ -1,5 +1,6 @@
 import type { Dictionary, Locale } from "../dictionaries";
-import { Instagram, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
+import InstagramIcon from "./InstagramIcon";
 import LanguageToggle from "./LanguageToggle";
 
 type FooterProps = {
@@ -45,7 +46,7 @@ export default function Footer({ lang, nav, footer }: FooterProps) {
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm font-sans text-accent-foreground/60 hover:text-accent-foreground transition-colors"
             >
-              <Instagram size={16} />
+              <InstagramIcon size={16} />
               @getbayes.me
             </a>
             <a

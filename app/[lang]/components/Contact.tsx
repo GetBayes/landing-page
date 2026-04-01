@@ -1,7 +1,8 @@
 "use client";
 
 import type { Dictionary } from "../dictionaries";
-import { Mail, Instagram } from "lucide-react";
+import { Mail } from "lucide-react";
+import InstagramIcon from "./InstagramIcon";
 
 type ContactProps = {
   contact: Dictionary["contact"];
@@ -101,7 +102,7 @@ export default function Contact({ contact }: ContactProps) {
             </div>
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                <Instagram size={22} className="text-foreground" />
+                <InstagramIcon size={22} className="text-foreground" />
               </div>
               <div>
                 <p className="text-sm font-sans font-medium text-foreground">{contact.info.instagramLabel}</p>
