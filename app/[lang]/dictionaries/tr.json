@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "title": "GetBayes - Akademik Araştırma Yol Arkadaşınız",
+    "description": "Akademik araştırmalar için profesyonel istatistiksel analiz. 15 dakikada yayına hazır sonuçlar."
+  },
+  "nav": {
+    "howItWorks": "Nasıl Çalışır",
+    "services": "Hizmetler",
+    "faq": "SSS",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "eyebrow": "Akademik Araştırma Yol Arkadaşınız",
+    "headline": "Araştırmanız İçin Profesyonel İstatistiksel Analiz",
+    "subtext": "Veriden yayına hazır sonuçlara. Kapsamlı istatistiksel analiz, tablolar, grafikler ve raporlar — 15 dakikada teslim.",
+    "cta": "Hemen Başla",
+    "ctaSecondary": "Daha Fazla Öğren"
+  },
+  "heroPreview": {
+    "label": "Örnek Çıktı",
+    "pValue": "p-değeri: 0.003",
+    "effectSize": "Etki büyüklüğü: 0.82",
+    "power": "Güç: 0.95",
+    "status": "Analiz Tamamlandı"
+  },
+  "trustBar": {
+    "analyses": "Tamamlanan Analiz",
+    "analysesCount": "500+",
+    "delivery": "Ortalama Teslimat",
+    "deliveryTime": "15 dk",
+    "satisfaction": "Memnuniyet Oranı",
+    "satisfactionRate": "%98"
+  },
+  "howItWorks": {
+    "eyebrow": "Nasıl Çalışır",
+    "headline": "Veriden Yayına",
+    "steps": [
+      {
+        "title": "Verilerinizi Yükleyin",
+        "description": "Araştırma makalelerinizi, veri setlerinizi ve ilgili belgelerinizi bizimle paylaşın."
+      },
+      {
+        "title": "Triyaj ve İnceleme",
+        "description": "Eksiklikleri, sorunları tespit eder ve araştırmanız için en uygun istatistiksel yaklaşımı belirleriz."
+      },
+      {
+        "title": "Kapsamlı Analiz",
+        "description": "Tablolar, grafikler ve detaylı yorumlarla eksiksiz istatistiksel analiz."
+      },
+      {
+        "title": "Yayına Hazır Rapor",
+        "description": "Yayınınız için hazır, akademik standartta düzenlenmiş bir rapor alın."
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Hizmetlerimiz",
+    "headline": "Araştırmanızın İhtiyacı Olan Her Şey",
+    "featured": {
+      "title": "İstatistiksel Analiz",
+      "description": "Eksiksiz analiz süreci: sorunları tespit eden triyaj, kapsamlı istatistiksel analiz ve tablolar ile grafikler içeren yayına hazır raporlar."
+    },
+    "items": [
+      {
+        "title": "A Priori Güç Analizi",
+        "description": "Veri toplamaya başlamadan önce optimal örneklem büyüklüğünü belirleyin."
+      },
+      {
+        "title": "Soru-Cevap Asistanı",
+        "description": "Sonuçlarınız, yöntemleriniz ve istatistiksel süreciniz hakkında her şeyi sorun. Anında, bilgili yanıtlar alın."
+      },
+      {
+        "title": "ResearchMate",
+        "description": "Araştırma planlaması rehberliği — yöntemler, anketler, veri toplama formatları.",
+        "badge": "Yakında"
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Sıkça Sorulan Sorular",
+    "headline": "Sorularınız mı Var?",
+    "items": [
+      {
+        "question": "Hangi veri formatlarını kabul ediyorsunuz?",
+        "answer": "SPSS (.sav), Excel (.xlsx, .csv), Stata (.dta), R veri setleri ve ham metin dosyaları dahil tüm yaygın veri formatlarını kabul ediyoruz. Dosyalarınızı yükleyin, gerisini biz halledelim."
+      },
+      {
+        "question": "Analiz ne kadar sürer?",
+        "answer": "Çoğu analiz 15 dakika içinde tamamlanır. Karmaşık veri setleri veya özel analizler biraz daha uzun sürebilir, ancak her zaman en hızlı teslim süresini hedefliyoruz."
+      },
+      {
+        "question": "İstatistiksel raporda neler yer alır?",
+        "answer": "Raporunuz tanımlayıcı istatistikler, çıkarımsal analizler, yayın kalitesinde tablolar ve grafikler, etki büyüklükleri, güven aralıkları ve detaylı yorumlar içerir — hepsi akademik yayın için formatlanmış ve hazır."
+      },
+      {
+        "question": "Soru-Cevap Asistanı nasıl çalışır?",
+        "answer": "Analiziniz tamamlandıktan sonra, araştırmanızı, verilerinizi ve sonuçlarınızı anlayan bilgili bir asistana erişim kazanırsınız. İstatistiksel yöntemler, yorumlar veya sonraki adımlar hakkında istediğiniz soruyu sorabilirsiniz."
+      },
+      {
+        "question": "Farklı istatistiksel yöntemleri destekliyor musunuz?",
+        "answer": "Evet. t-testi, ANOVA, regresyon analizi, ki-kare testi, korelasyon analizi, faktör analizi ve daha birçok yöntemi destekliyoruz. Uygun yöntem, araştırma tasarımınıza ve verilerinize göre seçilir."
+      },
+      {
+        "question": "Hangi dilleri destekliyorsunuz?",
+        "answer": "Platformumuz ve raporlarımız Türkçe ve İngilizce olarak mevcuttur. Gelecekte daha fazla dil eklemeye çalışıyoruz."
+      },
+      {
+        "question": "Nasıl başlarım?",
+        "answer": "Aşağıdaki iletişim formunu doldurun veya e-posta ya da Instagram üzerinden bize ulaşın. Süreci sizinle birlikte yürüteceğiz ve analizinize hemen başlayacağız."
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Araştırmacıların Güveni",
+    "headline": "Araştırmacılar Ne Diyor",
+    "placeholder": "Referanslar yakında eklenecek"
+  },
+  "contact": {
+    "eyebrow": "Bize Ulaşın",
+    "headline": "Araştırmanızı Hızlandırmaya Hazır mısınız?",
+    "subtext": "Araştırmanız hakkında bilgi almak isteriz.",
+    "form": {
+      "name": "İsim",
+      "email": "E-posta",
+      "subject": "Konu",
+      "message": "Mesaj",
+      "submit": "Mesaj Gönder",
+      "success": "Mesajınız gönderildi! En kısa sürede size dönüş yapacağız.",
+      "namePlaceholder": "Adınız",
+      "emailPlaceholder": "email@adresiniz.com",
+      "subjectPlaceholder": "Size nasıl yardımcı olabiliriz?",
+      "messagePlaceholder": "Araştırmanız hakkında bilgi verin..."
+    },
+    "info": {
+      "emailLabel": "E-posta",
+      "instagramLabel": "Instagram"
+    }
+  },
+  "footer": {
+    "tagline": "Akademik Araştırma Yol Arkadaşınız",
+    "copyright": "© 2026 GetBayes. Tüm hakları saklıdır.",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Koşulları"
+  }
+}

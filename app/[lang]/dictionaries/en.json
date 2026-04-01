@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "title": "GetBayes - Your Academic Research Companion",
+    "description": "Professional statistical analysis for academic research. Publication-ready results in 15 minutes."
+  },
+  "nav": {
+    "howItWorks": "How It Works",
+    "services": "Services",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "Your Academic Research Companion",
+    "headline": "Professional Statistical Analysis for Your Research",
+    "subtext": "From data to publication-ready results. Comprehensive statistical analysis, tables, charts, and reports — delivered in 15 minutes.",
+    "cta": "Get Started",
+    "ctaSecondary": "Learn More"
+  },
+  "heroPreview": {
+    "label": "Sample Output",
+    "pValue": "p-value: 0.003",
+    "effectSize": "Effect size: 0.82",
+    "power": "Power: 0.95",
+    "status": "Analysis Complete"
+  },
+  "trustBar": {
+    "analyses": "Analyses Completed",
+    "analysesCount": "500+",
+    "delivery": "Average Delivery",
+    "deliveryTime": "15 min",
+    "satisfaction": "Satisfaction Rate",
+    "satisfactionRate": "98%"
+  },
+  "howItWorks": {
+    "eyebrow": "How It Works",
+    "headline": "From Data to Publication",
+    "steps": [
+      {
+        "title": "Upload Your Data",
+        "description": "Share your research papers, datasets, and any relevant documents with us."
+      },
+      {
+        "title": "Triage & Review",
+        "description": "We identify gaps, issues, and determine the best statistical approach for your research."
+      },
+      {
+        "title": "Full Analysis",
+        "description": "Complete statistical analysis with tables, charts, and detailed interpretations."
+      },
+      {
+        "title": "Publication-Ready Report",
+        "description": "Receive a polished, academic report ready for your publication."
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Our Services",
+    "headline": "Everything Your Research Needs",
+    "featured": {
+      "title": "Statistical Analysis",
+      "description": "Complete analysis pipeline: triage to identify issues, full statistical analysis, and publication-ready reports with tables and charts."
+    },
+    "items": [
+      {
+        "title": "A Priori Power Analysis",
+        "description": "Determine optimal sample sizes before you begin data collection."
+      },
+      {
+        "title": "QA Agent",
+        "description": "Ask anything about your results, methods, and statistical process. Get instant, knowledgeable answers."
+      },
+      {
+        "title": "ResearchMate",
+        "description": "Guided research planning — methods, surveys, data collection formats.",
+        "badge": "Coming Soon"
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Frequently Asked Questions",
+    "headline": "Got Questions?",
+    "items": [
+      {
+        "question": "What data formats do you accept?",
+        "answer": "We accept all common data formats including SPSS (.sav), Excel (.xlsx, .csv), Stata (.dta), R datasets, and raw text files. Simply upload your files and we'll handle the rest."
+      },
+      {
+        "question": "How long does the analysis take?",
+        "answer": "Most analyses are completed within 15 minutes. Complex datasets or specialized analyses may take slightly longer, but we always aim for the fastest turnaround possible."
+      },
+      {
+        "question": "What's included in the statistical report?",
+        "answer": "Your report includes descriptive statistics, inferential analyses, publication-quality tables and charts, effect sizes, confidence intervals, and detailed interpretations — all formatted and ready for academic publication."
+      },
+      {
+        "question": "How does the QA Agent work?",
+        "answer": "After your analysis is complete, you get access to a knowledgeable assistant that understands your specific research, data, and results. Ask any question about your statistical methods, interpretations, or next steps."
+      },
+      {
+        "question": "Do you support different statistical methods?",
+        "answer": "Yes. We support a wide range of methods including t-tests, ANOVA, regression analysis, chi-square tests, correlation analyses, factor analysis, and many more. The appropriate method is selected based on your research design and data."
+      },
+      {
+        "question": "What languages do you support?",
+        "answer": "Our platform and reports are available in English and Turkish. We're working on adding more languages in the future."
+      },
+      {
+        "question": "How do I get started?",
+        "answer": "Simply fill out the contact form below or reach out to us via email or Instagram. We'll guide you through the process and get your analysis started right away."
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Trusted by Researchers",
+    "headline": "What Researchers Say",
+    "placeholder": "Testimonials coming soon"
+  },
+  "contact": {
+    "eyebrow": "Get In Touch",
+    "headline": "Ready to Accelerate Your Research?",
+    "subtext": "We'd love to hear about your research.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+      "success": "Message sent! We'll get back to you soon.",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "your@email.com",
+      "subjectPlaceholder": "How can we help?",
+      "messagePlaceholder": "Tell us about your research..."
+    },
+    "info": {
+      "emailLabel": "Email",
+      "instagramLabel": "Instagram"
+    }
+  },
+  "footer": {
+    "tagline": "Your Academic Research Companion",
+    "copyright": "© 2026 GetBayes. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}
