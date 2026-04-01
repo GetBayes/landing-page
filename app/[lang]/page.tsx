@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import HowItWorks from "./components/HowItWorks";
 import Services from "./components/Services";
 import FAQ from "./components/FAQ";
+import Testimonials from "./components/Testimonials";
 
 export default async function Home({
   params,
@@ -27,6 +28,7 @@ export default async function Home({
         <HowItWorks howItWorks={dict.howItWorks} />
         <Services services={dict.services} />
         <FAQ faq={dict.faq} />
+        <Testimonials testimonials={dict.testimonials} />
       </main>
     </>
   );
