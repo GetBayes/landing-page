@@ -2,6 +2,7 @@ import { getDictionary, hasLocale, type Locale } from "./dictionaries";
 import { notFound } from "next/navigation";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import HowItWorks from "./components/HowItWorks";
 
 export default async function Home({
   params,
@@ -21,6 +22,7 @@ export default async function Home({
           heroPreview={dict.heroPreview}
           trustBar={dict.trustBar}
         />
+        <HowItWorks howItWorks={dict.howItWorks} />
       </main>
     </>
   );
