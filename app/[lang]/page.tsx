@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import HowItWorks from "./components/HowItWorks";
+import Services from "./components/Services";
 
 export default async function Home({
   params,
@@ -23,6 +24,7 @@ export default async function Home({
           trustBar={dict.trustBar}
         />
         <HowItWorks howItWorks={dict.howItWorks} />
+        <Services services={dict.services} />
       </main>
     </>
   );
