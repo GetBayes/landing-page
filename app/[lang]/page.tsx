@@ -7,6 +7,7 @@ import Services from "./components/Services";
 import FAQ from "./components/FAQ";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 export default async function Home({
   params,
@@ -32,6 +33,7 @@ export default async function Home({
         <Testimonials testimonials={dict.testimonials} />
         <Contact contact={dict.contact} />
       </main>
+      <Footer lang={lang as Locale} nav={dict.nav} footer={dict.footer} />
     </>
   );
 }
