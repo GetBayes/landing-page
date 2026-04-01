@@ -1,5 +1,6 @@
-import { getDictionary, hasLocale } from "./dictionaries";
+import { getDictionary, hasLocale, type Locale } from "./dictionaries";
 import { notFound } from "next/navigation";
+import Navbar from "./components/Navbar";
 
 export default async function Home({
   params,
@@ -11,11 +12,13 @@ export default async function Home({
   const dict = await getDictionary(lang);
 
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen">
-      <h1 className="text-4xl font-serif font-semibold text-foreground">
-        {dict.hero.headline}
-      </h1>
-      <p className="mt-4 text-foreground-muted">{dict.hero.subtext}</p>
-    </main>
+    <>
+      <Navbar lang={lang as Locale} nav={dict.nav} />
+      <main className="flex flex-col items-center justify-center min-h-screen">
+        <h1 className="text-4xl font-serif font-semibold text-foreground">
+          {dict.hero.headline}
+        </h1>
+      </main>
+    </>
   );
 }
