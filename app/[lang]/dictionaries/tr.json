@@ -82,7 +82,7 @@
     "items": [
       {
         "question": "Hangi veri formatlarını kabul ediyorsunuz?",
-        "answer": "SPSS (.sav), Excel (.xlsx, .csv), Stata (.dta), R veri setleri ve ham metin dosyaları dahil tüm yaygın veri formatlarını kabul ediyoruz. Dosyalarınızı yükleyin, gerisini biz halledelim."
+        "answer": "CSV, Excel (.xlsx, .xls), JSON, XML, görseller (JPEG, PNG, GIF, WebP) ve metin dosyaları (.txt, .md, .py vb.) kabul ediyoruz. Dosyalarınızı yükleyin, gerisini biz halledelim."
       },
       {
         "question": "Analiz ne kadar sürer?",

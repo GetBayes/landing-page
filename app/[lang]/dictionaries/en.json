@@ -82,7 +82,7 @@
     "items": [
       {
         "question": "What data formats do you accept?",
-        "answer": "We accept all common data formats including SPSS (.sav), Excel (.xlsx, .csv), Stata (.dta), R datasets, and raw text files. Simply upload your files and we'll handle the rest."
+        "answer": "We accept CSV, Excel (.xlsx, .xls), JSON, XML, images (JPEG, PNG, GIF, WebP), and text files (.txt, .md, .py, etc.). Simply upload your files and we'll handle the rest."
       },
       {
         "question": "How long does the analysis take?",
