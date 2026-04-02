@@ -1,5 +1,6 @@
 import type { Dictionary } from "../dictionaries";
-import { CheckCircle } from "lucide-react";
+import HeroAnimation from "./HeroAnimation";
+import CountUp from "./CountUp";
 
 type HeroProps = {
   hero: Dictionary["hero"];
@@ -7,7 +8,7 @@ type HeroProps = {
   trustBar: Dictionary["trustBar"];
 };
 
-export default function Hero({ hero, heroPreview, trustBar }: HeroProps) {
+export default function Hero({ hero, trustBar }: HeroProps) {
   return (
     <section className="bg-gradient-to-b from-background to-background-warm">
       {/* Split hero */}
@@ -39,57 +40,31 @@ export default function Hero({ hero, heroPreview, trustBar }: HeroProps) {
           </div>
         </div>
 
-        {/* Right column - preview card */}
-        <div className="flex-shrink-0 w-full md:w-[380px]">
-          <div className="bg-background-warm border border-border rounded-xl p-6 shadow-sm">
-            <p className="text-xs font-sans uppercase tracking-[0.15em] text-foreground-muted mb-4">
-              {heroPreview.label}
-            </p>
-            <div className="space-y-3 font-mono text-sm text-foreground">
-              <div className="flex items-center gap-2">
-                <CheckCircle size={16} className="text-green-600" />
-                <span>{heroPreview.pValue}</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle size={16} className="text-green-600" />
-                <span>{heroPreview.effectSize}</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle size={16} className="text-green-600" />
-                <span>{heroPreview.power}</span>
-              </div>
-            </div>
-            {/* Mini bar chart representation */}
-            <div className="mt-5 flex items-end gap-2 h-16">
-              <div className="w-8 bg-foreground/20 rounded-t" style={{ height: "40%" }} />
-              <div className="w-8 bg-foreground/30 rounded-t" style={{ height: "65%" }} />
-              <div className="w-8 bg-foreground/50 rounded-t" style={{ height: "85%" }} />
-              <div className="w-8 bg-foreground/40 rounded-t" style={{ height: "55%" }} />
-              <div className="w-8 bg-foreground/60 rounded-t" style={{ height: "100%" }} />
-              <div className="w-8 bg-foreground/35 rounded-t" style={{ height: "70%" }} />
-            </div>
-            <p className="mt-3 text-xs font-sans text-foreground-muted text-center">
-              {heroPreview.status}
-            </p>
-          </div>
-        </div>
+        {/* Right column - animated preview */}
+        <HeroAnimation />
       </div>
 
-      {/* Trust bar */}
+      {/* Trust bar with count-up */}
       <div className="border-t border-border">
         <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-16">
           <div className="text-center">
-            <p className="text-2xl font-serif font-semibold text-foreground">{trustBar.analysesCount}</p>
+            <p className="text-2xl font-serif font-semibold text-foreground">
+              <CountUp end={500} suffix="+" />
+            </p>
             <p className="text-sm font-sans text-foreground-muted mt-1">{trustBar.analyses}</p>
           </div>
           <div className="hidden sm:block w-px h-10 bg-border-dark" />
           <div className="text-center">
-            <p className="text-2xl font-serif font-semibold text-foreground">{trustBar.deliveryTime}</p>
+            <p className="text-2xl font-serif font-semibold text-foreground">
+              <CountUp end={15} suffix=" min" />
+            </p>
             <p className="text-sm font-sans text-foreground-muted mt-1">{trustBar.delivery}</p>
           </div>
           <div className="hidden sm:block w-px h-10 bg-border-dark" />
           <div className="text-center">
-            <p className="text-2xl font-serif font-semibold text-foreground">{trustBar.satisfactionRate}</p>
+            <p className="text-2xl font-serif font-semibold text-foreground">
+              <CountUp end={98} suffix="%" />
+            </p>
             <p className="text-sm font-sans text-foreground-muted mt-1">{trustBar.satisfaction}</p>
           </div>
         </div>
