@@ -67,7 +67,39 @@ export default function Contact({ contact }: ContactProps) {
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+        {/* Quick contact links */}
+        <ScrollReveal>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+            <a
+              href="mailto:info@getbayes.me"
+              className="inline-flex items-center gap-3 px-6 py-3 bg-background border border-border rounded-xl hover:border-accent hover:shadow-sm transition-all group"
+            >
+              <div className="w-9 h-9 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                <Mail size={18} className="text-foreground" />
+              </div>
+              <div className="text-left">
+                <p className="text-xs font-sans text-foreground-muted">{contact.info.emailLabel}</p>
+                <p className="text-sm font-sans font-medium text-foreground">info@getbayes.me</p>
+              </div>
+            </a>
+            <a
+              href="https://instagram.com/getbayes.me"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-6 py-3 bg-background border border-border rounded-xl hover:border-accent hover:shadow-sm transition-all group"
+            >
+              <div className="w-9 h-9 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                <InstagramIcon size={18} className="text-foreground" />
+              </div>
+              <div className="text-left">
+                <p className="text-xs font-sans text-foreground-muted">{contact.info.instagramLabel}</p>
+                <p className="text-sm font-sans font-medium text-foreground">@getbayes.me</p>
+              </div>
+            </a>
+          </div>
+        </ScrollReveal>
+
+        <div className="max-w-lg mx-auto">
           {/* Contact form */}
           <ScrollReveal>
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -138,42 +170,6 @@ export default function Contact({ contact }: ContactProps) {
                 </p>
               )}
             </form>
-          </ScrollReveal>
-
-          {/* Contact info */}
-          <ScrollReveal delay={150}>
-            <div className="flex flex-col justify-center gap-8">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Mail size={22} className="text-foreground" />
-                </div>
-                <div>
-                  <p className="text-sm font-sans font-medium text-foreground">{contact.info.emailLabel}</p>
-                  <a
-                    href="mailto:info@getbayes.me"
-                    className="text-sm font-sans text-foreground-muted hover:text-foreground transition-colors"
-                  >
-                    info@getbayes.me
-                  </a>
-                </div>
-              </div>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <InstagramIcon size={22} className="text-foreground" />
-                </div>
-                <div>
-                  <p className="text-sm font-sans font-medium text-foreground">{contact.info.instagramLabel}</p>
-                  <a
-                    href="https://instagram.com/getbayes.me"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm font-sans text-foreground-muted hover:text-foreground transition-colors"
-                  >
-                    @getbayes.me
-                  </a>
-                </div>
-              </div>
-            </div>
           </ScrollReveal>
         </div>
       </div>
