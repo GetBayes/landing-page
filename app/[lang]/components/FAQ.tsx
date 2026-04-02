@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
 import type { Dictionary } from "../dictionaries";
+import ScrollReveal from "./ScrollReveal";
 
 type FAQProps = {
   faq: Dictionary["faq"];
@@ -15,16 +16,19 @@ export default function FAQ({ faq }: FAQProps) {
     <section id="faq" className="py-20 md:py-28 bg-background">
       <div className="max-w-3xl mx-auto px-6">
         {/* Heading */}
-        <div className="text-center mb-16">
-          <p className="text-xs font-sans uppercase tracking-[0.2em] text-foreground-muted mb-3">
-            {faq.eyebrow}
-          </p>
-          <h2 className="text-3xl md:text-4xl font-serif font-semibold text-foreground">
-            {faq.headline}
-          </h2>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-16">
+            <p className="text-xs font-sans uppercase tracking-[0.2em] text-foreground-muted mb-3">
+              {faq.eyebrow}
+            </p>
+            <h2 className="text-3xl md:text-4xl font-serif font-semibold text-foreground">
+              {faq.headline}
+            </h2>
+          </div>
+        </ScrollReveal>
 
         {/* Accordion */}
+        <ScrollReveal>
         <div className="space-y-3">
           {faq.items.map((item, index) => {
             const isOpen = openIndex === index;
@@ -57,6 +61,7 @@ export default function FAQ({ faq }: FAQProps) {
             );
           })}
         </div>
+        </ScrollReveal>
       </div>
     </section>
   );
