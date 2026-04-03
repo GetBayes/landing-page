@@ -64,7 +64,7 @@ export async function POST(request: NextRequest) {
 
   try {
     await resend.emails.send({
-      from: "GetBayes Contact <onboarding@resend.dev>",
+      from: "GetBayes Contact <contact@getbayes.me>",
       to: "info@getbayes.me",
       replyTo: email,
       subject: subject || `Contact form: ${name}`,
