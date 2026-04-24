@@ -136,6 +136,28 @@
       "instagramLabel": "Instagram"
     }
   },
+  "power": {
+    "logoText": "GetBayes",
+    "backToHome": "Ana Sayfaya Dön",
+    "headline": "A Priori Güç Analizi",
+    "subtext": "İster çalışmanızı planlıyor olun ister mevcut verilerle çalışıyor olun — doğru örneklem büyüklüğünü belirleyip istatistiksel gücünüzü doğrulayacağız.",
+    "features": [
+      "Optimal örneklem büyüklüğü hesaplama",
+      "Mevcut verilerinizle güç doğrulama",
+      "15 dakikada teslim"
+    ],
+    "form": {
+      "email": "E-posta",
+      "emailPlaceholder": "email@adresiniz.com",
+      "instagram": "Instagram Kullanıcı Adı",
+      "instagramPlaceholder": "@kullaniciadi",
+      "description": "Kısa Açıklama",
+      "descriptionPlaceholder": "Araştırmanız hakkında bilgi verin...",
+      "submit": "Güç Analizi Talep Et",
+      "success": "Talebiniz gönderildi! En kısa sürede size dönüş yapacağız.",
+      "error": "Bir hata oluştu. Lütfen tekrar deneyin."
+    }
+  },
   "footer": {
     "tagline": "Akademik Araştırma Yol Arkadaşınız",
     "copyright": "© 2026 GetBayes. Tüm hakları saklıdır.",

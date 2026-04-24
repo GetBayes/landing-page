@@ -136,6 +136,28 @@
       "instagramLabel": "Instagram"
     }
   },
+  "power": {
+    "logoText": "GetBayes",
+    "backToHome": "Back to Home",
+    "headline": "A Priori Power Analysis",
+    "subtext": "Whether you're planning your study or working with existing data — we'll determine the right sample size and validate your statistical power.",
+    "features": [
+      "Optimal sample size calculation",
+      "Power validation with your existing data",
+      "Delivered in 15 minutes"
+    ],
+    "form": {
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "instagram": "Instagram Handle",
+      "instagramPlaceholder": "@yourhandle",
+      "description": "Brief Description",
+      "descriptionPlaceholder": "Tell us about your research...",
+      "submit": "Request Power Analysis",
+      "success": "Request submitted! We'll get back to you soon.",
+      "error": "Something went wrong. Please try again."
+    }
+  },
   "footer": {
     "tagline": "Your Academic Research Companion",
     "copyright": "© 2026 GetBayes. All rights reserved.",
