@@ -152,7 +152,7 @@
       "instagram": "Instagram Handle",
       "instagramPlaceholder": "@yourhandle",
       "description": "Brief Description",
-      "descriptionPlaceholder": "Tell us about your research...",
+      "descriptionPlaceholder": "Briefly describe your study — we'll discuss the details together.",
       "submit": "Request Power Analysis",
       "success": "Request submitted! We'll get back to you soon.",
       "error": "Something went wrong. Please try again."

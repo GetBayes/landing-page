@@ -139,7 +139,7 @@
   "power": {
     "logoText": "GetBayes",
     "backToHome": "Ana Sayfaya Dön",
-    "headline": "A Priori Güç Analizi",
+    "headline": "Güç Analizi / Örneklem Büyüklüğü Hesaplama",
     "subtext": "İster çalışmanızı planlıyor olun ister mevcut verilerle çalışıyor olun — doğru örneklem büyüklüğünü belirleyip istatistiksel gücünüzü doğrulayacağız.",
     "features": [
       "Optimal örneklem büyüklüğü hesaplama",
@@ -152,7 +152,7 @@
       "instagram": "Instagram Kullanıcı Adı",
       "instagramPlaceholder": "@kullaniciadi",
       "description": "Kısa Açıklama",
-      "descriptionPlaceholder": "Araştırmanız hakkında bilgi verin...",
+      "descriptionPlaceholder": "Kısaca çalışmanızdan bahsedin — detayları birlikte konuşalım.",
       "submit": "Güç Analizi Talep Et",
       "success": "Talebiniz gönderildi! En kısa sürede size dönüş yapacağız.",
       "error": "Bir hata oluştu. Lütfen tekrar deneyin."
