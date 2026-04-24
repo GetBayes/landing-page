@@ -1,0 +1,36 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - link "GetBayes ← Back to Home" [ref=e4] [cursor=pointer]:
+        - /url: /en
+        - generic [ref=e5]: GetBayes
+        - generic [ref=e6]: ← Back to Home
+    - main [ref=e7]:
+      - generic [ref=e8]:
+        - generic [ref=e10]:
+          - heading "A Priori Power Analysis" [level=1] [ref=e11]
+          - paragraph [ref=e12]: Whether you're planning your study or working with existing data — we'll determine the right sample size and validate your statistical power.
+        - generic [ref=e14]:
+          - generic [ref=e15]:
+            - img [ref=e17]
+            - paragraph [ref=e21]: Optimal sample size calculation
+          - generic [ref=e22]:
+            - img [ref=e24]
+            - paragraph [ref=e27]: Power validation with your existing data
+          - generic [ref=e28]:
+            - img [ref=e30]
+            - paragraph [ref=e33]: Delivered in 15 minutes
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - generic [ref=e37]: Email *
+            - textbox "your@email.com" [ref=e38]
+          - generic [ref=e39]:
+            - generic [ref=e40]: Instagram Handle
+            - textbox "@yourhandle" [ref=e41]
+          - generic [ref=e42]:
+            - generic [ref=e43]: Brief Description
+            - textbox "Tell us about your research..." [ref=e44]
+          - button "Request Power Analysis" [ref=e45]
+  - button "Open Next.js Dev Tools" [ref=e51] [cursor=pointer]:
+    - img [ref=e52]
+  - alert [ref=e55]

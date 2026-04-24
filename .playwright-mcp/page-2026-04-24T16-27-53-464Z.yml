@@ -1,0 +1,36 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - link "GetBayes ← Ana Sayfaya Dön" [ref=e4] [cursor=pointer]:
+        - /url: /tr
+        - generic [ref=e5]: GetBayes
+        - generic [ref=e6]: ← Ana Sayfaya Dön
+    - main [ref=e7]:
+      - generic [ref=e8]:
+        - generic [ref=e10]:
+          - heading "A Priori Güç Analizi" [level=1] [ref=e11]
+          - paragraph [ref=e12]: İster çalışmanızı planlıyor olun ister mevcut verilerle çalışıyor olun — doğru örneklem büyüklüğünü belirleyip istatistiksel gücünüzü doğrulayacağız.
+        - generic [ref=e14]:
+          - generic [ref=e15]:
+            - img [ref=e17]
+            - paragraph [ref=e21]: Optimal örneklem büyüklüğü hesaplama
+          - generic [ref=e22]:
+            - img [ref=e24]
+            - paragraph [ref=e27]: Mevcut verilerinizle güç doğrulama
+          - generic [ref=e28]:
+            - img [ref=e30]
+            - paragraph [ref=e33]: 15 dakikada teslim
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - generic [ref=e37]: E-posta *
+            - textbox "email@adresiniz.com" [ref=e38]
+          - generic [ref=e39]:
+            - generic [ref=e40]: Instagram Kullanıcı Adı
+            - textbox "@kullaniciadi" [ref=e41]
+          - generic [ref=e42]:
+            - generic [ref=e43]: Kısa Açıklama
+            - textbox "Araştırmanız hakkında bilgi verin..." [ref=e44]
+          - button "Güç Analizi Talep Et" [ref=e45]
+  - button "Open Next.js Dev Tools" [ref=e51] [cursor=pointer]:
+    - img [ref=e52]
+  - alert [ref=e55]

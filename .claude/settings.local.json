@@ -18,7 +18,13 @@
       "mcp__plugin_playwright_playwright__browser_navigate",
       "mcp__plugin_playwright_playwright__browser_take_screenshot",
       "Bash(pnpm build:*)",
-      "Bash(node -e \"const lucide = require\\('lucide-react'\\); const icons = Object.keys\\(lucide\\).filter\\(k => k.toLowerCase\\(\\).includes\\('instagram'\\)\\); console.log\\(icons.length ? icons : 'No Instagram icon found'\\); const social = Object.keys\\(lucide\\).filter\\(k => /social|twitter|facebook|github|link|globe/i.test\\(k\\)\\).slice\\(0, 10\\); console.log\\('Similar:', social\\);\")"
+      "Bash(node -e \"const lucide = require\\('lucide-react'\\); const icons = Object.keys\\(lucide\\).filter\\(k => k.toLowerCase\\(\\).includes\\('instagram'\\)\\); console.log\\(icons.length ? icons : 'No Instagram icon found'\\); const social = Object.keys\\(lucide\\).filter\\(k => /social|twitter|facebook|github|link|globe/i.test\\(k\\)\\).slice\\(0, 10\\); console.log\\('Similar:', social\\);\")",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('app/[lang]/dictionaries/en.json','utf8'\\)\\); console.log\\('en.json OK'\\)\")",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('app/[lang]/dictionaries/tr.json','utf8'\\)\\); console.log\\('tr.json OK'\\)\")",
+      "Bash(git commit -m ' *)",
+      "Bash(git commit *)",
+      "Bash(npm run *)",
+      "mcp__plugin_playwright_playwright__browser_snapshot"
     ]
   }
 }
