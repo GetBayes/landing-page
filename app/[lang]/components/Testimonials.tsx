@@ -8,7 +8,7 @@ type TestimonialsProps = {
 
 export default function Testimonials({ testimonials }: TestimonialsProps) {
   return (
-    <section className="py-20 md:py-28 bg-background-warm">
+    <section id="testimonials" aria-label="Testimonials" className="py-20 md:py-28 bg-background-warm">
       <div className="max-w-6xl mx-auto px-6">
         {/* Heading */}
         <ScrollReveal>

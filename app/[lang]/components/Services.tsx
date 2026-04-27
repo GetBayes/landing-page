@@ -29,7 +29,7 @@ export default function Services({ services }: ServicesProps) {
           <div className="bg-background border border-border rounded-xl p-8 mb-6">
             <div className="flex flex-col md:flex-row items-start gap-6">
               <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                <FlaskConical size={24} className="text-foreground" />
+                <FlaskConical size={24} className="text-foreground" aria-hidden="true" />
               </div>
               <div>
                 <h3 className="text-xl font-serif font-semibold text-foreground mb-2">
@@ -64,7 +64,7 @@ export default function Services({ services }: ServicesProps) {
                     </div>
                   )}
                   <div className="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <Icon size={20} className="text-foreground" />
+                    <Icon size={20} className="text-foreground" aria-hidden="true" />
                   </div>
                   <h3 className="text-base font-serif font-semibold text-foreground mb-2">
                     {item.title}

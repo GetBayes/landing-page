@@ -104,34 +104,39 @@ export default function Contact({ contact }: ContactProps) {
           <ScrollReveal>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label className="block text-sm font-sans font-medium text-foreground mb-1.5">
+                <label htmlFor="contact-name" className="block text-sm font-sans font-medium text-foreground mb-1.5">
                   {contact.form.name}
                 </label>
                 <input
+                  id="contact-name"
                   type="text"
                   name="name"
                   required
+                  autoComplete="name"
                   placeholder={contact.form.namePlaceholder}
                   className="w-full px-4 py-3 bg-background border border-border rounded-lg font-sans text-sm text-foreground placeholder:text-foreground-muted/50 focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition-colors"
                 />
               </div>
               <div>
-                <label className="block text-sm font-sans font-medium text-foreground mb-1.5">
+                <label htmlFor="contact-email" className="block text-sm font-sans font-medium text-foreground mb-1.5">
                   {contact.form.email}
                 </label>
                 <input
+                  id="contact-email"
                   type="email"
                   name="email"
                   required
+                  autoComplete="email"
                   placeholder={contact.form.emailPlaceholder}
                   className="w-full px-4 py-3 bg-background border border-border rounded-lg font-sans text-sm text-foreground placeholder:text-foreground-muted/50 focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition-colors"
                 />
               </div>
               <div>
-                <label className="block text-sm font-sans font-medium text-foreground mb-1.5">
+                <label htmlFor="contact-subject" className="block text-sm font-sans font-medium text-foreground mb-1.5">
                   {contact.form.subject}
                 </label>
                 <input
+                  id="contact-subject"
                   type="text"
                   name="subject"
                   placeholder={contact.form.subjectPlaceholder}
@@ -139,10 +144,11 @@ export default function Contact({ contact }: ContactProps) {
                 />
               </div>
               <div>
-                <label className="block text-sm font-sans font-medium text-foreground mb-1.5">
+                <label htmlFor="contact-message" className="block text-sm font-sans font-medium text-foreground mb-1.5">
                   {contact.form.message}
                 </label>
                 <textarea
+                  id="contact-message"
                   name="message"
                   required
                   rows={5}

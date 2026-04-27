@@ -1,0 +1,14 @@
+# GetBayes - Statistical Analysis for Academic Research
+# https://getbayes.me
+
+User-agent: *
+Allow: /
+
+# Block API routes
+Disallow: /api/
+
+# Block Next.js internal routes
+Disallow: /_next/
+
+# Sitemap
+Sitemap: https://getbayes.me/sitemap.xml

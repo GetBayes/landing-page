@@ -10,7 +10,7 @@ type HeroProps = {
 
 export default function Hero({ hero, trustBar }: HeroProps) {
   return (
-    <section className="bg-gradient-to-b from-background to-background-warm">
+    <section aria-label="Hero" className="bg-gradient-to-b from-background to-background-warm">
       {/* Split hero */}
       <div className="max-w-6xl mx-auto px-6 py-20 md:py-28 flex flex-col md:flex-row items-center gap-12 md:gap-16">
         {/* Left column - text */}

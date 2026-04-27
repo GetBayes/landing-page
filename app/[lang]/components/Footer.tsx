@@ -11,7 +11,7 @@ type FooterProps = {
 
 export default function Footer({ lang, nav, footer }: FooterProps) {
   return (
-    <footer className="bg-foreground text-accent-foreground">
+    <footer className="bg-foreground text-accent-foreground" role="contentinfo">
       <div className="max-w-6xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
@@ -23,7 +23,7 @@ export default function Footer({ lang, nav, footer }: FooterProps) {
           </div>
 
           {/* Nav links */}
-          <div className="flex flex-col gap-3">
+          <nav aria-label="Footer navigation" className="flex flex-col gap-3">
             <a href="#how-it-works" className="text-sm font-sans text-accent-foreground/60 hover:text-accent-foreground transition-colors">
               {nav.howItWorks}
             </a>
@@ -36,7 +36,7 @@ export default function Footer({ lang, nav, footer }: FooterProps) {
             <a href="#contact" className="text-sm font-sans text-accent-foreground/60 hover:text-accent-foreground transition-colors">
               {nav.contact}
             </a>
-          </div>
+          </nav>
 
           {/* Social + language */}
           <div className="flex flex-col gap-3">

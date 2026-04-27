@@ -18,7 +18,7 @@ export default function HeroAnimation() {
   ];
 
   return (
-    <div className="flex-shrink-0 w-full md:w-[420px]">
+    <div className="flex-shrink-0 w-full md:w-[420px]" role="img" aria-label="Animated preview showing data flowing through statistical analysis to produce a completed research report">
       <div className="flex items-center gap-4 md:gap-6">
         {/* Data side */}
         <div className="hidden sm:flex flex-col gap-1.5 flex-shrink-0">

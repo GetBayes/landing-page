@@ -39,9 +39,11 @@ export default function FAQ({ faq }: FAQProps) {
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : index)}
+                  aria-expanded={isOpen}
+                  aria-controls={`faq-answer-${index}`}
                   className="w-full flex items-center justify-between px-6 py-4 text-left hover:bg-background-warm/50 transition-colors"
                 >
-                  <span className="text-base font-sans font-medium text-foreground pr-4">
+                  <span id={`faq-question-${index}`} className="text-base font-sans font-medium text-foreground pr-4">
                     {item.question}
                   </span>
                   {isOpen ? (
@@ -51,7 +53,7 @@ export default function FAQ({ faq }: FAQProps) {
                   )}
                 </button>
                 {isOpen && (
-                  <div className="px-6 pb-4">
+                  <div id={`faq-answer-${index}`} role="region" aria-labelledby={`faq-question-${index}`} className="px-6 pb-4">
                     <p className="text-sm font-sans text-foreground-muted leading-relaxed">
                       {item.answer}
                     </p>

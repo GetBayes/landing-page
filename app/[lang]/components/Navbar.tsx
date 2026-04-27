@@ -26,8 +26,8 @@ export default function Navbar({ lang, nav }: NavbarProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
-      <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border" role="banner">
+      <nav aria-label="Main navigation" className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <a href={`/${lang}`} className="text-xl font-bold font-sans tracking-tight">
           GetBayes

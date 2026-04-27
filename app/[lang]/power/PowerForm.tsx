@@ -51,22 +51,25 @@ export default function PowerForm({ form }: PowerFormProps) {
     <ScrollReveal>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label className="block text-sm font-sans font-medium text-foreground mb-1.5">
+          <label htmlFor="power-email" className="block text-sm font-sans font-medium text-foreground mb-1.5">
             {form.email} <span className="text-red-500">*</span>
           </label>
           <input
+            id="power-email"
             type="email"
             name="email"
             required
+            autoComplete="email"
             placeholder={form.emailPlaceholder}
             className="w-full px-4 py-3 bg-background border border-border rounded-lg font-sans text-sm text-foreground placeholder:text-foreground-muted/50 focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition-colors"
           />
         </div>
         <div>
-          <label className="block text-sm font-sans font-medium text-foreground mb-1.5">
+          <label htmlFor="power-instagram" className="block text-sm font-sans font-medium text-foreground mb-1.5">
             {form.instagram}
           </label>
           <input
+            id="power-instagram"
             type="text"
             name="instagram"
             placeholder={form.instagramPlaceholder}
@@ -74,10 +77,11 @@ export default function PowerForm({ form }: PowerFormProps) {
           />
         </div>
         <div>
-          <label className="block text-sm font-sans font-medium text-foreground mb-1.5">
+          <label htmlFor="power-description" className="block text-sm font-sans font-medium text-foreground mb-1.5">
             {form.description}
           </label>
           <textarea
+            id="power-description"
             name="description"
             rows={3}
             placeholder={form.descriptionPlaceholder}

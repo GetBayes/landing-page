@@ -21,7 +21,7 @@ export default async function Home({
   return (
     <>
       <Navbar lang={lang as Locale} nav={dict.nav} />
-      <main>
+      <main id="main-content">
         <Hero
           hero={dict.hero}
           heroPreview={dict.heroPreview}
