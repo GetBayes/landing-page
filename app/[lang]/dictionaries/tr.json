@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "GetBayes | Akademik Araştırma İçin İstatistiksel Analiz",
-    "description": "Akademik araştırmalar için profesyonel istatistiksel analiz hizmeti. Tablolar, grafikler ve yorumlarla yayına hazır raporlar 15 dakikada teslim. Hemen başlayın."
+    "title": "GetBayes | İstatistik Analiz Hizmeti — Tez & Akademik Araştırma",
+    "description": "Tez istatistik yapan yerler arıyorsanız doğru adrestesiniz. SPSS analiz yaptırma, örneklem büyüklüğü hesaplama, güç analizi — yayına hazır raporlar 15 dakikada teslim."
   },
   "nav": {
     "howItWorks": "Nasıl Çalışır",
@@ -12,7 +12,7 @@
   "hero": {
     "eyebrow": "Akademik Araştırma Yol Arkadaşınız",
     "headline": "Araştırmanız İçin Profesyonel İstatistiksel Analiz",
-    "subtext": "Veriden yayına hazır sonuçlara. Kapsamlı istatistiksel analiz, tablolar, grafikler ve raporlar — 15 dakikada teslim.",
+    "subtext": "Veriden yayına hazır sonuçlara. Akademik veri analizi, tablolar, grafikler ve raporlar — istatistik analiz hizmeti 15 dakikada teslim.",
     "cta": "Hemen Başla",
     "ctaSecondary": "Daha Fazla Öğren"
   },
@@ -58,12 +58,12 @@
     "headline": "Araştırmanızın İhtiyacı Olan Her Şey",
     "featured": {
       "title": "İstatistiksel Analiz",
-      "description": "Eksiksiz analiz süreci: sorunları tespit eden triyaj, kapsamlı istatistiksel analiz ve tablolar ile grafikler içeren yayına hazır raporlar."
+      "description": "Eksiksiz istatistik analiz hizmeti: sorunları tespit eden triyaj, SPSS ve modern yöntemlerle kapsamlı akademik veri analizi, tablolar ve grafikler içeren yayına hazır raporlar."
     },
     "items": [
       {
         "title": "A Priori Güç Analizi",
-        "description": "Veri toplamaya başlamadan önce optimal örneklem büyüklüğünü belirleyin."
+        "description": "Güç analizi hesaplama ve örneklem büyüklüğü hesaplama — veri toplamaya başlamadan önce optimal örneklem büyüklüğünü belirleyin."
       },
       {
         "title": "Soru-Cevap Asistanı",
@@ -105,6 +105,14 @@
         "answer": "Platformumuz ve raporlarımız Türkçe ve İngilizce olarak mevcuttur. Gelecekte daha fazla dil eklemeye çalışıyoruz."
       },
       {
+        "question": "Tez istatistik yapan yerler arıyorum, bana yardımcı olabilir misiniz?",
+        "answer": "Evet, GetBayes tez istatistik analizi konusunda uzmanlaşmış bir hizmettir. Yüksek lisans ve doktora tezleri için eksiksiz istatistiksel analiz, tablolar, grafikler ve yorumlarla yayına hazır raporlar sunuyoruz. İletişim formunu doldurmanız yeterli."
+      },
+      {
+        "question": "SPSS analiz yaptırmak istiyorum, hangi programları kullanıyorsunuz?",
+        "answer": "SPSS, R, Python ve diğer modern istatistik araçlarıyla analiz yapıyoruz. Araştırmanız için en uygun yöntemi ve aracı belirleyerek sonuçları akademik standartlarda raporluyoruz. SPSS analiz yaptırma süreciniz 15 dakikada tamamlanır."
+      },
+      {
         "question": "Nasıl başlarım?",
         "answer": "Aşağıdaki iletişim formunu doldurun veya e-posta ya da Instagram üzerinden bize ulaşın. Süreci sizinle birlikte yürüteceğiz ve analizinize hemen başlayacağız."
       }
@@ -139,7 +147,7 @@
   "power": {
     "logoText": "GetBayes",
     "backToHome": "Ana Sayfaya Dön",
-    "headline": "Güç Analizi / Örneklem Büyüklüğü Hesaplama",
+    "headline": "Güç Analizi Hesaplama ve Örneklem Büyüklüğü Hesaplama",
     "subtext": "İster çalışmanızı planlıyor olun ister mevcut verilerle çalışıyor olun — doğru örneklem büyüklüğünü belirleyip istatistiksel gücünüzü doğrulayacağız.",
     "features": [
       "Optimal örneklem büyüklüğü hesaplama",
@@ -157,6 +165,14 @@
       "success": "Talebiniz gönderildi! En kısa sürede size dönüş yapacağız.",
       "error": "Bir hata oluştu. Lütfen tekrar deneyin."
     }
+  },
+  "legal": {
+    "backToHome": "Ana Sayfaya Dön",
+    "lastUpdated": "Son güncelleme",
+    "privacyTitle": "Gizlilik Politikası",
+    "privacyDescription": "GetBayes Gizlilik Politikası — verilerinizi nasıl topladığımız, kullandığımız ve koruduğumuz hakkında bilgi.",
+    "termsTitle": "Kullanım Koşulları",
+    "termsDescription": "GetBayes Kullanım Koşulları — hizmetlerimizi kullanma kuralları ve koşulları."
   },
   "footer": {
     "tagline": "Akademik Araştırma Yol Arkadaşınız",

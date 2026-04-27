@@ -1,5 +1,5 @@
 # GetBayes SEO Audit Report
-**Date:** 2026-04-24
+**Date:** 2026-04-27 (updated)
 **Domain:** getbayes.me
 **Auditor:** SEO Architect
 
@@ -69,16 +69,16 @@ The GetBayes landing page had significant SEO gaps that would prevent it from ra
 |------------|:---:|-------|
 | Technical SEO Foundation | **9/10** | robots.txt, sitemap, canonicals, hreflang all implemented. Minus 1 for no custom 404 page. |
 | Meta Tags & Head | **9/10** | Full title, description, OG, Twitter, robots, keywords. Minus 1 for no favicon variants (apple-touch-icon, etc). |
-| Open Graph & Social | **8/10** | All OG and Twitter tags set. Minus 2 because og-image.png does not yet exist in /public. |
-| Structured Data | **9/10** | Organization, WebSite, ProfessionalService, Service, FAQPage, BreadcrumbList schemas. Minus 1: no Review schema (no testimonials yet). |
+| Open Graph & Social | **10/10** | All OG and Twitter tags set. OG image created at `/public/og-image.png`. ✅ |
+| Structured Data | **9/10** | Organization, WebSite, ProfessionalService, Service, FAQPage, BreadcrumbList schemas. Minus 1: no AggregateRating/Review schema yet (testimonials now real — can add). |
 | Semantic HTML & Headings | **9/10** | Single H1 per page, proper hierarchy (H1->H2->H3), semantic elements used. Minus 1: HowItWorks pipeline section could use more semantic structure. |
-| Image Optimization | **7/10** | No raster images currently used (all CSS/SVG animations). Need OG image created. |
+| Image Optimization | **9/10** | OG image created. All CSS/SVG animations. Minus 1: no apple-touch-icon or PWA icons yet. |
 | Performance & Core Web Vitals | **8/10** | Server Components by default, font `display: swap`, pure CSS animations. Minus 2: several client components that could potentially be optimized. |
-| Content & Keywords | **7/10** | Good keyword placement in titles/descriptions. Minus 3: thin content in some areas, no blog/content strategy, testimonials placeholder. |
+| Content & Keywords | **8/10** | Good keyword placement in titles/descriptions. Real testimonials added. Minus 2: no blog/content strategy yet, thin content in some areas. |
 | i18n SEO | **9/10** | Full hreflang with x-default, per-language meta, Turkish character font support. Minus 1: no Turkish-specific structured data localization for special chars. |
 | Accessibility | **8/10** | Skip nav, aria labels, form labels, landmark roles. Minus 2: no focus ring customization, color contrast not fully audited. |
 
-**Overall SEO Readiness: 8.3/10**
+**Overall SEO Readiness: 8.9/10** (up from 8.3 — OG image, Search Console, GBP, testimonials done)
 
 ---
 
@@ -86,11 +86,11 @@ The GetBayes landing page had significant SEO gaps that would prevent it from ra
 
 ### Critical (Fix Immediately)
 
-1. **Create OG Image (1200x630px)** -- All OG and Twitter card tags reference `/og-image.png` which does not exist yet. Without this image, social shares will have no preview image. Create a branded image at `public/og-image.png` with the GetBayes logo, tagline, and professional design. Consider a separate Turkish variant later.
+1. ~~**Create OG Image (1200x630px)**~~ ✅ DONE (2026-04-27) -- OG image created at `public/og-image.png`.
 
-2. **Set up Google Search Console** -- Verify site ownership at search.google.com/search-console. Submit the sitemap URL `https://getbayes.me/sitemap.xml`. Add the verification meta tag to the layout (uncomment the `verification.google` field in `generateMetadata()`). This is the single most important step for monitoring search performance.
+2. ~~**Set up Google Search Console**~~ ✅ DONE (2026-04-27) -- Ownership verified via DNS. Sitemap submitted. 277 crawl requests in last 90 days. Note: robots.txt not yet detected by Google — will update after next deploy + crawl cycle.
 
-3. **Create Google Business Profile** -- Register GetBayes on Google Business Profile (business.google.com) for Ankara, Turkey. This enables local search visibility, Google Maps presence, and the Knowledge Panel. Use category "Statistical Consulting" or "Business Consulting Service". Add photos, hours, and the website URL.
+3. ~~**Create Google Business Profile**~~ ✅ DONE (2026-04-27) -- Registered for Ankara, Turkey.
 
 4. **Verify domain and email with Resend** -- Ensure `getbayes.me` domain is properly verified with Resend for email deliverability. Check SPF, DKIM, and DMARC records are configured.
 
@@ -100,7 +100,7 @@ The GetBayes landing page had significant SEO gaps that would prevent it from ra
 
 6. **Add favicon variants** -- Create `app/favicon.ico` (already exists), `public/apple-touch-icon.png` (180x180), `public/icon-192.png`, `public/icon-512.png`. Add a `manifest.webmanifest` for PWA support. Use Next.js metadata API to declare these.
 
-7. **Replace placeholder testimonials** -- The Testimonials section currently shows "coming soon" placeholder text. Real testimonials with researcher names and institutions would significantly boost trust signals and provide unique content for SEO.
+7. ~~**Replace placeholder testimonials**~~ ✅ DONE (2026-04-27) -- Real testimonials added.
 
 8. **Set up Google Analytics or Plausible** -- Implement analytics to track organic traffic, user behavior, conversion rates on the contact form, and bounce rates. This data informs future SEO strategy.
 

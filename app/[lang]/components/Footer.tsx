@@ -70,12 +70,12 @@ export default function Footer({ lang, nav, footer }: FooterProps) {
             {footer.copyright}
           </p>
           <div className="flex gap-4">
-            <span className="text-xs font-sans text-accent-foreground/40 cursor-default">
+            <a href={`/${lang}/privacy`} className="text-xs font-sans text-accent-foreground/40 hover:text-accent-foreground transition-colors">
               {footer.privacy}
-            </span>
-            <span className="text-xs font-sans text-accent-foreground/40 cursor-default">
+            </a>
+            <a href={`/${lang}/terms`} className="text-xs font-sans text-accent-foreground/40 hover:text-accent-foreground transition-colors">
               {footer.terms}
-            </span>
+            </a>
           </div>
         </div>
       </div>

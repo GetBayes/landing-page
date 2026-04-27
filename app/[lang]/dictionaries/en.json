@@ -158,6 +158,14 @@
       "error": "Something went wrong. Please try again."
     }
   },
+  "legal": {
+    "backToHome": "Back to Home",
+    "lastUpdated": "Last updated",
+    "privacyTitle": "Privacy Policy",
+    "privacyDescription": "GetBayes Privacy Policy — how we collect, use, and protect your data.",
+    "termsTitle": "Terms of Service",
+    "termsDescription": "GetBayes Terms of Service — rules and conditions for using our services."
+  },
   "footer": {
     "tagline": "Your Academic Research Companion",
     "copyright": "© 2026 GetBayes. All rights reserved.",

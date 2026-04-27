@@ -89,15 +89,15 @@ export async function generateMetadata({
     keywords:
       lang === "tr"
         ? [
+            "istatistik analiz hizmeti",
+            "tez istatistik yapan yerler",
+            "akademik veri analizi",
+            "SPSS analiz yaptırma",
+            "örneklem büyüklüğü hesaplama",
+            "güç analizi hesaplama",
             "istatistiksel analiz",
-            "akademik arastirma",
-            "veri analizi",
-            "guc analizi",
-            "orneklem buyuklugu",
-            "SPSS alternatifi",
             "tez istatistik",
-            "akademik yayin",
-            "istatistik hizmeti",
+            "akademik araştırma",
             "Ankara istatistik",
           ]
         : [
@@ -134,7 +134,7 @@ function buildStructuredData(lang: string, dict: Awaited<ReturnType<typeof getDi
     logo: baseUrl + "/og-image.png",
     description: isEn
       ? "Professional statistical analysis services for academic research. Publication-ready results delivered quickly."
-      : "Akademik arastirmalar icin profesyonel istatistiksel analiz hizmetleri.",
+      : "Akademik araştırmalar için profesyonel istatistik analiz hizmeti. Tez istatistik, SPSS analiz, örneklem büyüklüğü hesaplama.",
     email: "info@getbayes.me",
     sameAs: ["https://instagram.com/getbayes.me"],
     contactPoint: {
@@ -169,7 +169,7 @@ function buildStructuredData(lang: string, dict: Awaited<ReturnType<typeof getDi
     name: "GetBayes",
     description: isEn
       ? "Professional statistical analysis for academic research. From data to publication-ready results in 15 minutes."
-      : "Akademik arastirmalar icin profesyonel istatistiksel analiz. Veriden yayina hazir sonuclara 15 dakikada.",
+      : "Akademik araştırmalar için profesyonel istatistiksel analiz. Tez istatistik yapan yerler — veriden yayına hazır sonuçlara 15 dakikada.",
     url: baseUrl,
     email: "info@getbayes.me",
     address: {
@@ -192,7 +192,7 @@ function buildStructuredData(lang: string, dict: Awaited<ReturnType<typeof getDi
     {
       "@context": "https://schema.org",
       "@type": "Service",
-      name: isEn ? "Statistical Analysis" : "Istatistiksel Analiz",
+      name: isEn ? "Statistical Analysis" : "İstatistiksel Analiz Hizmeti",
       description: dict.services.featured.description,
       provider: { "@type": "Organization", name: "GetBayes" },
       serviceType: "Statistical Analysis",
@@ -201,7 +201,7 @@ function buildStructuredData(lang: string, dict: Awaited<ReturnType<typeof getDi
     {
       "@context": "https://schema.org",
       "@type": "Service",
-      name: isEn ? "A Priori Power Analysis" : "A Priori Guc Analizi",
+      name: isEn ? "A Priori Power Analysis" : "Güç Analizi Hesaplama ve Örneklem Büyüklüğü Hesaplama",
       description: dict.services.items[0].description,
       provider: { "@type": "Organization", name: "GetBayes" },
       serviceType: "Power Analysis",
@@ -282,7 +282,7 @@ export default async function RootLayout({
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:bg-accent focus:text-accent-foreground focus:px-4 focus:py-2 focus:rounded-md focus:top-2 focus:left-2"
         >
-          {lang === "tr" ? "Ana icerigi atla" : "Skip to main content"}
+          {lang === "tr" ? "Ana içeriğe atla" : "Skip to main content"}
         </a>
         {children}
       </body>

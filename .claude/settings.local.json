@@ -24,7 +24,8 @@
       "Bash(git commit -m ' *)",
       "Bash(git commit *)",
       "Bash(npm run *)",
-      "mcp__plugin_playwright_playwright__browser_snapshot"
+      "mcp__plugin_playwright_playwright__browser_snapshot",
+      "Bash(npx next *)"
     ]
   }
 }
