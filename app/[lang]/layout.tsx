@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Source_Serif_4, Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import { getDictionary, hasLocale, type Locale } from "./dictionaries";
 import { notFound } from "next/navigation";
+import ChatWidget from "./components/ChatWidget";
 import "../globals.css";
 
 const sourceSerif = Source_Serif_4({
@@ -285,6 +286,7 @@ export default async function RootLayout({
           {lang === "tr" ? "Ana içeriğe atla" : "Skip to main content"}
         </a>
         {children}
+        <ChatWidget chatWidget={dict.chatWidget} />
       </body>
     </html>
   );

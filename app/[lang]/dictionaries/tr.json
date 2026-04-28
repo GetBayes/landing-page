@@ -157,8 +157,8 @@
     "form": {
       "email": "E-posta",
       "emailPlaceholder": "email@adresiniz.com",
-      "instagram": "Instagram Kullanıcı Adı",
-      "instagramPlaceholder": "@kullaniciadi",
+      "contact": "Instagram / WhatsApp",
+      "contactPlaceholder": "@kullaniciadi veya telefon numarası",
       "description": "Kısa Açıklama",
       "descriptionPlaceholder": "Kısaca çalışmanızdan bahsedin — detayları birlikte konuşalım.",
       "submit": "Güç Analizi Talep Et",

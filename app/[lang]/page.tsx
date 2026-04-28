@@ -8,7 +8,7 @@ import FAQ from "./components/FAQ";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import ChatWidget from "./components/ChatWidget";
+
 
 export default async function Home({
   params,
@@ -35,7 +35,6 @@ export default async function Home({
         <Contact contact={dict.contact} />
       </main>
       <Footer lang={lang as Locale} nav={dict.nav} footer={dict.footer} />
-      <ChatWidget chatWidget={dict.chatWidget} />
     </>
   );
 }

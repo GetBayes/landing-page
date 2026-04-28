@@ -29,7 +29,7 @@ export default function PowerForm({ form }: PowerFormProps) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           email: formData.get("email"),
-          instagram: formData.get("instagram") || undefined,
+          contact: formData.get("contact") || undefined,
           description: formData.get("description") || undefined,
         }),
       });
@@ -65,14 +65,14 @@ export default function PowerForm({ form }: PowerFormProps) {
           />
         </div>
         <div>
-          <label htmlFor="power-instagram" className="block text-sm font-sans font-medium text-foreground mb-1.5">
-            {form.instagram}
+          <label htmlFor="power-contact" className="block text-sm font-sans font-medium text-foreground mb-1.5">
+            {form.contact}
           </label>
           <input
-            id="power-instagram"
+            id="power-contact"
             type="text"
-            name="instagram"
-            placeholder={form.instagramPlaceholder}
+            name="contact"
+            placeholder={form.contactPlaceholder}
             className="w-full px-4 py-3 bg-background border border-border rounded-lg font-sans text-sm text-foreground placeholder:text-foreground-muted/50 focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition-colors"
           />
         </div>

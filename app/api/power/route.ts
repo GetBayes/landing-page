@@ -44,7 +44,7 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  let body: { email?: string; instagram?: string; description?: string };
+  let body: { email?: string; contact?: string; description?: string };
 
   try {
     body = await request.json();
@@ -52,7 +52,7 @@ export async function POST(request: NextRequest) {
     return Response.json({ error: "Invalid request body." }, { status: 400 });
   }
 
-  const { email, instagram, description } = body;
+  const { email, contact, description } = body;
 
   if (!email) {
     return Response.json(
@@ -69,7 +69,7 @@ export async function POST(request: NextRequest) {
       subject: `Power Analysis Request: ${email}`,
       text: [
         `Email: ${email}`,
-        instagram ? `Instagram: ${instagram}` : null,
+        contact ? `Contact: ${contact}` : null,
         description ? `\nDescription:\n${description}` : null,
       ]
         .filter(Boolean)

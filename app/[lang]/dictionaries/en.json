@@ -149,8 +149,8 @@
     "form": {
       "email": "Email",
       "emailPlaceholder": "your@email.com",
-      "instagram": "Instagram Handle",
-      "instagramPlaceholder": "@yourhandle",
+      "contact": "Instagram / WhatsApp",
+      "contactPlaceholder": "@yourhandle or phone number",
       "description": "Brief Description",
       "descriptionPlaceholder": "Briefly describe your study — we'll discuss the details together.",
       "submit": "Request Power Analysis",
