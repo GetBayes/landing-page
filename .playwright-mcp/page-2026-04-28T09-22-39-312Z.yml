@@ -1,0 +1,55 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - navigation "Info page navigation" [ref=e5]:
+        - link "GetBayes ← Back to Home" [ref=e6] [cursor=pointer]:
+          - /url: /en
+          - generic [ref=e7]: GetBayes
+          - generic [ref=e8]: ← Back to Home
+    - main [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e12]:
+          - heading "Got a Research Question?" [level=1] [ref=e13]
+          - paragraph [ref=e14]: Describe your study or question — we'll review it and get back to you with a plan.
+        - list [ref=e16]:
+          - listitem [ref=e17]:
+            - img [ref=e19]
+            - paragraph [ref=e21]: Free initial review
+          - listitem [ref=e22]:
+            - img [ref=e24]
+            - paragraph [ref=e27]: Response within 24 hours
+          - listitem [ref=e28]:
+            - img [ref=e30]
+            - paragraph [ref=e33]: No commitment required
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - generic [ref=e37]: Email *
+            - textbox "Email *" [ref=e38]:
+              - /placeholder: your@email.com
+          - generic [ref=e39]:
+            - generic [ref=e40]: Instagram / WhatsApp
+            - textbox "Instagram / WhatsApp" [ref=e41]:
+              - /placeholder: "@yourhandle or phone number"
+          - generic [ref=e42]:
+            - generic [ref=e43]: Research Area
+            - combobox "Research Area" [ref=e44]:
+              - option "Select your field" [disabled]
+              - option "Medicine"
+              - option "Psychology"
+              - option "Education"
+              - option "Social Sciences"
+              - option "Other" [selected]
+          - generic [ref=e59]:
+            - generic [ref=e60]: Please specify
+            - textbox "Please specify" [ref=e61]:
+              - /placeholder: Your research area
+          - generic [ref=e45]:
+            - generic [ref=e46]: Your Question *
+            - textbox "Your Question *" [ref=e47]:
+              - /placeholder: Tell us about your research, ask a question, or describe what you need help with...
+          - button "Send Your Question" [ref=e48]
+  - button "Open Next.js Dev Tools" [ref=e54] [cursor=pointer]:
+    - img [ref=e55]
+  - alert [ref=e58]

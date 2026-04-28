@@ -25,7 +25,11 @@
       "Bash(git commit *)",
       "Bash(npm run *)",
       "mcp__plugin_playwright_playwright__browser_snapshot",
-      "Bash(npx next *)"
+      "Bash(npx next *)",
+      "Bash(findstr \":3000\")",
+      "mcp__plugin_playwright_playwright__browser_close",
+      "Bash(findstr \":3001\")",
+      "mcp__plugin_playwright_playwright__browser_select_option"
     ]
   }
 }

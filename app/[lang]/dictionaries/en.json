@@ -158,6 +158,39 @@
       "error": "Something went wrong. Please try again."
     }
   },
+  "info": {
+    "logoText": "GetBayes",
+    "backToHome": "Back to Home",
+    "headline": "Need More Information?",
+    "subtext": "Tell us about your research — we'll get back to you with how we can help.",
+    "features": [
+      "Free initial review",
+      "Response within 24 hours",
+      "No commitment required"
+    ],
+    "researchAreas": [
+      "Medicine",
+      "Psychology",
+      "Education",
+      "Social Sciences",
+      "Other"
+    ],
+    "form": {
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "contact": "Instagram / WhatsApp",
+      "contactPlaceholder": "@yourhandle or phone number",
+      "researchArea": "Research Area",
+      "researchAreaPlaceholder": "Select your field",
+      "otherArea": "Please specify",
+      "otherAreaPlaceholder": "Your research area",
+      "question": "Your Message",
+      "questionPlaceholder": "Tell us about your research, ask a question, or describe what you need help with...",
+      "submit": "Get in Touch",
+      "success": "Message received! We'll get back to you within 24 hours.",
+      "error": "Something went wrong. Please try again."
+    }
+  },
   "legal": {
     "backToHome": "Back to Home",
     "lastUpdated": "Last updated",
@@ -165,6 +198,15 @@
     "privacyDescription": "GetBayes Privacy Policy — how we collect, use, and protect your data.",
     "termsTitle": "Terms of Service",
     "termsDescription": "GetBayes Terms of Service — rules and conditions for using our services."
+  },
+  "chatWidget": {
+    "welcome": "Hi there! 👋",
+    "subtitle": "How can we help you?",
+    "whatsapp": "Chat on WhatsApp",
+    "whatsappDesc": "Usually replies within an hour",
+    "ai": "AI Assistant",
+    "aiDesc": "Coming soon",
+    "prefill": "Hi! I'd like to learn more about GetBayes statistical analysis services."
   },
   "footer": {
     "tagline": "Your Academic Research Companion",

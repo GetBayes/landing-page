@@ -1,0 +1,51 @@
+- generic [active] [ref=e1]:
+  - link "Ana içeriğe atla" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - navigation "Info page navigation" [ref=e5]:
+        - link "GetBayes ← Ana Sayfaya Dön" [ref=e6] [cursor=pointer]:
+          - /url: /tr
+          - generic [ref=e7]: GetBayes
+          - generic [ref=e8]: ← Ana Sayfaya Dön
+    - main [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e12]:
+          - heading "Araştırma Sorunuz mu Var?" [level=1] [ref=e13]
+          - paragraph [ref=e14]: Çalışmanızı veya sorunuzu anlatın — inceleyip size bir planla dönelim.
+        - list [ref=e16]:
+          - listitem [ref=e17]:
+            - img [ref=e19]
+            - paragraph [ref=e21]: Ücretsiz ön değerlendirme
+          - listitem [ref=e22]:
+            - img [ref=e24]
+            - paragraph [ref=e27]: 24 saat içinde yanıt
+          - listitem [ref=e28]:
+            - img [ref=e30]
+            - paragraph [ref=e33]: Bağlayıcı değil
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - generic [ref=e37]: E-posta *
+            - textbox "E-posta *" [ref=e38]:
+              - /placeholder: email@adresiniz.com
+          - generic [ref=e39]:
+            - generic [ref=e40]: Instagram / WhatsApp
+            - textbox "Instagram / WhatsApp" [ref=e41]:
+              - /placeholder: "@kullaniciadi veya telefon numarası"
+          - generic [ref=e42]:
+            - generic [ref=e43]: Araştırma Alanı
+            - combobox "Araştırma Alanı" [ref=e44]:
+              - option "Alanınızı seçin" [disabled] [selected]
+              - option "Tıp"
+              - option "Psikoloji"
+              - option "Eğitim"
+              - option "Sosyal Bilimler"
+              - option "Diğer"
+          - generic [ref=e45]:
+            - generic [ref=e46]: Sorunuz *
+            - textbox "Sorunuz *" [ref=e47]:
+              - /placeholder: Araştırmanızı anlatın, soru sorun veya neye ihtiyacınız olduğunu açıklayın...
+          - button "Sorunuzu Gönderin" [ref=e48]
+  - button "Open Next.js Dev Tools" [ref=e54] [cursor=pointer]:
+    - img [ref=e55]
+  - alert [ref=e58]

@@ -166,6 +166,39 @@
       "error": "Bir hata oluştu. Lütfen tekrar deneyin."
     }
   },
+  "info": {
+    "logoText": "GetBayes",
+    "backToHome": "Ana Sayfaya Dön",
+    "headline": "Daha Fazla Bilgiye mi İhtiyacınız Var?",
+    "subtext": "Araştırmanızdan bahsedin — size nasıl yardımcı olabileceğimizi anlatalım.",
+    "features": [
+      "Ücretsiz ön değerlendirme",
+      "24 saat içinde yanıt",
+      "Bağlayıcı değil"
+    ],
+    "researchAreas": [
+      "Tıp",
+      "Psikoloji",
+      "Eğitim",
+      "Sosyal Bilimler",
+      "Diğer"
+    ],
+    "form": {
+      "email": "E-posta",
+      "emailPlaceholder": "email@adresiniz.com",
+      "contact": "Instagram / WhatsApp",
+      "contactPlaceholder": "@kullaniciadi veya telefon numarası",
+      "researchArea": "Araştırma Alanı",
+      "researchAreaPlaceholder": "Alanınızı seçin",
+      "otherArea": "Lütfen belirtin",
+      "otherAreaPlaceholder": "Araştırma alanınız",
+      "question": "Mesajınız",
+      "questionPlaceholder": "Araştırmanızı anlatın, soru sorun veya neye ihtiyacınız olduğunu açıklayın...",
+      "submit": "Bize Ulaşın",
+      "success": "Mesajınız bize ulaştı! 24 saat içinde size dönüş yapacağız.",
+      "error": "Bir hata oluştu. Lütfen tekrar deneyin."
+    }
+  },
   "legal": {
     "backToHome": "Ana Sayfaya Dön",
     "lastUpdated": "Son güncelleme",
@@ -173,6 +206,15 @@
     "privacyDescription": "GetBayes Gizlilik Politikası — verilerinizi nasıl topladığımız, kullandığımız ve koruduğumuz hakkında bilgi.",
     "termsTitle": "Kullanım Koşulları",
     "termsDescription": "GetBayes Kullanım Koşulları — hizmetlerimizi kullanma kuralları ve koşulları."
+  },
+  "chatWidget": {
+    "welcome": "Merhaba! 👋",
+    "subtitle": "Size nasıl yardımcı olabiliriz?",
+    "whatsapp": "WhatsApp ile Yazın",
+    "whatsappDesc": "Genellikle 1 saat içinde yanıt",
+    "ai": "AI Asistan",
+    "aiDesc": "Yakında",
+    "prefill": "Merhaba! GetBayes istatistik analiz hizmetleri hakkında bilgi almak istiyorum."
   },
   "footer": {
     "tagline": "Akademik Araştırma Yol Arkadaşınız",
