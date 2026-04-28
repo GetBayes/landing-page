@@ -1,5 +1,5 @@
 import type { Dictionary, Locale } from "../dictionaries";
-import { Mail } from "lucide-react";
+import { Mail, MessageCircle } from "lucide-react";
 import InstagramIcon from "./InstagramIcon";
 import LanguageToggle from "./LanguageToggle";
 
@@ -40,6 +40,15 @@ export default function Footer({ lang, nav, footer }: FooterProps) {
 
           {/* Social + language */}
           <div className="flex flex-col gap-3">
+            <a
+              href="https://wa.me/905016510674"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-sm font-sans text-accent-foreground/60 hover:text-accent-foreground transition-colors"
+            >
+              <MessageCircle size={16} />
+              +90 501 651 0674
+            </a>
             <a
               href="https://instagram.com/getbayes.me"
               target="_blank"

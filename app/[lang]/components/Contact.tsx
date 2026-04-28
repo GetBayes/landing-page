@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import type { Dictionary } from "../dictionaries";
-import { Mail, Loader2 } from "lucide-react";
+import { Mail, Loader2, MessageCircle } from "lucide-react";
 import InstagramIcon from "./InstagramIcon";
 import ScrollReveal from "./ScrollReveal";
 
@@ -70,6 +70,20 @@ export default function Contact({ contact }: ContactProps) {
         {/* Quick contact links */}
         <ScrollReveal>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+            <a
+              href="https://wa.me/905016510674"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-6 py-3 bg-[#25D366]/5 border border-[#25D366]/30 rounded-xl hover:border-[#25D366] hover:shadow-sm transition-all group"
+            >
+              <div className="w-9 h-9 bg-[#25D366]/15 rounded-lg flex items-center justify-center group-hover:bg-[#25D366]/25 transition-colors">
+                <MessageCircle size={18} className="text-[#25D366]" />
+              </div>
+              <div className="text-left">
+                <p className="text-xs font-sans text-foreground-muted">{contact.info.whatsappLabel}</p>
+                <p className="text-sm font-sans font-medium text-foreground">+90 501 651 0674</p>
+              </div>
+            </a>
             <a
               href="mailto:info@getbayes.me"
               className="inline-flex items-center gap-3 px-6 py-3 bg-background border border-border rounded-xl hover:border-accent hover:shadow-sm transition-all group"

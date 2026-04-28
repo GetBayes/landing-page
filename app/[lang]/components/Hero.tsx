@@ -1,4 +1,5 @@
 import type { Dictionary } from "../dictionaries";
+import { MessageCircle } from "lucide-react";
 import HeroAnimation from "./HeroAnimation";
 import CountUp from "./CountUp";
 
@@ -24,7 +25,7 @@ export default function Hero({ hero, trustBar }: HeroProps) {
           <p className="text-lg font-sans text-foreground-muted leading-relaxed mb-8 max-w-lg mx-auto md:mx-0">
             {hero.subtext}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
             <a
               href="#contact"
               className="inline-flex items-center justify-center px-8 py-3 bg-accent text-accent-foreground font-sans font-medium rounded-lg hover:opacity-90 transition-opacity"
@@ -32,12 +33,21 @@ export default function Hero({ hero, trustBar }: HeroProps) {
               {hero.cta}
             </a>
             <a
-              href="#how-it-works"
-              className="inline-flex items-center justify-center px-8 py-3 border border-border-dark text-foreground font-sans font-medium rounded-lg hover:bg-background-warm transition-colors"
+              href="https://wa.me/905016510674"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-[#25D366] text-white font-sans font-medium rounded-lg hover:bg-[#22c55e] transition-colors"
             >
-              {hero.ctaSecondary}
+              <MessageCircle size={18} />
+              {hero.ctaWhatsapp}
             </a>
           </div>
+          <a
+            href="#how-it-works"
+            className="inline-flex items-center justify-center text-sm font-sans text-foreground-muted hover:text-foreground transition-colors mt-2 mx-auto md:mx-0"
+          >
+            {hero.ctaSecondary} →
+          </a>
         </div>
 
         {/* Right column - animated preview */}

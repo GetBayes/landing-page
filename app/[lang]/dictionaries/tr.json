@@ -14,7 +14,8 @@
     "headline": "Araştırmanız İçin Profesyonel İstatistiksel Analiz",
     "subtext": "Veriden yayına hazır sonuçlara. Akademik veri analizi, tablolar, grafikler ve raporlar — istatistik analiz hizmeti 15 dakikada teslim.",
     "cta": "Hemen Başla",
-    "ctaSecondary": "Daha Fazla Öğren"
+    "ctaSecondary": "Daha Fazla Öğren",
+    "ctaWhatsapp": "WhatsApp ile Yazın"
   },
   "heroPreview": {
     "label": "Örnek Çıktı",
@@ -141,7 +142,8 @@
     },
     "info": {
       "emailLabel": "E-posta",
-      "instagramLabel": "Instagram"
+      "instagramLabel": "Instagram",
+      "whatsappLabel": "WhatsApp"
     }
   },
   "power": {
@@ -174,7 +176,7 @@
     "features": [
       "Ücretsiz ön değerlendirme",
       "24 saat içinde yanıt",
-      "Bağlayıcı değil"
+      "Herhangi bir taahhüt yok"
     ],
     "researchAreas": [
       "Tıp",

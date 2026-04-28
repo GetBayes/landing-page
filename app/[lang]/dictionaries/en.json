@@ -14,7 +14,8 @@
     "headline": "Professional Statistical Analysis for Your Research",
     "subtext": "From data to publication-ready results. Comprehensive statistical analysis, tables, charts, and reports — delivered in 15 minutes.",
     "cta": "Get Started",
-    "ctaSecondary": "Learn More"
+    "ctaSecondary": "Learn More",
+    "ctaWhatsapp": "Write on WhatsApp"
   },
   "heroPreview": {
     "label": "Sample Output",
@@ -133,7 +134,8 @@
     },
     "info": {
       "emailLabel": "Email",
-      "instagramLabel": "Instagram"
+      "instagramLabel": "Instagram",
+      "whatsappLabel": "WhatsApp"
     }
   },
   "power": {
