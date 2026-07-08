@@ -60,7 +60,10 @@
       "Bash(powershell -c 'Get-NetTCPConnection -LocalPort 3457 -State Listen -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force }')",
       "Bash(powershell -c 'Get-NetTCPConnection -LocalPort 3458 -State Listen -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force }')",
       "Bash(nslookup -type=TXT getbayes.me 8.8.8.8)",
-      "Bash(node *)"
+      "Bash(node *)",
+      "PowerShell(Resolve-DnsName *)",
+      "Bash(powershell -c 'Get-Process -Name node -ErrorAction SilentlyContinue | Where-Object {\\($_.Path -like '\\\\''*node*'\\\\''\\)} | Where-Object {$_.MainWindowTitle -eq '\\\\'''\\\\''} | Select-Object Id,ProcessName | Format-Table')",
+      "Bash(taskkill *)"
     ]
   }
 }

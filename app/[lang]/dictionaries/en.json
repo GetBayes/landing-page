@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "GetBayes | Statistical Analysis for Academic Research",
-    "description": "Professional statistical analysis for academic research. Get publication-ready reports with tables, charts, and interpretations delivered in 15 minutes. Start today."
+    "title": "Statistical Analysis for Theses & Academic Research | GetBayes",
+    "description": "Statistical analysis for PhD dissertations, master's theses, and journal articles. Publication-ready reports with tables, charts, and interpretation in 15 minutes."
   },
   "nav": {
     "howItWorks": "How It Works",
@@ -106,6 +106,14 @@
         "answer": "Our platform and reports are available in English and Turkish. We're working on adding more languages in the future."
       },
       {
+        "question": "Do you handle statistics for medical, dental, psychology, and nursing research?",
+        "answer": "Yes. We provide statistical analysis for PhD dissertations, master's theses, medical and dental specialty (residency) theses, and research in psychology, nursing, education, and the social sciences — method selection, analysis, and interpretation in one package."
+      },
+      {
+        "question": "Can I get statistical analysis for a journal article?",
+        "answer": "Yes. We run complete statistical analyses for journal submissions and support revision rounds with the additional analyses reviewers request. Reports arrive publication-ready with tables, charts, effect sizes, and interpretations."
+      },
+      {
         "question": "How do I get started?",
         "answer": "Simply fill out the contact form below or reach out to us via email or Instagram. We'll guide you through the process and get your analysis started right away."
       }
@@ -141,6 +149,10 @@
   "power": {
     "logoText": "GetBayes",
     "backToHome": "Back to Home",
+    "meta": {
+      "title": "A Priori Power Analysis & Sample Size Calculation | GetBayes",
+      "description": "Determine the right sample size for your study with a priori power analysis. Justified, ethics-committee-ready sample size reports for theses and articles."
+    },
     "headline": "A Priori Power Analysis",
     "subtext": "Whether you're planning your study or working with existing data — we'll determine the right sample size and validate your statistical power.",
     "features": [
@@ -163,6 +175,10 @@
   "info": {
     "logoText": "GetBayes",
     "backToHome": "Back to Home",
+    "meta": {
+      "title": "Free Initial Review for Your Statistical Analysis | GetBayes",
+      "description": "Need statistical analysis for your thesis, dissertation, or journal article? Tell us about your research and get a free initial review within 24 hours."
+    },
     "headline": "Need More Information?",
     "subtext": "Tell us about your research — we'll get back to you with how we can help.",
     "features": [

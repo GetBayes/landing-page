@@ -26,8 +26,8 @@ export async function generateMetadata({
   const ogImageUrl = `${baseUrl}/og-image.png`;
 
   return {
-    title: `${dict.info.headline} | GetBayes`,
-    description: dict.info.subtext,
+    title: dict.info.meta.title,
+    description: dict.info.meta.description,
     alternates: {
       canonical: canonicalUrl,
       languages: {

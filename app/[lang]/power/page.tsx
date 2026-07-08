@@ -26,8 +26,8 @@ export async function generateMetadata({
   const ogImageUrl = `${baseUrl}/og-image.png`;
 
   return {
-    title: `${dict.power.headline} | GetBayes`,
-    description: dict.power.subtext,
+    title: dict.power.meta.title,
+    description: dict.power.meta.description,
     alternates: {
       canonical: canonicalUrl,
       languages: {

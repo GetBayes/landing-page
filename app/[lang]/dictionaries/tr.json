@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "GetBayes | İstatistik Analiz Hizmeti — Tez & Akademik Araştırma",
-    "description": "Tez istatistik yapan yerler arıyorsanız doğru adrestesiniz. SPSS analiz yaptırma, örneklem büyüklüğü hesaplama, güç analizi — yayına hazır raporlar 15 dakikada teslim."
+    "title": "İstatistik Analiz Hizmeti — Tez, Makale ve SPSS Analizi | GetBayes",
+    "description": "Doktora, yüksek lisans ve tıpta uzmanlık tezleri için istatistik analiz hizmeti. SPSS analizi, güç analizi, örneklem hesaplama — yayına hazır rapor 15 dakikada."
   },
   "nav": {
     "howItWorks": "Nasıl Çalışır",
@@ -114,6 +114,14 @@
         "answer": "SPSS, R, Python ve diğer modern istatistik araçlarıyla analiz yapıyoruz. Araştırmanız için en uygun yöntemi ve aracı belirleyerek sonuçları akademik standartlarda raporluyoruz. SPSS analiz yaptırma süreciniz 15 dakikada tamamlanır."
       },
       {
+        "question": "Tıp, diş hekimliği, psikoloji ve hemşirelik alanlarında tez istatistiği yapıyor musunuz?",
+        "answer": "Evet. Tıpta ve diş hekimliğinde uzmanlık tezleri, doktora ve yüksek lisans tezleri ile psikoloji, hemşirelik, eğitim bilimleri ve sosyal bilimler araştırmaları için istatistik analiz hizmeti sunuyoruz. Alanınıza uygun yöntem seçimi, analiz ve yorumlama tek pakette teslim edilir."
+      },
+      {
+        "question": "Makale ve yayın için istatistik analizi yaptırabilir miyim?",
+        "answer": "Evet. Dergiye gönderilecek makaleler için eksiksiz istatistik analizi yapıyor, hakem (revizyon) sürecinde istenen ek analizleri de destekliyoruz. Raporlar tablolar, grafikler, etki büyüklükleri ve yorumlarla yayına hazır formatta hazırlanır."
+      },
+      {
         "question": "Nasıl başlarım?",
         "answer": "Aşağıdaki iletişim formunu doldurun veya e-posta ya da Instagram üzerinden bize ulaşın. Süreci sizinle birlikte yürüteceğiz ve analizinize hemen başlayacağız."
       }
@@ -149,6 +157,10 @@
   "power": {
     "logoText": "GetBayes",
     "backToHome": "Ana Sayfaya Dön",
+    "meta": {
+      "title": "Güç Analizi ve Örneklem Büyüklüğü Hesaplama Hizmeti | GetBayes",
+      "description": "Teziniz ve etik kurul başvurunuz için a priori güç analiziyle doğru örneklem büyüklüğünü hesaplıyoruz. Gerekçeli, yayına hazır örneklem raporu hızla teslim."
+    },
     "headline": "Güç Analizi Hesaplama ve Örneklem Büyüklüğü Hesaplama",
     "subtext": "İster çalışmanızı planlıyor olun ister mevcut verilerle çalışıyor olun — doğru örneklem büyüklüğünü belirleyip istatistiksel gücünüzü doğrulayacağız.",
     "features": [
@@ -171,6 +183,10 @@
   "info": {
     "logoText": "GetBayes",
     "backToHome": "Ana Sayfaya Dön",
+    "meta": {
+      "title": "Ücretsiz Ön Değerlendirme — Tez ve Makale İstatistiği | GetBayes",
+      "description": "Doktora, yüksek lisans veya uzmanlık teziniz için istatistik analizi mi gerekiyor? Araştırmanızı anlatın; 24 saat içinde ücretsiz ön değerlendirmeyle dönelim."
+    },
     "headline": "Daha Fazla Bilgiye mi İhtiyacınız Var?",
     "subtext": "Araştırmanızdan bahsedin — size nasıl yardımcı olabileceğimizi anlatalım.",
     "features": [

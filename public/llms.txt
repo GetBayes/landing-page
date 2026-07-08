@@ -4,10 +4,12 @@
 
 Key facts:
 - 100+ analyses completed, 15-minute average delivery, 98% satisfaction rate
+- Who it's for: PhD candidates, master's students, medical and dental specialty (residency/uzmanlık tezi) students, and researchers in psychology, nursing, education, medicine, dentistry, and the social sciences
+- Typical requests: thesis statistics (tez istatistik), dissertation data analysis, SPSS analysis (SPSS analiz yaptırma), journal article statistics including reviewer-revision support, a priori power analysis and sample size calculation for ethics committee (etik kurul) applications
 - Supported methods: t-tests, ANOVA, regression, chi-square, correlation, factor analysis, and more
 - Tools used: SPSS, R, Python
 - Accepted data formats: CSV, Excel (.xlsx, .xls), JSON, XML, images, text files
-- Based in Ankara, Turkey; serves researchers worldwide
+- Based in Ankara, Turkey; serves researchers worldwide in English and Turkish
 - Contact: info@getbayes.me · WhatsApp +90 501 651 0674 · Instagram @getbayes.me
 
 ## Pages

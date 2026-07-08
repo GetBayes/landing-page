@@ -99,6 +99,17 @@ export async function generateMetadata({
             "güç analizi hesaplama",
             "istatistiksel analiz",
             "tez istatistik",
+            "doktora tezi istatistik analizi",
+            "yüksek lisans tezi istatistik",
+            "tıpta uzmanlık tezi istatistik",
+            "diş hekimliği tez istatistiği",
+            "psikoloji istatistik analizi",
+            "hemşirelik tezi istatistik",
+            "makale istatistik analizi",
+            "biyoistatistik danışmanlık",
+            "istatistik danışmanlık hizmeti",
+            "ücretli istatistik analizi",
+            "etik kurul örneklem hesaplama",
             "akademik araştırma",
             "Ankara istatistik",
           ]
@@ -113,6 +124,12 @@ export async function generateMetadata({
             "research statistics",
             "academic publication",
             "statistical report",
+            "dissertation statistics help",
+            "thesis statistical analysis",
+            "biostatistics consulting",
+            "SPSS analysis service",
+            "medical research statistics",
+            "psychology research statistics",
           ],
     authors: [{ name: "GetBayes" }],
     creator: "GetBayes",
@@ -139,6 +156,20 @@ function buildStructuredData(lang: string, dict: Awaited<ReturnType<typeof getDi
       : "Akademik araştırmalar için profesyonel istatistik analiz hizmeti. Tez istatistik, SPSS analiz, örneklem büyüklüğü hesaplama.",
     email: "info@getbayes.me",
     sameAs: ["https://instagram.com/getbayes.me"],
+    knowsAbout: [
+      "Statistical Analysis",
+      "Biostatistics",
+      "SPSS",
+      "R",
+      "Power Analysis",
+      "Sample Size Calculation",
+      "Thesis Statistics",
+      "Medical Research Statistics",
+      "Psychology Research Statistics",
+      "Regression Analysis",
+      "ANOVA",
+      "Factor Analysis",
+    ],
     contactPoint: {
       "@type": "ContactPoint",
       email: "info@getbayes.me",
@@ -190,6 +221,13 @@ function buildStructuredData(lang: string, dict: Awaited<ReturnType<typeof getDi
     },
   };
 
+  const serviceAudience = {
+    "@type": "Audience",
+    audienceType: isEn
+      ? "PhD candidates, master's students, medical and dental residents, psychology and nursing researchers, academics"
+      : "Doktora öğrencileri, yüksek lisans öğrencileri, tıpta ve diş hekimliğinde uzmanlık öğrencileri, psikoloji ve hemşirelik araştırmacıları, akademisyenler",
+  };
+
   const serviceSchemas = [
     {
       "@context": "https://schema.org",
@@ -199,6 +237,7 @@ function buildStructuredData(lang: string, dict: Awaited<ReturnType<typeof getDi
       provider: { "@type": "Organization", name: "GetBayes" },
       serviceType: "Statistical Analysis",
       areaServed: "Worldwide",
+      audience: serviceAudience,
     },
     {
       "@context": "https://schema.org",
@@ -208,6 +247,21 @@ function buildStructuredData(lang: string, dict: Awaited<ReturnType<typeof getDi
       provider: { "@type": "Organization", name: "GetBayes" },
       serviceType: "Power Analysis",
       areaServed: "Worldwide",
+      audience: serviceAudience,
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: isEn
+        ? "Thesis & Dissertation Statistical Analysis"
+        : "Tez İstatistik Analizi (Doktora, Yüksek Lisans, Uzmanlık Tezi)",
+      description: isEn
+        ? "Complete statistical analysis for PhD dissertations, master's theses, and medical or dental specialty theses — method selection, analysis with SPSS and R, and publication-ready reporting."
+        : "Doktora, yüksek lisans ve tıpta/diş hekimliğinde uzmanlık tezleri için eksiksiz istatistik analizi — yöntem seçimi, SPSS ve R ile analiz, yayına hazır raporlama.",
+      provider: { "@type": "Organization", name: "GetBayes" },
+      serviceType: "Thesis Statistics",
+      areaServed: "Worldwide",
+      audience: serviceAudience,
     },
   ];
 
