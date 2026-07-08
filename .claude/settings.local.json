@@ -59,7 +59,8 @@
       "Bash(pnpm lint *)",
       "Bash(powershell -c 'Get-NetTCPConnection -LocalPort 3457 -State Listen -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force }')",
       "Bash(powershell -c 'Get-NetTCPConnection -LocalPort 3458 -State Listen -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force }')",
-      "Bash(nslookup -type=TXT getbayes.me 8.8.8.8)"
+      "Bash(nslookup -type=TXT getbayes.me 8.8.8.8)",
+      "Bash(node *)"
     ]
   }
 }
