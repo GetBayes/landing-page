@@ -1,0 +1,38 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - main [ref=e3]:
+    - generic [ref=e4]:
+      - paragraph [ref=e5]: "404"
+      - heading "Page not found" [level=1] [ref=e6]
+      - paragraph [ref=e7]: The page you're looking for may have been moved or never existed. The rest of the site is working — you can continue from the home page.
+      - generic [ref=e8]:
+        - link "Back to home" [ref=e9] [cursor=pointer]:
+          - /url: /en
+        - link "Contact us" [ref=e10] [cursor=pointer]:
+          - /url: /en#contact
+  - alert [ref=e11]
+  - generic [ref=e12]:
+    - generic:
+      - generic:
+        - paragraph: Hi there! 👋
+        - paragraph: How can we help you?
+      - generic:
+        - link "Chat on WhatsApp Usually replies within an hour":
+          - /url: https://wa.me/905016510674?text=Hi!%20I'd%20like%20to%20learn%20more%20about%20GetBayes%20statistical%20analysis%20services.
+          - generic:
+            - img
+          - generic:
+            - paragraph: Chat on WhatsApp
+            - paragraph: Usually replies within an hour
+          - img
+        - generic:
+          - generic:
+            - img
+          - generic:
+            - paragraph: Q&A Assistant
+            - paragraph: Coming soon
+          - generic: Soon
+    - button "Open chat" [ref=e13]:
+      - img [ref=e14]
+      - img

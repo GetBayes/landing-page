@@ -210,6 +210,12 @@
     "aiDesc": "Coming soon",
     "prefill": "Hi! I'd like to learn more about GetBayes statistical analysis services."
   },
+  "cookieConsent": {
+    "message": "We use Google Analytics to understand visitor traffic. Analytics cookies are only set if you accept.",
+    "accept": "Accept",
+    "decline": "Decline",
+    "privacy": "Privacy Policy"
+  },
   "footer": {
     "tagline": "Your Academic Research Companion",
     "copyright": "© 2026 GetBayes. All rights reserved.",

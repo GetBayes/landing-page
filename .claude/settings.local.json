@@ -39,7 +39,27 @@
       "Skill(artifact-design)",
       "Bash(python -c \"import sys,re,html; t=sys.stdin.read\\(\\); t=re.sub\\(r'<script[^>]*>.*?</script>','',t,flags=re.S\\); t=re.sub\\(r'<style[^>]*>.*?</style>','',t,flags=re.S\\); t=re.sub\\(r'<[^>]+>',' ',t\\); words=html.unescape\\(t\\).split\\(\\); print\\('TR visible words:',len\\(words\\)\\)\")",
       "Bash(python -c \"import sys,re,html; t=sys.stdin.read\\(\\); t=re.sub\\(r'<script[^>]*>.*?</script>','',t,flags=re.S\\); t=re.sub\\(r'<style[^>]*>.*?</style>','',t,flags=re.S\\); t=re.sub\\(r'<[^>]+>',' ',t\\); words=html.unescape\\(t\\).split\\(\\); print\\('EN visible words:',len\\(words\\)\\)\")",
-      "Artifact"
+      "Artifact",
+      "Bash(echo \"exit: $?\")",
+      "Bash(pnpm start *)",
+      "Bash(break)",
+      "Read(//tmp/**)",
+      "Bash(python -c ' *)",
+      "Bash(python *)",
+      "Bash(nslookup getbayes.me)",
+      "Bash(nslookup -type=TXT getbayes.me)",
+      "Bash(nslookup -type=MX getbayes.me)",
+      "Bash(npx kill-port *)",
+      "Bash(powershell -c 'Get-NetTCPConnection -LocalPort 3457 -State Listen | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force }')",
+      "Bash(NEXT_PUBLIC_GA_ID=G-TESTID123 pnpm build)",
+      "Bash(NEXT_PUBLIC_GA_ID=G-TESTID123 pnpm start *)",
+      "mcp__plugin_playwright_playwright__browser_click",
+      "mcp__plugin_playwright_playwright__browser_evaluate",
+      "mcp__plugin_playwright_playwright__browser_network_requests",
+      "Bash(pnpm lint *)",
+      "Bash(powershell -c 'Get-NetTCPConnection -LocalPort 3457 -State Listen -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force }')",
+      "Bash(powershell -c 'Get-NetTCPConnection -LocalPort 3458 -State Listen -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force }')",
+      "Bash(nslookup -type=TXT getbayes.me 8.8.8.8)"
     ]
   }
 }

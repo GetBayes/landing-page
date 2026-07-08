@@ -3,6 +3,7 @@ import { Source_Serif_4, Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/goo
 import { getDictionary, hasLocale, type Locale } from "./dictionaries";
 import { notFound } from "next/navigation";
 import ChatWidget from "./components/ChatWidget";
+import CookieConsent from "./components/CookieConsent";
 import "../globals.css";
 
 const sourceSerif = Source_Serif_4({
@@ -294,6 +295,11 @@ export default async function RootLayout({
         </a>
         {children}
         <ChatWidget chatWidget={dict.chatWidget} />
+        <CookieConsent
+          lang={lang as Locale}
+          gaId={process.env.NEXT_PUBLIC_GA_ID}
+          copy={dict.cookieConsent}
+        />
       </body>
     </html>
   );

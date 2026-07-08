@@ -218,6 +218,12 @@
     "aiDesc": "Yakında",
     "prefill": "Merhaba! GetBayes istatistik analiz hizmetleri hakkında bilgi almak istiyorum."
   },
+  "cookieConsent": {
+    "message": "Ziyaretçi trafiğini anlamak için Google Analytics kullanıyoruz. Analiz çerezleri yalnızca onay verirseniz etkinleşir.",
+    "accept": "Kabul et",
+    "decline": "Reddet",
+    "privacy": "Gizlilik Politikası"
+  },
   "footer": {
     "tagline": "Akademik Araştırma Yol Arkadaşınız",
     "copyright": "© 2026 GetBayes. Tüm hakları saklıdır.",

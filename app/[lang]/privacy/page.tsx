@@ -53,7 +53,7 @@ const contentEn = {
     {
       title: "3. Data Sharing",
       paragraphs: [
-        "We do not sell, trade, or rent your personal information to third parties. Your data may be processed by our email delivery provider (Resend) solely for the purpose of delivering our communications to you. We do not share your research data or analysis results with anyone outside of GetBayes.",
+        "We do not sell, trade, or rent your personal information to third parties. Your data may be processed by our email delivery provider (Resend) solely for the purpose of delivering our communications to you. If you consent to analytics cookies, anonymized usage data is processed by Google Analytics. We do not share your research data or analysis results with anyone outside of GetBayes.",
       ],
     },
     {
@@ -65,7 +65,7 @@ const contentEn = {
     {
       title: "5. Cookies and Tracking",
       paragraphs: [
-        "Our website does not use cookies for tracking or advertising purposes. We do not use any third-party analytics or tracking tools.",
+        "Our website uses Google Analytics to understand visitor traffic, but only with your explicit consent. Analytics cookies are set solely if you accept them via the consent banner; if you decline, no analytics or tracking cookies are placed. You can change your choice at any time by clearing your browser's site data. We do not use cookies for advertising purposes.",
       ],
     },
     {
@@ -114,7 +114,7 @@ const contentTr = {
     {
       title: "3. Veri Paylaşımı",
       paragraphs: [
-        "Kişisel bilgilerinizi üçüncü taraflara satmıyor, takas etmiyor veya kiralamıyoruz. Verileriniz, yalnızca iletişimlerimizi size ulaştırmak amacıyla e-posta hizmet sağlayıcımız (Resend) tarafından işlenebilir. Araştırma verilerinizi veya analiz sonuçlarınızı GetBayes dışında kimseyle paylaşmıyoruz.",
+        "Kişisel bilgilerinizi üçüncü taraflara satmıyor, takas etmiyor veya kiralamıyoruz. Verileriniz, yalnızca iletişimlerimizi size ulaştırmak amacıyla e-posta hizmet sağlayıcımız (Resend) tarafından işlenebilir. Analiz çerezlerine onay verirseniz, anonimleştirilmiş kullanım verileri Google Analytics tarafından işlenir. Araştırma verilerinizi veya analiz sonuçlarınızı GetBayes dışında kimseyle paylaşmıyoruz.",
       ],
     },
     {
@@ -126,7 +126,7 @@ const contentTr = {
     {
       title: "5. Çerezler ve İzleme",
       paragraphs: [
-        "Web sitemiz izleme veya reklam amaçlı çerez kullanmamaktadır. Üçüncü taraf analiz veya izleme araçları kullanmıyoruz.",
+        "Web sitemiz, ziyaretçi trafiğini anlamak için yalnızca açık onayınızla Google Analytics kullanmaktadır. Analiz çerezleri sadece onay bandı üzerinden kabul etmeniz halinde yerleştirilir; reddederseniz hiçbir analiz veya izleme çerezi kullanılmaz. Tercihinizi tarayıcınızın site verilerini temizleyerek istediğiniz zaman değiştirebilirsiniz. Reklam amaçlı çerez kullanmıyoruz.",
       ],
     },
     {
