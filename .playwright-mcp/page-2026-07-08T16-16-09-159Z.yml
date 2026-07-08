@@ -1,0 +1,134 @@
+- generic [active] [ref=f1e1]:
+  - link "Ana içeriğe atla" [ref=f1e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=f1e3]:
+    - banner [ref=f1e4]:
+      - navigation "Topic page navigation" [ref=f1e5]:
+        - link "GetBayes ← Ana Sayfaya Dön" [ref=f1e6] [cursor=pointer]:
+          - /url: /tr
+          - generic [ref=f1e7]: GetBayes
+          - generic [ref=f1e8]: ← Ana Sayfaya Dön
+    - main [ref=f1e9]:
+      - article [ref=f1e10]:
+        - generic [ref=f1e11]:
+          - 'heading "Hocam İstatistikçi İstedi: Nereden Bulabilirim?" [level=1] [ref=f1e12]'
+          - paragraph [ref=f1e13]: "Danışmanınız 'analizler için bir istatistikçiyle çalış' dediyse, aradığınız kişi verinize uygun testleri seçip çalıştıracak, sonuçları tez veya makale formatında tablolar ve yorumlarla raporlayacak ve savunmada 'bu testi neden kullandın?' sorusuna hazırlanmanızı sağlayacak bir uzmandır. GetBayes tam olarak bu işi yapar: verinizi ve araştırma sorularınızı gönderirsiniz; analizin kendisi çoğunlukla 15 dakika sürer, yayına hazır raporunuzu aynı gün, çoğu zaman saatler hatta dakikalar içinde teslim alırsınız."
+          - paragraph [ref=f1e14]: Bu sayfada istatistikçiyle çalışmanın ne anlama geldiğini, seçerken nelere dikkat etmeniz gerektiğini ve sürecin nasıl ilerlediğini adım adım anlattık — kararınızı bilinçli verin.
+        - generic [ref=f1e16]:
+          - heading "Bu rehber kimler için?" [level=2] [ref=f1e17]
+          - list [ref=f1e18]:
+            - listitem [ref=f1e19]:
+              - paragraph [ref=f1e21]: Danışmanı analiz için uzman desteği isteyen yüksek lisans ve doktora öğrencileri
+            - listitem [ref=f1e22]:
+              - paragraph [ref=f1e24]: Uzmanlık tezinin istatistik bölümü için destek arayan hekimler ve diş hekimleri
+            - listitem [ref=f1e25]:
+              - paragraph [ref=f1e27]: Makalesi hakemden 'istatistiksel analiz yetersiz' notuyla dönen araştırmacılar
+            - listitem [ref=f1e28]:
+              - paragraph [ref=f1e30]: Veri toplamış ama analiz aşamasında ilerleyemeyen herkes
+        - generic [ref=f1e31]:
+          - generic [ref=f1e34]:
+            - heading "İstatistikçi tez sürecinde tam olarak ne yapar?" [level=2] [ref=f1e35]
+            - paragraph [ref=f1e36]: "İyi bir istatistik uzmanı yalnızca 'testi çalıştırmaz'. Önce verinizi inceler: eksik gözlemler, hatalı kodlamalar, uç değerler. Sonra araştırma sorularınızı hipotezlere çevirir ve veri yapınıza uygun yöntemi gerekçesiyle seçer — iki grup mu karşılaştırılıyor, ilişki mi aranıyor, bir sonucu yordayan değişkenler mi inceleniyor? Analizden sonra işin en kritik kısmı gelir: bulguların tez diline çevrilmesi. p-değerinin, etki büyüklüğünün ve güven aralığının ne anlama geldiğinin akademik dille, tablo ve grafiklerle raporlanması."
+            - paragraph [ref=f1e37]: "Sınır da nettir: istatistikçi tezinizi yazmaz, veriniz üzerinde oynama yapmaz. Analizi doğru yapar, doğru raporlar ve size anlatır — tezin sahibi ve savunucusu sizsiniz."
+          - generic [ref=f1e40]:
+            - heading "İstatistikçi seçerken nelere dikkat etmelisiniz?" [level=2] [ref=f1e41]
+            - paragraph [ref=f1e42]: "Piyasada kalite farkı büyük. Şu soruların cevabı seçiminizi netleştirir:"
+            - list [ref=f1e43]:
+              - listitem [ref=f1e44]:
+                - paragraph [ref=f1e46]: Yöntem gerekçesi veriyor mu? 'ANOVA yaptım' değil, 'şu varsayımlar sağlandığı için ANOVA seçildi' diyebilmeli — jüri bunu soracak.
+              - listitem [ref=f1e47]:
+                - paragraph [ref=f1e49]: Alanınızın raporlama standardını biliyor mu? (APA formatı, tıp dergisi tablo düzeni, etki büyüklüğü raporlama)
+              - listitem [ref=f1e50]:
+                - paragraph [ref=f1e52]: Çıktı dosyalarını (SPSS output, temizlenmiş veri seti) teslim ediyor mu?
+              - listitem [ref=f1e53]:
+                - paragraph [ref=f1e55]: Revizyon desteği var mı? Danışman veya hakem ek analiz isterse ne olacağı baştan net olmalı.
+              - listitem [ref=f1e56]:
+                - paragraph [ref=f1e58]: Gizlilik taahhüdü veriyor mu? Veriniz ve teziniz üçüncü kişiyle paylaşılmamalı.
+              - listitem [ref=f1e59]:
+                - paragraph [ref=f1e61]: Süre ve fiyat baştan yazılı mı? Kapsam netleşmeden verilen fiyat sonradan değişir.
+          - generic [ref=f1e64]:
+            - heading "Seçenekleriniz ve artı-eksileri" [level=2] [ref=f1e65]
+            - table [ref=f1e67]:
+              - rowgroup [ref=f1e68]:
+                - row "Seçenek Artısı Eksisi" [ref=f1e69]:
+                  - columnheader "Seçenek" [ref=f1e70]
+                  - columnheader "Artısı" [ref=f1e71]
+                  - columnheader "Eksisi" [ref=f1e72]
+              - rowgroup [ref=f1e73]:
+                - row "Üniversitedeki istatistik bölümünden destek Ücretsiz olabilir, akademik güven Yoğunluk nedeniyle haftalar sürebilir; kapsam sınırlı" [ref=f1e74]:
+                  - cell "Üniversitedeki istatistik bölümünden destek" [ref=f1e75]
+                  - cell "Ücretsiz olabilir, akademik güven" [ref=f1e76]
+                  - cell "Yoğunluk nedeniyle haftalar sürebilir; kapsam sınırlı" [ref=f1e77]
+                - row "Bireysel/freelance istatistikçiler Esnek, pazarlık edilebilir Kalite değişken; rapor standardı ve revizyon garantisi belirsiz" [ref=f1e78]:
+                  - cell "Bireysel/freelance istatistikçiler" [ref=f1e79]
+                  - cell "Esnek, pazarlık edilebilir" [ref=f1e80]
+                  - cell "Kalite değişken; rapor standardı ve revizyon garantisi belirsiz" [ref=f1e81]
+                - row "Profesyonel analiz hizmeti (GetBayes gibi) Hızlı teslim, standart rapor formatı, revizyon ve soru-cevap desteği Ücretli; çok özel yöntemlerde kapsam önceden konuşulmalı" [ref=f1e82]:
+                  - cell "Profesyonel analiz hizmeti (GetBayes gibi)" [ref=f1e83]
+                  - cell "Hızlı teslim, standart rapor formatı, revizyon ve soru-cevap desteği" [ref=f1e84]
+                  - cell "Ücretli; çok özel yöntemlerde kapsam önceden konuşulmalı" [ref=f1e85]
+          - generic [ref=f1e88]:
+            - heading "GetBayes ile süreç nasıl ilerler?" [level=2] [ref=f1e89]
+            - list [ref=f1e90]:
+              - listitem [ref=f1e91]:
+                - text: "01"
+                - heading "Ulaşın" [level=3] [ref=f1e92]
+                - paragraph [ref=f1e93]: İletişim formu, e-posta veya WhatsApp üzerinden verinizi ve araştırma sorularınızı iletin. 24 saat içinde ücretsiz ön değerlendirme yaparız.
+              - listitem [ref=f1e94]:
+                - text: "02"
+                - heading "Kapsam ve fiyat netleşir" [level=3] [ref=f1e95]
+                - paragraph [ref=f1e96]: Hangi analizlerin gerektiğini, süreyi ve ücreti yazılı olarak bildiririz — sürpriz yok.
+              - listitem [ref=f1e97]:
+                - text: "03"
+                - heading "Analiz ve teslim" [level=3] [ref=f1e98]
+                - paragraph [ref=f1e99]: Analizin kendisi çoğunlukla 15 dakikada tamamlanır; tablolar, grafikler ve yorumlarla yayına hazır raporunuz aynı gün elinizde olur.
+              - listitem [ref=f1e100]:
+                - text: "04"
+                - heading "Savunmaya hazırlık" [level=3] [ref=f1e101]
+                - paragraph [ref=f1e102]: "Rapor üzerindeki her soruyu sorabilirsiniz: hangi test neden seçildi, sonuç nasıl yorumlanır — savunmaya hazır girersiniz."
+        - generic [ref=f1e104]:
+          - heading "Sıkça sorulan sorular" [level=2] [ref=f1e105]
+          - generic [ref=f1e106]:
+            - generic [ref=f1e107]:
+              - heading "Tez için istatistikçiyle çalışmak etik mi?" [level=3] [ref=f1e108]
+              - paragraph [ref=f1e109]: "Evet — analiz desteği almak, tıpkı dil redaksiyonu gibi akademide yaygın ve kabul gören bir uygulamadır. Etik sınır şudur: veri size ait ve gerçek olmalı, bulguları anlamalı ve savunabilmelisiniz. Biz her yöntem seçiminin gerekçesini raporda yazarak bunu kolaylaştırıyoruz."
+            - generic [ref=f1e110]:
+              - heading "İstatistikçi ücretleri neye göre değişir?" [level=3] [ref=f1e111]
+              - paragraph [ref=f1e112]: "Üç etken belirleyicidir: araştırma sorusu sayısı, değişken/ölçek sayısı ve yöntemlerin karmaşıklığı (t-testi ile doğrulayıcı faktör analizi aynı emek değildir). Net fiyat için verinizi ve sorularınızı iletmeniz yeterli — 24 saat içinde ücretsiz ön değerlendirmeyle dönüyoruz."
+            - generic [ref=f1e113]:
+              - heading "Verimi paylaşmak güvenli mi?" [level=3] [ref=f1e114]
+              - paragraph [ref=f1e115]: GetBayes'te veriniz yalnızca analiziniz için kullanılır, üçüncü kişilerle paylaşılmaz ve talep ederseniz teslimat sonrası silinir.
+            - generic [ref=f1e116]:
+              - heading "Danışmanım analizleri beğenmezse ne olur?" [level=3] [ref=f1e117]
+              - paragraph [ref=f1e118]: "Revizyon desteği sunuyoruz: danışmanınız farklı bir test, ek analiz veya farklı tablo düzeni isterse aynı veri üzerinde güncelliyoruz."
+            - generic [ref=f1e119]:
+              - heading "Hangi alanlarda çalışıyorsunuz?" [level=3] [ref=f1e120]
+              - paragraph [ref=f1e121]: Tıp ve diş hekimliği uzmanlık tezleri, hemşirelik, psikoloji, eğitim bilimleri ve sosyal bilimler başta olmak üzere nicel veri içeren tüm akademik çalışmalarda hizmet veriyoruz.
+            - generic [ref=f1e122]:
+              - heading "Acil teslim mümkün mü?" [level=3] [ref=f1e123]
+              - paragraph [ref=f1e124]: Analizin kendisi zaten çoğunlukla 15 dakika sürüyor; teslim aynı gün, saatler hatta dakikalar içinde yapılıyor. Savunma veya gönderim tarihi yaklaşan çalışmalarda önceliklendirme yapabiliyoruz — durumu iletmeniz yeterli.
+        - generic [ref=f1e126]:
+          - heading "İstatistikçi aramanız burada bitiyor" [level=2] [ref=f1e127]
+          - paragraph [ref=f1e128]: Verinizi ve araştırma sorularınızı gönderin; 24 saat içinde ücretsiz ön değerlendirme ve net fiyatla dönelim.
+          - generic [ref=f1e129]:
+            - link "Ücretsiz Ön Değerlendirme Al" [ref=f1e130] [cursor=pointer]:
+              - /url: /tr/bilgi
+            - link "WhatsApp ile Yazın" [ref=f1e131] [cursor=pointer]:
+              - /url: https://wa.me/905016510674
+              - img [ref=f1e132]
+              - text: WhatsApp ile Yazın
+        - navigation "İlgili hizmetler ve rehberler" [ref=f1e135]:
+          - heading "İlgili hizmetler ve rehberler" [level=2] [ref=f1e136]
+          - list [ref=f1e137]:
+            - listitem [ref=f1e138]:
+              - link "Tez İstatistik Analizi" [ref=f1e139] [cursor=pointer]:
+                - /url: /tr/tez-istatistik-analizi
+            - listitem [ref=f1e140]:
+              - link "SPSS Analizi" [ref=f1e141] [cursor=pointer]:
+                - /url: /tr/spss-analizi
+            - listitem [ref=f1e142]:
+              - link "Makale İstatistik Analizi" [ref=f1e143] [cursor=pointer]:
+                - /url: /tr/makale-istatistik-analizi
+        - paragraph [ref=f1e144]: "Son güncelleme: 8 Temmuz 2026"
+  - button "Open Next.js Dev Tools" [ref=f1e150] [cursor=pointer]:
+    - img [ref=f1e151]

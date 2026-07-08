@@ -10,6 +10,8 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 
+const baseUrl = "https://getbayes.me";
+
 export default async function Home({
   params,
 }: {
@@ -19,8 +21,47 @@ export default async function Home({
   if (!hasLocale(lang)) notFound();
   const dict = await getDictionary(lang);
 
+  // Homepage-level schemas (moved out of the layout so sub-pages can emit
+  // their own FAQPage/BreadcrumbList without duplicates). Built from our own
+  // dictionary strings only — safe to serialize.
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: dict.faq.items.map(
+      (item: { question: string; answer: string }) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.answer,
+        },
+      })
+    ),
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: baseUrl + "/" + lang,
+      },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Navbar lang={lang as Locale} nav={dict.nav} />
       <main id="main-content">
         <Hero

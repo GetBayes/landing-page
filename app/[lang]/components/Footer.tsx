@@ -1,5 +1,17 @@
 import type { Dictionary, Locale } from "../dictionaries";
 import { localizedPath } from "../slugs";
+import { topicLabels, topicPath, type TopicKey } from "../../../content/slugs";
+
+// The topic catalog keeps growing; the footer shows only this curated set
+// and links to the guides hub for the rest.
+const featuredTopics: TopicKey[] = [
+  "thesis-statistics",
+  "spss-analysis",
+  "pricing",
+  "power-bi",
+  "find-statistician",
+  "biostatistics",
+];
 import { Mail, MessageCircle } from "lucide-react";
 import InstagramIcon from "./InstagramIcon";
 import LanguageToggle from "./LanguageToggle";
@@ -14,7 +26,7 @@ export default function Footer({ lang, nav, footer }: FooterProps) {
   return (
     <footer className="bg-foreground text-accent-foreground" role="contentinfo">
       <div className="max-w-6xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
             <p className="text-xl font-bold font-sans tracking-tight mb-2">GetBayes</p>
@@ -36,6 +48,28 @@ export default function Footer({ lang, nav, footer }: FooterProps) {
             </a>
             <a href="#contact" className="text-sm font-sans text-accent-foreground/60 hover:text-accent-foreground transition-colors">
               {nav.contact}
+            </a>
+          </nav>
+
+          {/* Topic pages */}
+          <nav aria-label="Footer resources" className="flex flex-col gap-3">
+            <p className="text-sm font-sans font-semibold text-accent-foreground/80">
+              {footer.resources}
+            </p>
+            {featuredTopics.map((key) => (
+              <a
+                key={key}
+                href={topicPath(key, lang)}
+                className="text-sm font-sans text-accent-foreground/60 hover:text-accent-foreground transition-colors"
+              >
+                {topicLabels[key][lang]}
+              </a>
+            ))}
+            <a
+              href={localizedPath("guides", lang)}
+              className="text-sm font-sans font-semibold text-accent-foreground/80 hover:text-accent-foreground transition-colors"
+            >
+              {footer.allResources} &rarr;
             </a>
           </nav>
 

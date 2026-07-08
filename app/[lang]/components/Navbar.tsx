@@ -4,26 +4,32 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import LanguageToggle from "./LanguageToggle";
 import type { Locale } from "../dictionaries";
+import { localizedPath } from "../slugs";
+import { topicPath } from "../../../content/slugs";
 
 type NavbarProps = {
   lang: Locale;
   nav: {
     howItWorks: string;
     services: string;
+    guides: string;
+    about: string;
     faq: string;
     contact: string;
   };
 };
 
-const navLinks = [
-  { key: "howItWorks", href: "#how-it-works" },
-  { key: "services", href: "#services" },
-  { key: "faq", href: "#faq" },
-  { key: "contact", href: "#contact" },
-] as const;
-
 export default function Navbar({ lang, nav }: NavbarProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  const navLinks = [
+    { key: "howItWorks", href: "#how-it-works" },
+    { key: "services", href: "#services" },
+    { key: "guides", href: localizedPath("guides", lang) },
+    { key: "about", href: topicPath("about-us", lang) },
+    { key: "faq", href: "#faq" },
+    { key: "contact", href: "#contact" },
+  ] as const;
 
   return (
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border" role="banner">

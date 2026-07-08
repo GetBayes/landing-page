@@ -3,11 +3,14 @@
 // them and redirects the English slugs away under /tr.
 // No "server-only" here — LanguageToggle (client) needs this map too.
 
+import { topicSlugs } from "../../content/slugs";
+
 export type Locale = "en" | "tr";
 
 export const routeSlugs = {
   power: { en: "power", tr: "guc-analizi" },
   info: { en: "info", tr: "bilgi" },
+  guides: { en: "guides", tr: "rehberler" },
   privacy: { en: "privacy", tr: "gizlilik-politikasi" },
   terms: { en: "terms", tr: "kullanim-kosullari" },
 } as const;
@@ -26,7 +29,10 @@ export function translatePath(pathname: string, to: Locale): string {
   segments[1] = to;
   const slug = segments[2];
   if (slug && from !== to) {
-    for (const slugs of Object.values(routeSlugs)) {
+    for (const slugs of [
+      ...Object.values(routeSlugs),
+      ...Object.values(topicSlugs),
+    ]) {
       if (slugs[from] === slug) {
         segments[2] = slugs[to];
         break;

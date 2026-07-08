@@ -201,8 +201,8 @@ function buildStructuredData(lang: string, dict: Awaited<ReturnType<typeof getDi
     "@type": "ProfessionalService",
     name: "GetBayes",
     description: isEn
-      ? "Professional statistical analysis for academic research. From data to publication-ready results in 15 minutes."
-      : "Akademik araştırmalar için profesyonel istatistiksel analiz. Tez istatistik yapan yerler — veriden yayına hazır sonuçlara 15 dakikada.",
+      ? "Professional statistical analysis for academic research. Analysis in 15 minutes, publication-ready results delivered the same day — within hours, even minutes."
+      : "Akademik araştırmalar için profesyonel istatistiksel analiz. Tez istatistik yapan yerler — analiz 15 dakikada, yayına hazır sonuçlar aynı gün, saatler hatta dakikalar içinde.",
     url: baseUrl,
     email: "info@getbayes.me",
     address: {
@@ -265,41 +265,14 @@ function buildStructuredData(lang: string, dict: Awaited<ReturnType<typeof getDi
     },
   ];
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: dict.faq.items.map(
-      (item: { question: string; answer: string }) => ({
-        "@type": "Question",
-        name: item.question,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: item.answer,
-        },
-      })
-    ),
-  };
-
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: baseUrl + "/" + lang,
-      },
-    ],
-  };
-
+  // FAQPage and BreadcrumbList are page-level schemas: the homepage emits
+  // them from app/[lang]/page.tsx, and sub-pages emit their own — a URL must
+  // not carry two FAQPage entities.
   return [
     organizationSchema,
     websiteSchema,
     localBusinessSchema,
     ...serviceSchemas,
-    faqSchema,
-    breadcrumbSchema,
   ];
 }
 
@@ -323,6 +296,9 @@ export default async function RootLayout({
     <html
       lang={lang}
       className={`${sourceSerif.variable} ${plusJakarta.variable} ${jetbrainsMono.variable} h-full antialiased`}
+      // The inline script below adds the "js" class before hydration, so the
+      // DOM className never matches the server-rendered one.
+      suppressHydrationWarning
     >
       <head>
         {/* Marks JS availability before first paint; scroll-reveal hiding is

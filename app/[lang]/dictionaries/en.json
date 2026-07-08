@@ -1,18 +1,20 @@
 {
   "meta": {
     "title": "Statistical Analysis for Theses & Academic Research | GetBayes",
-    "description": "Statistical analysis for PhD dissertations, master's theses, and journal articles. Publication-ready reports with tables, charts, and interpretation in 15 minutes."
+    "description": "Statistical analysis for PhD dissertations, master's theses, and journal articles. Publication-ready reports with tables and charts — analysis in 15 minutes, delivered within hours, even minutes."
   },
   "nav": {
     "howItWorks": "How It Works",
     "services": "Services",
+    "guides": "Guides",
+    "about": "About Us",
     "faq": "FAQ",
     "contact": "Contact"
   },
   "hero": {
     "eyebrow": "Your Academic Research Companion",
     "headline": "Professional Statistical Analysis for Your Research",
-    "subtext": "From data to publication-ready results. Comprehensive statistical analysis, tables, charts, and reports — delivered in 15 minutes.",
+    "subtext": "From data to publication-ready results. Comprehensive statistical analysis, tables, charts, and reports — analysis in 15 minutes, delivered the same day. Speed is our baseline; our real work is quality that holds up at your defense and under peer review. Revisions are free, and we stay with you until you're genuinely satisfied.",
     "cta": "Get Started",
     "ctaSecondary": "Learn More",
     "ctaWhatsapp": "Write on WhatsApp"
@@ -27,7 +29,7 @@
   "trustBar": {
     "analyses": "Analyses Completed",
     "analysesCount": "100+",
-    "delivery": "Average Delivery",
+    "delivery": "Average Analysis Time",
     "deliveryTime": "15 min",
     "satisfaction": "Satisfaction Rate",
     "satisfactionRate": "98%"
@@ -41,8 +43,8 @@
         "description": "Share your research papers, datasets, and any relevant documents with us."
       },
       {
-        "title": "Triage & Review",
-        "description": "We identify gaps, issues, and determine the best statistical approach for your research."
+        "title": "Initial Review",
+        "description": "We pinpoint issues precisely, clean your data and fix what we can ourselves — rescuing even very messy datasets — then determine the best statistical approach."
       },
       {
         "title": "Full Analysis",
@@ -50,7 +52,7 @@
       },
       {
         "title": "Publication-Ready Report",
-        "description": "Receive a polished, academic report ready for your publication."
+        "description": "Receive a polished, academic report ready for your publication. If your advisor or a reviewer requests changes, we revise for free — until you're satisfied."
       }
     ]
   },
@@ -59,7 +61,7 @@
     "headline": "Everything Your Research Needs",
     "featured": {
       "title": "Statistical Analysis",
-      "description": "Complete analysis pipeline: triage to identify issues, full statistical analysis, and publication-ready reports with tables and charts."
+      "description": "Complete analysis pipeline: an initial review that pinpoints issues and cleans your data, full statistical analysis, and publication-ready reports with tables and charts. Revisions are free — whatever your advisor or reviewer asks for, we work with you until you're satisfied."
     },
     "items": [
       {
@@ -87,7 +89,7 @@
       },
       {
         "question": "How long does the analysis take?",
-        "answer": "Most analyses are completed within 15 minutes. Complex datasets or specialized analyses may take slightly longer, but we always aim for the fastest turnaround possible."
+        "answer": "The analysis itself usually takes 15 minutes; we deliver your report the same day — often within hours, even minutes. Total time is mostly set by the iterative nature of the process: missing information, data corrections, additions and removals are completed together with you. We're with you from start to finish — you can write to us at every step."
       },
       {
         "question": "What's included in the statistical report?",
@@ -114,6 +116,18 @@
         "answer": "Yes. We run complete statistical analyses for journal submissions and support revision rounds with the additional analyses reviewers request. Reports arrive publication-ready with tables, charts, effect sizes, and interpretations."
       },
       {
+        "question": "How does your pricing work?",
+        "answer": "Our model is research-friendly: you send your data and questions, and within 24 hours you receive a free assessment and a written, fixed quote. The price is set by the scope of your study; it is fully independent of delivery speed and revisions, and it never changes afterwards. The assessment, revisions and post-delivery Q&A are all free. For market averages, see our Statistical Analysis Pricing guide."
+      },
+      {
+        "question": "Do I pay extra for revisions?",
+        "answer": "No. Our price is fully independent of delivery and revisions: if your advisor, committee or a reviewer wants a different test, additional analyses or new tables, we update the work on the same dataset for free. The written quote you receive up front never grows through revisions."
+      },
+      {
+        "question": "I've had bad experiences with analysis services before — how is your process different?",
+        "answer": "We hear these stories a lot: prices that grow mid-project, \"no, we don't do that\" answers, consultants unreachable for days, revisions done grudgingly. We built our process as the exact opposite: the price is in writing and never changes, revisions are free, you can reach us at every step, and we look for solutions instead of putting up walls. Our goal isn't to close the job — it's your genuine satisfaction. That approach is where our 98% satisfaction rate comes from."
+      },
+      {
         "question": "How do I get started?",
         "answer": "Simply fill out the contact form below or reach out to us via email or Instagram. We'll guide you through the process and get your analysis started right away."
       }
@@ -122,7 +136,23 @@
   "testimonials": {
     "eyebrow": "Trusted by Researchers",
     "headline": "What Researchers Say",
-    "placeholder": "Testimonials coming soon"
+    "items": [
+      {
+        "quote": "Thank you so much — I'm truly happy with the results. I'll be reaching out for help with my upcoming studies as well 🌸",
+        "name": "De..",
+        "role": "Researcher, Gazi University"
+      },
+      {
+        "quote": "I'm very satisfied with the whole process; I can reach out and get support any time I need. Having them this accessible is a huge relief.",
+        "name": "Se..",
+        "role": "Researcher, Başkent University"
+      },
+      {
+        "quote": "My analyses were reported quickly and clearly, and every step was patiently explained. They took a real weight off my thesis — I recommend them wholeheartedly.",
+        "name": "Me..",
+        "role": "Researcher, Hacettepe University"
+      }
+    ]
   },
   "contact": {
     "eyebrow": "Get In Touch",
@@ -158,7 +188,7 @@
     "features": [
       "Optimal sample size calculation",
       "Power validation with your existing data",
-      "Delivered in 15 minutes"
+      "Delivered within hours, even minutes"
     ],
     "form": {
       "email": "Email",
@@ -234,6 +264,8 @@
   },
   "footer": {
     "tagline": "Your Academic Research Companion",
+    "resources": "Services & Guides",
+    "allResources": "View All",
     "copyright": "© 2026 GetBayes. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"

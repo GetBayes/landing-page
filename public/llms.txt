@@ -1,13 +1,14 @@
 # GetBayes
 
-> GetBayes provides professional statistical analysis services for academic research. Researchers upload their data and receive publication-ready statistical reports — tables, charts, effect sizes, confidence intervals, and detailed interpretations — typically delivered in 15 minutes. Services are available in English and Turkish (tez istatistik, SPSS analiz, güç analizi, örneklem büyüklüğü hesaplama).
+> GetBayes provides professional statistical analysis services for academic research. Researchers upload their data and receive publication-ready statistical reports — tables, charts, effect sizes, confidence intervals, and detailed interpretations. The analysis itself typically takes 15 minutes; reports are delivered the same day, often within hours or even minutes, with iterative support throughout the process. Services are available in English and Turkish (tez istatistik, SPSS analiz, güç analizi, örneklem büyüklüğü hesaplama).
 
 Key facts:
-- 100+ analyses completed, 15-minute average delivery, 98% satisfaction rate
-- Who it's for: PhD candidates, master's students, medical and dental specialty (residency/uzmanlık tezi) students, and researchers in psychology, nursing, education, medicine, dentistry, and the social sciences
+- 100+ analyses completed, 15-minute average analysis time (same-day delivery, often within hours or minutes), 98% satisfaction rate
+- Who it's for: PhD candidates, master's students, medical and dental specialty (residency/uzmanlık tezi) students, undergraduates running research or capstone projects, independent researchers, and researchers in psychology, nursing, education, medicine, dentistry, and the social sciences
+- Research-friendly pricing: written fixed quote after a free assessment; price is independent of delivery speed and revisions — revisions are free, post-delivery Q&A is free
 - Typical requests: thesis statistics (tez istatistik), dissertation data analysis, SPSS analysis (SPSS analiz yaptırma), journal article statistics including reviewer-revision support, a priori power analysis and sample size calculation for ethics committee (etik kurul) applications
 - Supported methods: t-tests, ANOVA, regression, chi-square, correlation, factor analysis, and more
-- Tools used: SPSS, R, Python
+- Tools: modern statistical stack (Python, R); results fully consistent with SPSS, reporting in the SPSS/APA layout committees expect
 - Accepted data formats: CSV, Excel (.xlsx, .xls), JSON, XML, images, text files
 - Based in Ankara, Turkey; serves researchers worldwide in English and Turkish
 - Contact: info@getbayes.me · WhatsApp +90 501 651 0674 · Instagram @getbayes.me
@@ -20,10 +21,23 @@ Key facts:
 - [Güç Analizi Hesaplama](https://getbayes.me/tr/guc-analizi): Örneklem büyüklüğü hesaplama ve güç doğrulama
 - [Get More Information](https://getbayes.me/en/info): Free initial review, response within 24 hours
 - [Bilgi Alın](https://getbayes.me/tr/bilgi): Ücretsiz ön değerlendirme, 24 saat içinde yanıt
+- [Tez İstatistik Analizi](https://getbayes.me/tr/tez-istatistik-analizi): Yüksek lisans, doktora ve uzmanlık tezleri için uçtan uca istatistik analizi — yöntem seçimi, analiz, yayına hazır rapor ([English](https://getbayes.me/en/thesis-statistics-analysis))
+- [SPSS Analizi](https://getbayes.me/tr/spss-analizi): SPSS ile veri analizi hizmeti — veri hazırlığı, test seçimi, APA tabloları, output dosyaları dahil ([English](https://getbayes.me/en/spss-analysis-service))
+- [İstatistikçi mi Arıyorsunuz?](https://getbayes.me/tr/istatistikci-ariyorum): Danışmanı istatistikçi isteyen öğrenciler için rehber — istatistikçi ne yapar, nasıl seçilir, süreç nasıl işler ([English](https://getbayes.me/en/find-a-statistician))
+- [Makale İstatistik Analizi](https://getbayes.me/tr/makale-istatistik-analizi): Dergi makaleleri için istatistik — dergi formatında tablolar, yöntem metni, hakem revizyonu desteği ([English](https://getbayes.me/en/journal-article-statistics))
+- [Biz Kimiz?](https://getbayes.me/tr/biz-kimiz): Veri analizi uzmanlarından oluşan dinamik ekip — neden bu işi yapıyoruz, nasıl çalışıyoruz ([English](https://getbayes.me/en/about-us))
+- [Biyoistatistik Danışmanlık](https://getbayes.me/tr/biyoistatistik-danismanlik): Tıp ve sağlık bilimleri için biyoistatistik — sağkalım analizi, ROC, tanı testleri, CONSORT/STROBE uyumlu raporlama ([English](https://getbayes.me/en/biostatistics-consulting))
+- [Hangi İstatistik Testi Kullanılır?](https://getbayes.me/tr/hangi-istatistik-testi): Test seçim rehberi — veri tipi, grup sayısı ve dağılıma göre karar tabloları ([English](https://getbayes.me/en/which-statistical-test))
+- [Örneklem Büyüklüğü Nasıl Hesaplanır?](https://getbayes.me/tr/orneklem-buyuklugu-hesaplama): Güç analizi mantığı, Cohen etki büyüklükleri, etik kurul gerekçe metni rehberi ([English](https://getbayes.me/en/sample-size-calculation))
+- [Sağlık Bilimlerinde Örnek Analizler](https://getbayes.me/tr/saglik-bilimlerinde-ornek-analizler): 5 temsili vaka — uzmanlık tezi, ölçek çalışması, gözlemci uyumu, deneysel desen, dergi revizyonu ([English](https://getbayes.me/en/health-sciences-case-examples))
+- [İstatistik Analiz Ücretleri 2026](https://getbayes.me/tr/istatistik-analiz-ucretleri): Tez ve SPSS analizi piyasa ortalamaları, uygun fiyatlı analiz bulma rehberi — GetBayes'te araştırma dostu fiyatlandırma: ücretsiz ön değerlendirme, ücretsiz revizyon, fiyat teslim ve revizelerden bağımsız ([English](https://getbayes.me/en/statistical-analysis-pricing))
+- [Ücretsiz Power BI Analizi](https://getbayes.me/tr/ucretsiz-power-bi-analizi): Veri setinizi gönderin, interaktif Power BI gösterge paneline ücretsiz dönüştürelim — grafikler, filtreler, özet istatistikler; koşulsuz tanışma teklifi ([English](https://getbayes.me/en/free-power-bi-analysis))
+- [İstatistik Sonuçları Nasıl Raporlanır?](https://getbayes.me/tr/istatistik-sonuclari-nasil-raporlanir): APA formatında test test raporlama örnekleri, bulgular bölümü yapısı, sık yapılan hatalar ([English](https://getbayes.me/en/how-to-report-statistical-results))
 
 ## Services
 
-- Statistical Analysis: full pipeline — triage to identify issues, complete analysis, publication-ready report
+- Statistical Analysis: full pipeline — an initial review that pinpoints issues, cleans the data and rescues even messy datasets (we fix what we can ourselves instead of sending it back), complete analysis, publication-ready report; iterative process with support at every step
+- Free Power BI Analysis: send one dataset, receive an interactive Power BI dashboard at no charge — standing introduction offer, works for academic and business data
 - A Priori Power Analysis: optimal sample size before data collection, power validation with existing data
 - QA Assistant: ask questions about your results, methods, and statistical process after delivery
 - ResearchMate (coming soon): guided research planning — methods, surveys, data collection formats

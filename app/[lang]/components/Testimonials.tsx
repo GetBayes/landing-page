@@ -22,21 +22,28 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
           </div>
         </ScrollReveal>
 
-        {/* Placeholder cards */}
+        {/* Testimonial cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[0, 1, 2].map((i) => (
-            <ScrollReveal key={i} delay={i * 100}>
-              <div
-                className="bg-background border border-border rounded-xl p-8 flex flex-col items-center text-center h-full"
-              >
+          {testimonials.items.map((item, i) => (
+            <ScrollReveal key={item.name} delay={i * 100}>
+              <div className="bg-background border border-border rounded-xl p-8 flex flex-col items-center text-center h-full">
                 <Quote size={32} className="text-border-dark mb-6" />
-                <p className="text-sm font-sans text-foreground-muted italic mb-6">
-                  {testimonials.placeholder}
+                <p className="text-sm font-sans text-foreground-muted italic mb-6 leading-relaxed">
+                  &ldquo;{item.quote}&rdquo;
                 </p>
                 <div className="mt-auto">
-                  <div className="w-10 h-10 bg-border rounded-full mx-auto mb-3" />
-                  <div className="w-24 h-3 bg-border rounded mx-auto mb-2" />
-                  <div className="w-32 h-2 bg-border/60 rounded mx-auto" />
+                  <div
+                    aria-hidden="true"
+                    className="w-10 h-10 rounded-full bg-accent text-accent-foreground font-serif font-semibold flex items-center justify-center mx-auto mb-3"
+                  >
+                    {item.name.charAt(0)}
+                  </div>
+                  <p className="text-sm font-sans font-semibold text-foreground mb-1">
+                    {item.name}
+                  </p>
+                  <p className="text-xs font-sans text-foreground-muted">
+                    {item.role}
+                  </p>
                 </div>
               </div>
             </ScrollReveal>

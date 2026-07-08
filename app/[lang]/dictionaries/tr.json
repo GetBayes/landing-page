@@ -1,18 +1,20 @@
 {
   "meta": {
     "title": "İstatistik Analiz Hizmeti — Tez, Makale ve SPSS Analizi | GetBayes",
-    "description": "Doktora, yüksek lisans ve tıpta uzmanlık tezleri için istatistik analiz hizmeti. SPSS analizi, güç analizi, örneklem hesaplama — yayına hazır rapor 15 dakikada."
+    "description": "Doktora, yüksek lisans ve tıpta uzmanlık tezleri için istatistik analiz hizmeti. SPSS analizi, güç analizi, örneklem hesaplama — analiz 15 dakikada, teslim saatler hatta dakikalar içinde."
   },
   "nav": {
     "howItWorks": "Nasıl Çalışır",
     "services": "Hizmetler",
+    "guides": "Rehberler",
+    "about": "Biz Kimiz",
     "faq": "SSS",
     "contact": "İletişim"
   },
   "hero": {
     "eyebrow": "Akademik Araştırma Yol Arkadaşınız",
     "headline": "Araştırmanız İçin Profesyonel İstatistiksel Analiz",
-    "subtext": "Veriden yayına hazır sonuçlara. Akademik veri analizi, tablolar, grafikler ve raporlar — istatistik analiz hizmeti 15 dakikada teslim.",
+    "subtext": "Veriden yayına hazır sonuçlara. Akademik veri analizi, tablolar, grafikler ve raporlar — analiz 15 dakikada, teslim aynı gün. Hız bizde standart; asıl işimiz savunmada ve hakem karşısında ayakta kalan kalite. Revizyonlar ücretsiz, siz tatmin olana kadar yanınızdayız.",
     "cta": "Hemen Başla",
     "ctaSecondary": "Daha Fazla Öğren",
     "ctaWhatsapp": "WhatsApp ile Yazın"
@@ -27,7 +29,7 @@
   "trustBar": {
     "analyses": "Tamamlanan Analiz",
     "analysesCount": "100+",
-    "delivery": "Ortalama Teslimat",
+    "delivery": "Ortalama Analiz Süresi",
     "deliveryTime": "15 dk",
     "satisfaction": "Memnuniyet Oranı",
     "satisfactionRate": "%98"
@@ -41,8 +43,8 @@
         "description": "Araştırma makalelerinizi, veri setlerinizi ve ilgili belgelerinizi bizimle paylaşın."
       },
       {
-        "title": "Triyaj ve İnceleme",
-        "description": "Eksiklikleri, sorunları tespit eder ve araştırmanız için en uygun istatistiksel yaklaşımı belirleriz."
+        "title": "Ön İnceleme",
+        "description": "Sorunları tam olarak tespit eder, veriyi temizler, düzeltebildiklerimizi kendimiz düzeltiriz — çok kötü durumdaki verileri bile kurtarır, en uygun istatistiksel yaklaşımı belirleriz."
       },
       {
         "title": "Kapsamlı Analiz",
@@ -50,7 +52,7 @@
       },
       {
         "title": "Yayına Hazır Rapor",
-        "description": "Yayınınız için hazır, akademik standartta düzenlenmiş bir rapor alın."
+        "description": "Yayınınız için hazır, akademik standartta düzenlenmiş bir rapor alın. Danışmanınız veya hakem değişiklik isterse ücretsiz revize ederiz — siz tatmin olana kadar."
       }
     ]
   },
@@ -59,7 +61,7 @@
     "headline": "Araştırmanızın İhtiyacı Olan Her Şey",
     "featured": {
       "title": "İstatistiksel Analiz",
-      "description": "Eksiksiz istatistik analiz hizmeti: sorunları tespit eden triyaj, SPSS ve modern yöntemlerle kapsamlı akademik veri analizi, tablolar ve grafikler içeren yayına hazır raporlar."
+      "description": "Eksiksiz istatistik analiz hizmeti: sorunları tespit edip veriyi temizleyen ön inceleme, modern analiz araçlarıyla SPSS uyumlu kapsamlı akademik veri analizi, tablolar ve grafikler içeren yayına hazır raporlar. Revizyonlar ücretsizdir — danışmanınız veya hakem ne isterse, siz tatmin olana kadar birlikte çalışırız."
     },
     "items": [
       {
@@ -87,7 +89,7 @@
       },
       {
         "question": "Analiz ne kadar sürer?",
-        "answer": "Çoğu analiz 15 dakika içinde tamamlanır. Karmaşık veri setleri veya özel analizler biraz daha uzun sürebilir, ancak her zaman en hızlı teslim süresini hedefliyoruz."
+        "answer": "Analizin kendisi çoğunlukla 15 dakika sürer; raporunuzu aynı gün — çoğu zaman saatler, hatta dakikalar içinde — teslim ederiz. Toplam süreyi genellikle sürecin iteratif doğası belirler: eksik bilgiler, veri düzeltmeleri, ekleme ve çıkarmalar sizinle birlikte tamamlanır. Baştan sona yanınızdayız — her aşamada bize yazabilirsiniz."
       },
       {
         "question": "İstatistiksel raporda neler yer alır?",
@@ -111,7 +113,7 @@
       },
       {
         "question": "SPSS analiz yaptırmak istiyorum, hangi programları kullanıyorsunuz?",
-        "answer": "SPSS, R, Python ve diğer modern istatistik araçlarıyla analiz yapıyoruz. Araştırmanız için en uygun yöntemi ve aracı belirleyerek sonuçları akademik standartlarda raporluyoruz. SPSS analiz yaptırma süreciniz 15 dakikada tamamlanır."
+        "answer": "Analizlerimizi ağırlıklı olarak Python ve R gibi modern istatistik araçlarıyla yapıyoruz; sonuçlar SPSS ile birebir aynıdır ve akademik standartlarda, SPSS kullanıcılarının alışkın olduğu formatta raporlanır. SPSS analiz yaptırma sürecinizde analizin kendisi 15 dakikada tamamlanır, raporunuz aynı gün — çoğu zaman saatler hatta dakikalar içinde — teslim edilir. SPSS lisansınıza gerek yoktur."
       },
       {
         "question": "Tıp, diş hekimliği, psikoloji ve hemşirelik alanlarında tez istatistiği yapıyor musunuz?",
@@ -122,6 +124,18 @@
         "answer": "Evet. Dergiye gönderilecek makaleler için eksiksiz istatistik analizi yapıyor, hakem (revizyon) sürecinde istenen ek analizleri de destekliyoruz. Raporlar tablolar, grafikler, etki büyüklükleri ve yorumlarla yayına hazır formatta hazırlanır."
       },
       {
+        "question": "Fiyatlandırmanız nasıl çalışıyor?",
+        "answer": "Araştırma dostu bir modelimiz var: verinizi ve sorularınızı gönderirsiniz, 24 saat içinde ücretsiz ön değerlendirme ve yazılı net fiyat alırsınız. Fiyat çalışmanın kapsamına göre belirlenir; teslim süresinden ve revizyonlardan tamamen bağımsızdır ve sonradan değişmez. Ön değerlendirme, revizyonlar ve teslim sonrası soru-cevap ücretsizdir. Piyasa ortalamalarını merak ediyorsanız İstatistik Analiz Ücretleri rehberimize bakabilirsiniz."
+      },
+      {
+        "question": "Revizyon istersem ek ücret öder miyim?",
+        "answer": "Hayır. Fiyatımız teslimden ve revizyonlardan tamamen bağımsızdır: danışmanınız, jüriniz veya hakem farklı bir test, ek analiz ya da yeni tablo düzeni isterse aynı veri üzerinde ücretsiz güncelleriz. Baştan verdiğimiz yazılı fiyat revizyonlarla büyümez."
+      },
+      {
+        "question": "Daha önce analiz hizmetlerinde kötü deneyim yaşadım — sizde süreç nasıl işliyor?",
+        "answer": "Bu tür deneyimleri çok duyuyoruz: işin ortasında artan fiyatlar, \"yok, onu yapmayız\" cevapları, günlerce ulaşılamayan danışmanlar, isteksizce yapılan revizyonlar. Biz süreci tam tersi şekilde kurduk: fiyat baştan yazılıdır ve değişmez, revizyonlar ücretsizdir, her aşamada bize ulaşabilirsiniz ve isteklerinize duvar örmek yerine çözüm ararız. Amacımız işi kapatmak değil, gerçekten tatmin olmanız — %98 memnuniyet oranının kaynağı bu yaklaşım."
+      },
+      {
         "question": "Nasıl başlarım?",
         "answer": "Aşağıdaki iletişim formunu doldurun veya e-posta ya da Instagram üzerinden bize ulaşın. Süreci sizinle birlikte yürüteceğiz ve analizinize hemen başlayacağız."
       }
@@ -130,7 +144,23 @@
   "testimonials": {
     "eyebrow": "Araştırmacıların Güveni",
     "headline": "Araştırmacılar Ne Diyor",
-    "placeholder": "Referanslar yakında eklenecek"
+    "items": [
+      {
+        "quote": "Çok teşekkür ederim, gerçekten çok memnunum. Önümüzdeki çalışmalar için de sizden yardım isteyeceğim 🌸",
+        "name": "De..",
+        "role": "Araştırmacı, Gazi Üniversitesi"
+      },
+      {
+        "quote": "Süreçten çok memnunum; ihtiyacım olduğunda her an, her saniye ulaşıp destek alabiliyorum. Bu kadar erişilebilir olmaları büyük rahatlık.",
+        "name": "Se..",
+        "role": "Araştırmacı, Başkent Üniversitesi"
+      },
+      {
+        "quote": "Analizlerim hızlı ve anlaşılır şekilde raporlandı, her adımı sabırla açıkladılar. Tez sürecimde büyük yük aldılar, gönül rahatlığıyla öneririm.",
+        "name": "Me..",
+        "role": "Araştırmacı, Hacettepe Üniversitesi"
+      }
+    ]
   },
   "contact": {
     "eyebrow": "Bize Ulaşın",
@@ -166,7 +196,7 @@
     "features": [
       "Optimal örneklem büyüklüğü hesaplama",
       "Mevcut verilerinizle güç doğrulama",
-      "15 dakikada teslim"
+      "Teslim saatler, hatta dakikalar içinde"
     ],
     "form": {
       "email": "E-posta",
@@ -242,6 +272,8 @@
   },
   "footer": {
     "tagline": "Akademik Araştırma Yol Arkadaşınız",
+    "resources": "Hizmetler ve Rehberler",
+    "allResources": "Tümünü Gör",
     "copyright": "© 2026 GetBayes. Tüm hakları saklıdır.",
     "privacy": "Gizlilik Politikası",
     "terms": "Kullanım Koşulları"
