@@ -1,4 +1,5 @@
 import { getDictionary, hasLocale, type Locale } from "../dictionaries";
+import { localizedPath } from "../slugs";
 import { notFound } from "next/navigation";
 import { Target, TrendingUp, Clock } from "lucide-react";
 import ScrollReveal from "../components/ScrollReveal";
@@ -21,7 +22,7 @@ export async function generateMetadata({
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang as Locale);
 
-  const canonicalUrl = `${baseUrl}/${lang}/power`;
+  const canonicalUrl = `${baseUrl}${localizedPath("power", lang as Locale)}`;
   const ogImageUrl = `${baseUrl}/og-image.png`;
 
   return {
@@ -30,9 +31,9 @@ export async function generateMetadata({
     alternates: {
       canonical: canonicalUrl,
       languages: {
-        en: `${baseUrl}/en/power`,
-        tr: `${baseUrl}/tr/power`,
-        "x-default": `${baseUrl}/en/power`,
+        en: `${baseUrl}${localizedPath("power", "en")}`,
+        tr: `${baseUrl}${localizedPath("power", "tr")}`,
+        "x-default": `${baseUrl}${localizedPath("power", "tr")}`,
       },
     },
     openGraph: {
@@ -87,7 +88,7 @@ export default async function PowerPage({
         "@type": "ListItem",
         position: 2,
         name: power.headline,
-        item: `${baseUrl}/${lang}/power`,
+        item: `${baseUrl}${localizedPath("power", lang as Locale)}`,
       },
     ],
   };

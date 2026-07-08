@@ -1,0 +1,27 @@
+# GetBayes
+
+> GetBayes provides professional statistical analysis services for academic research. Researchers upload their data and receive publication-ready statistical reports — tables, charts, effect sizes, confidence intervals, and detailed interpretations — typically delivered in 15 minutes. Services are available in English and Turkish (tez istatistik, SPSS analiz, güç analizi, örneklem büyüklüğü hesaplama).
+
+Key facts:
+- 100+ analyses completed, 15-minute average delivery, 98% satisfaction rate
+- Supported methods: t-tests, ANOVA, regression, chi-square, correlation, factor analysis, and more
+- Tools used: SPSS, R, Python
+- Accepted data formats: CSV, Excel (.xlsx, .xls), JSON, XML, images, text files
+- Based in Ankara, Turkey; serves researchers worldwide
+- Contact: info@getbayes.me · WhatsApp +90 501 651 0674 · Instagram @getbayes.me
+
+## Pages
+
+- [Home (English)](https://getbayes.me/en): Services overview, how it works, FAQ, contact
+- [Ana Sayfa (Türkçe)](https://getbayes.me/tr): Hizmetler, nasıl çalışır, SSS, iletişim
+- [A Priori Power Analysis](https://getbayes.me/en/power): Sample size calculation and power validation
+- [Güç Analizi Hesaplama](https://getbayes.me/tr/guc-analizi): Örneklem büyüklüğü hesaplama ve güç doğrulama
+- [Get More Information](https://getbayes.me/en/info): Free initial review, response within 24 hours
+- [Bilgi Alın](https://getbayes.me/tr/bilgi): Ücretsiz ön değerlendirme, 24 saat içinde yanıt
+
+## Services
+
+- Statistical Analysis: full pipeline — triage to identify issues, complete analysis, publication-ready report
+- A Priori Power Analysis: optimal sample size before data collection, power validation with existing data
+- QA Assistant: ask questions about your results, methods, and statistical process after delivery
+- ResearchMate (coming soon): guided research planning — methods, surveys, data collection formats

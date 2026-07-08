@@ -30,14 +30,16 @@ body {
   color: var(--foreground);
 }
 
-/* Scroll reveal animations */
-.scroll-reveal {
+/* Scroll reveal animations — hidden state only applies when JS is running
+   (html.js set by inline script in layout). Without JS, all content stays
+   visible for users and crawlers. */
+html.js .scroll-reveal {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.scroll-revealed {
+html.js .scroll-revealed {
   opacity: 1;
   transform: translateY(0);
 }

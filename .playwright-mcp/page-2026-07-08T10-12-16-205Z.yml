@@ -1,0 +1,278 @@
+- generic [active] [ref=e1]:
+  - link "Ana içeriğe atla" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - link "GetBayes" [ref=e5] [cursor=pointer]:
+        - /url: /tr
+      - generic [ref=e6]:
+        - link "Nasıl Çalışır" [ref=e7] [cursor=pointer]:
+          - /url: "#how-it-works"
+        - link "Hizmetler" [ref=e8] [cursor=pointer]:
+          - /url: "#services"
+        - link "SSS" [ref=e9] [cursor=pointer]:
+          - /url: "#faq"
+        - link "İletişim" [ref=e10] [cursor=pointer]:
+          - /url: "#contact"
+        - group "Language selection" [ref=e11]:
+          - button "Switch to English" [ref=e12]: EN
+          - generic [ref=e13]: "|"
+          - button "Turkceye gecis yap" [ref=e14]: TR
+  - main [ref=e15]:
+    - region "Hero" [ref=e16]:
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - paragraph [ref=e19]: Akademik Araştırma Yol Arkadaşınız
+          - heading "Araştırmanız İçin Profesyonel İstatistiksel Analiz" [level=1] [ref=e20]
+          - paragraph [ref=e21]: Veriden yayına hazır sonuçlara. Akademik veri analizi, tablolar, grafikler ve raporlar — istatistik analiz hizmeti 15 dakikada teslim.
+          - generic [ref=e22]:
+            - link "Hemen Başla" [ref=e23] [cursor=pointer]:
+              - /url: "#contact"
+            - link "WhatsApp ile Yazın" [ref=e24] [cursor=pointer]:
+              - /url: https://wa.me/905016510674
+              - img [ref=e25]
+              - text: WhatsApp ile Yazın
+          - link "Daha Fazla Öğren →" [ref=e27] [cursor=pointer]:
+            - /url: "#how-it-works"
+        - img "Animated preview showing data flowing through statistical analysis to produce a completed research report" [ref=e28]:
+          - generic [ref=e29]:
+            - generic [ref=e30]:
+              - generic [ref=e31]: id, age, score, group
+              - generic [ref=e32]: 1, 24, 87.3, control
+              - generic [ref=e33]: 2, 31, 92.1, treatment
+              - generic [ref=e34]: 3, 28, 78.5, control
+              - generic [ref=e35]: 4, 35, 95.0, treatment
+            - generic [ref=e42]:
+              - paragraph [ref=e43]: Analysis Output
+              - paragraph [ref=e51]: Analysis Complete
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - paragraph [ref=e55]:
+            - generic [ref=e56]: 100+
+          - paragraph [ref=e57]: Tamamlanan Analiz
+        - generic [ref=e59]:
+          - paragraph [ref=e60]:
+            - generic [ref=e61]: 15 dk
+          - paragraph [ref=e62]: Ortalama Teslimat
+        - generic [ref=e64]:
+          - paragraph [ref=e65]:
+            - generic [ref=e66]: "%98"
+          - paragraph [ref=e67]: Memnuniyet Oranı
+    - generic [ref=e69]:
+      - generic [ref=e71]:
+        - paragraph [ref=e72]: Nasıl Çalışır
+        - heading "Veriden Yayına" [level=2] [ref=e73]
+      - generic [ref=e74]:
+        - generic [ref=e75]:
+          - generic [ref=e77]:
+            - text: id,age,score
+            - text: 1,24,87.3
+            - text: 2,31,92.1
+          - paragraph [ref=e78]: Verilerinizi Yükleyin
+        - generic [ref=e79]: →
+        - generic [ref=e80]:
+          - generic [ref=e82]: ⚙
+          - paragraph [ref=e83]: Triyaj ve İnceleme
+        - generic [ref=e84]: →
+        - paragraph [ref=e92]: Yayına Hazır Rapor
+      - generic [ref=e93]:
+        - generic [ref=e95]:
+          - generic [ref=e96]: "1"
+          - heading "Verilerinizi Yükleyin" [level=3] [ref=e97]
+          - paragraph [ref=e98]: Araştırma makalelerinizi, veri setlerinizi ve ilgili belgelerinizi bizimle paylaşın.
+        - generic [ref=e100]:
+          - generic [ref=e101]: "2"
+          - heading "Triyaj ve İnceleme" [level=3] [ref=e102]
+          - paragraph [ref=e103]: Eksiklikleri, sorunları tespit eder ve araştırmanız için en uygun istatistiksel yaklaşımı belirleriz.
+        - generic [ref=e105]:
+          - generic [ref=e106]: "3"
+          - heading "Kapsamlı Analiz" [level=3] [ref=e107]
+          - paragraph [ref=e108]: Tablolar, grafikler ve detaylı yorumlarla eksiksiz istatistiksel analiz.
+        - generic [ref=e110]:
+          - generic [ref=e111]: "4"
+          - heading "Yayına Hazır Rapor" [level=3] [ref=e112]
+          - paragraph [ref=e113]: Yayınınız için hazır, akademik standartta düzenlenmiş bir rapor alın.
+    - generic [ref=e115]:
+      - generic [ref=e117]:
+        - paragraph [ref=e118]: Hizmetlerimiz
+        - heading "Araştırmanızın İhtiyacı Olan Her Şey" [level=2] [ref=e119]
+      - generic [ref=e122]:
+        - img [ref=e124]
+        - generic [ref=e126]:
+          - heading "İstatistiksel Analiz" [level=3] [ref=e127]
+          - paragraph [ref=e128]: "Eksiksiz istatistik analiz hizmeti: sorunları tespit eden triyaj, SPSS ve modern yöntemlerle kapsamlı akademik veri analizi, tablolar ve grafikler içeren yayına hazır raporlar."
+      - generic [ref=e129]:
+        - generic [ref=e131]:
+          - img [ref=e133]
+          - heading "A Priori Güç Analizi" [level=3] [ref=e135]
+          - paragraph [ref=e136]: Güç analizi hesaplama ve örneklem büyüklüğü hesaplama — veri toplamaya başlamadan önce optimal örneklem büyüklüğünü belirleyin.
+        - generic [ref=e138]:
+          - img [ref=e140]
+          - heading "Soru-Cevap Asistanı" [level=3] [ref=e142]
+          - paragraph [ref=e143]: Sonuçlarınız, yöntemleriniz ve istatistiksel süreciniz hakkında her şeyi sorun. Anında, bilgili yanıtlar alın.
+        - generic [ref=e145]:
+          - generic [ref=e147]: Yakında
+          - img [ref=e149]
+          - heading "ResearchMate" [level=3] [ref=e152]
+          - paragraph [ref=e153]: Araştırma planlaması rehberliği — yöntemler, anketler, veri toplama formatları.
+    - generic [ref=e155]:
+      - generic [ref=e157]:
+        - paragraph [ref=e158]: Sıkça Sorulan Sorular
+        - heading "Sorularınız mı Var?" [level=2] [ref=e159]
+      - generic [ref=e161]:
+        - group [ref=e162]:
+          - generic "Hangi veri formatlarını kabul ediyorsunuz?" [ref=e163] [cursor=pointer]:
+            - generic [ref=e164]: Hangi veri formatlarını kabul ediyorsunuz?
+            - img [ref=e165]
+        - group [ref=e166]:
+          - generic "Analiz ne kadar sürer?" [ref=e167] [cursor=pointer]:
+            - generic [ref=e168]: Analiz ne kadar sürer?
+            - img [ref=e169]
+        - group [ref=e170]:
+          - generic "İstatistiksel raporda neler yer alır?" [ref=e171] [cursor=pointer]:
+            - generic [ref=e172]: İstatistiksel raporda neler yer alır?
+            - img [ref=e173]
+        - group [ref=e174]:
+          - generic "Soru-Cevap Asistanı nasıl çalışır?" [ref=e175] [cursor=pointer]:
+            - generic [ref=e176]: Soru-Cevap Asistanı nasıl çalışır?
+            - img [ref=e177]
+        - group [ref=e178]:
+          - generic "Farklı istatistiksel yöntemleri destekliyor musunuz?" [ref=e179] [cursor=pointer]:
+            - generic [ref=e180]: Farklı istatistiksel yöntemleri destekliyor musunuz?
+            - img [ref=e181]
+        - group [ref=e182]:
+          - generic "Hangi dilleri destekliyorsunuz?" [ref=e183] [cursor=pointer]:
+            - generic [ref=e184]: Hangi dilleri destekliyorsunuz?
+            - img [ref=e185]
+        - group [ref=e186]:
+          - generic "Tez istatistik yapan yerler arıyorum, bana yardımcı olabilir misiniz?" [ref=e187] [cursor=pointer]:
+            - generic [ref=e188]: Tez istatistik yapan yerler arıyorum, bana yardımcı olabilir misiniz?
+            - img [ref=e189]
+        - group [ref=e190]:
+          - generic "SPSS analiz yaptırmak istiyorum, hangi programları kullanıyorsunuz?" [ref=e191] [cursor=pointer]:
+            - generic [ref=e192]: SPSS analiz yaptırmak istiyorum, hangi programları kullanıyorsunuz?
+            - img [ref=e193]
+        - group [ref=e194]:
+          - generic "Nasıl başlarım?" [ref=e195] [cursor=pointer]:
+            - generic [ref=e196]: Nasıl başlarım?
+            - img [ref=e197]
+    - region "Testimonials" [ref=e198]:
+      - generic [ref=e199]:
+        - generic [ref=e201]:
+          - paragraph [ref=e202]: Araştırmacıların Güveni
+          - heading "Araştırmacılar Ne Diyor" [level=2] [ref=e203]
+        - generic [ref=e204]:
+          - generic [ref=e206]:
+            - img [ref=e207]
+            - paragraph [ref=e210]: Referanslar yakında eklenecek
+          - generic [ref=e216]:
+            - img [ref=e217]
+            - paragraph [ref=e220]: Referanslar yakında eklenecek
+          - generic [ref=e226]:
+            - img [ref=e227]
+            - paragraph [ref=e230]: Referanslar yakında eklenecek
+    - generic [ref=e236]:
+      - generic [ref=e238]:
+        - paragraph [ref=e239]: Bize Ulaşın
+        - heading "Araştırmanızı Hızlandırmaya Hazır mısınız?" [level=2] [ref=e240]
+        - paragraph [ref=e241]: Araştırmanız hakkında bilgi almak isteriz.
+      - generic [ref=e243]:
+        - link "WhatsApp +90 501 651 0674" [ref=e244] [cursor=pointer]:
+          - /url: https://wa.me/905016510674
+          - img [ref=e246]
+          - generic [ref=e248]:
+            - paragraph [ref=e249]: WhatsApp
+            - paragraph [ref=e250]: +90 501 651 0674
+        - link "E-posta info@getbayes.me" [ref=e251] [cursor=pointer]:
+          - /url: mailto:info@getbayes.me
+          - img [ref=e253]
+          - generic [ref=e256]:
+            - paragraph [ref=e257]: E-posta
+            - paragraph [ref=e258]: info@getbayes.me
+        - link "Instagram @getbayes.me" [ref=e259] [cursor=pointer]:
+          - /url: https://instagram.com/getbayes.me
+          - img [ref=e261]
+          - generic [ref=e264]:
+            - paragraph [ref=e265]: Instagram
+            - paragraph [ref=e266]: "@getbayes.me"
+      - generic [ref=e269]:
+        - generic [ref=e270]:
+          - generic [ref=e271]: İsim
+          - textbox "İsim" [ref=e272]:
+            - /placeholder: Adınız
+        - generic [ref=e273]:
+          - generic [ref=e274]: E-posta
+          - textbox "E-posta" [ref=e275]:
+            - /placeholder: email@adresiniz.com
+        - generic [ref=e276]:
+          - generic [ref=e277]: Konu
+          - textbox "Konu" [ref=e278]:
+            - /placeholder: Size nasıl yardımcı olabiliriz?
+        - generic [ref=e279]:
+          - generic [ref=e280]: Mesaj
+          - textbox "Mesaj" [ref=e281]:
+            - /placeholder: Araştırmanız hakkında bilgi verin...
+        - button "Mesaj Gönder" [ref=e282]
+  - contentinfo [ref=e283]:
+    - generic [ref=e285]:
+      - generic [ref=e286]:
+        - paragraph [ref=e287]: GetBayes
+        - paragraph [ref=e288]: Akademik Araştırma Yol Arkadaşınız
+      - navigation "Footer navigation" [ref=e289]:
+        - link "Nasıl Çalışır" [ref=e290] [cursor=pointer]:
+          - /url: "#how-it-works"
+        - link "Hizmetler" [ref=e291] [cursor=pointer]:
+          - /url: "#services"
+        - link "SSS" [ref=e292] [cursor=pointer]:
+          - /url: "#faq"
+        - link "İletişim" [ref=e293] [cursor=pointer]:
+          - /url: "#contact"
+      - generic [ref=e294]:
+        - link "+90 501 651 0674" [ref=e295] [cursor=pointer]:
+          - /url: https://wa.me/905016510674
+          - img [ref=e296]
+          - text: +90 501 651 0674
+        - link "@getbayes.me" [ref=e298] [cursor=pointer]:
+          - /url: https://instagram.com/getbayes.me
+          - img [ref=e299]
+          - text: "@getbayes.me"
+        - link "info@getbayes.me" [ref=e302] [cursor=pointer]:
+          - /url: mailto:info@getbayes.me
+          - img [ref=e303]
+          - text: info@getbayes.me
+        - group "Language selection" [ref=e307]:
+          - button "Switch to English" [ref=e308]: EN
+          - generic [ref=e309]: "|"
+          - button "Turkceye gecis yap" [ref=e310]: TR
+    - generic [ref=e312]:
+      - paragraph [ref=e313]: © 2026 GetBayes. Tüm hakları saklıdır.
+      - generic [ref=e314]:
+        - link "Gizlilik Politikası" [ref=e315] [cursor=pointer]:
+          - /url: /tr/gizlilik-politikasi
+        - link "Kullanım Koşulları" [ref=e316] [cursor=pointer]:
+          - /url: /tr/kullanim-kosullari
+  - alert [ref=e317]
+  - generic [ref=e318]:
+    - generic:
+      - generic:
+        - paragraph: Merhaba! 👋
+        - paragraph: Size nasıl yardımcı olabiliriz?
+      - generic:
+        - link "WhatsApp ile Yazın Genellikle 1 saat içinde yanıt":
+          - /url: https://wa.me/905016510674?text=Merhaba!%20GetBayes%20istatistik%20analiz%20hizmetleri%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.
+          - generic:
+            - img
+          - generic:
+            - paragraph: WhatsApp ile Yazın
+            - paragraph: Genellikle 1 saat içinde yanıt
+          - img
+        - generic:
+          - generic:
+            - img
+          - generic:
+            - paragraph: Soru-Cevap Asistanı
+            - paragraph: Yakında
+          - generic: Soon
+    - button "Open chat" [ref=e319]:
+      - img [ref=e320]
+      - img

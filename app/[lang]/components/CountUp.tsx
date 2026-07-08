@@ -10,7 +10,9 @@ type CountUpProps = {
 };
 
 export default function CountUp({ end, suffix = "", prefix = "", duration = 2000 }: CountUpProps) {
-  const [count, setCount] = useState(0);
+  // SSR must emit the real final value so crawlers without JS read it;
+  // the 0 → end animation only replaces it client-side once in view.
+  const [count, setCount] = useState(end);
   const [started, setStarted] = useState(false);
   const ref = useRef<HTMLSpanElement>(null);
 
@@ -35,6 +37,7 @@ export default function CountUp({ end, suffix = "", prefix = "", duration = 2000
   useEffect(() => {
     if (!started) return;
 
+    setCount(0);
     const startTime = performance.now();
 
     function update(currentTime: number) {

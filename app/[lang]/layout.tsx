@@ -50,7 +50,7 @@ export async function generateMetadata({
       languages: {
         en: `${baseUrl}/en`,
         tr: `${baseUrl}/tr`,
-        "x-default": `${baseUrl}/en`,
+        "x-default": `${baseUrl}/tr`,
       },
     },
     openGraph: {
@@ -270,6 +270,13 @@ export default async function RootLayout({
       className={`${sourceSerif.variable} ${plusJakarta.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <head>
+        {/* Marks JS availability before first paint; scroll-reveal hiding is
+            gated on html.js so no-JS visitors see all content. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `document.documentElement.classList.add("js")`,
+          }}
+        />
         {jsonLdScripts.map((scriptContent, index) => (
           <script
             key={index}

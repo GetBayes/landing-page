@@ -26,7 +26,7 @@
   },
   "trustBar": {
     "analyses": "Tamamlanan Analiz",
-    "analysesCount": "500+",
+    "analysesCount": "100+",
     "delivery": "Ortalama Teslimat",
     "deliveryTime": "15 dk",
     "satisfaction": "Memnuniyet Oranı",
@@ -214,7 +214,7 @@
     "subtitle": "Size nasıl yardımcı olabiliriz?",
     "whatsapp": "WhatsApp ile Yazın",
     "whatsappDesc": "Genellikle 1 saat içinde yanıt",
-    "ai": "AI Asistan",
+    "ai": "Soru-Cevap Asistanı",
     "aiDesc": "Yakında",
     "prefill": "Merhaba! GetBayes istatistik analiz hizmetleri hakkında bilgi almak istiyorum."
   },

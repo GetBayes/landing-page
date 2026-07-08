@@ -26,7 +26,7 @@
   },
   "trustBar": {
     "analyses": "Analyses Completed",
-    "analysesCount": "500+",
+    "analysesCount": "100+",
     "delivery": "Average Delivery",
     "deliveryTime": "15 min",
     "satisfaction": "Satisfaction Rate",
@@ -206,7 +206,7 @@
     "subtitle": "How can we help you?",
     "whatsapp": "Chat on WhatsApp",
     "whatsappDesc": "Usually replies within an hour",
-    "ai": "AI Assistant",
+    "ai": "Q&A Assistant",
     "aiDesc": "Coming soon",
     "prefill": "Hi! I'd like to learn more about GetBayes statistical analysis services."
   },

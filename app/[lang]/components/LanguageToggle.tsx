@@ -2,15 +2,14 @@
 
 import { usePathname, useRouter } from "next/navigation";
 import type { Locale } from "../dictionaries";
+import { translatePath } from "../slugs";
 
 export default function LanguageToggle({ currentLang }: { currentLang: Locale }) {
   const pathname = usePathname();
   const router = useRouter();
 
   function switchLocale(newLocale: Locale) {
-    const segments = pathname.split("/");
-    segments[1] = newLocale;
-    router.push(segments.join("/"));
+    router.push(translatePath(pathname, newLocale));
   }
 
   return (

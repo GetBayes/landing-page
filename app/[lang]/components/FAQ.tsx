@@ -1,6 +1,3 @@
-"use client";
-
-import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
 import type { Dictionary } from "../dictionaries";
 import ScrollReveal from "./ScrollReveal";
@@ -9,9 +6,10 @@ type FAQProps = {
   faq: Dictionary["faq"];
 };
 
+// Server component on purpose: answers must exist in the SSR HTML so
+// crawlers that don't execute JS can read them. <details>/<summary>
+// keeps the accordion behavior without any client-side state.
 export default function FAQ({ faq }: FAQProps) {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
   return (
     <section id="faq" className="py-20 md:py-28 bg-background">
       <div className="max-w-3xl mx-auto px-6">
@@ -30,38 +28,25 @@ export default function FAQ({ faq }: FAQProps) {
         {/* Accordion */}
         <ScrollReveal>
         <div className="space-y-3">
-          {faq.items.map((item, index) => {
-            const isOpen = openIndex === index;
-            return (
-              <div
-                key={index}
-                className="border border-border rounded-lg overflow-hidden"
-              >
-                <button
-                  onClick={() => setOpenIndex(isOpen ? null : index)}
-                  aria-expanded={isOpen}
-                  aria-controls={`faq-answer-${index}`}
-                  className="w-full flex items-center justify-between px-6 py-4 text-left hover:bg-background-warm/50 transition-colors"
-                >
-                  <span id={`faq-question-${index}`} className="text-base font-sans font-medium text-foreground pr-4">
-                    {item.question}
-                  </span>
-                  {isOpen ? (
-                    <Minus size={18} className="text-foreground-muted flex-shrink-0" />
-                  ) : (
-                    <Plus size={18} className="text-foreground-muted flex-shrink-0" />
-                  )}
-                </button>
-                {isOpen && (
-                  <div id={`faq-answer-${index}`} role="region" aria-labelledby={`faq-question-${index}`} className="px-6 pb-4">
-                    <p className="text-sm font-sans text-foreground-muted leading-relaxed">
-                      {item.answer}
-                    </p>
-                  </div>
-                )}
+          {faq.items.map((item, index) => (
+            <details
+              key={index}
+              className="group border border-border rounded-lg overflow-hidden"
+            >
+              <summary className="flex items-center justify-between px-6 py-4 text-left cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-background-warm/50 transition-colors">
+                <span className="text-base font-sans font-medium text-foreground pr-4">
+                  {item.question}
+                </span>
+                <Plus size={18} className="text-foreground-muted flex-shrink-0 group-open:hidden" aria-hidden="true" />
+                <Minus size={18} className="text-foreground-muted flex-shrink-0 hidden group-open:block" aria-hidden="true" />
+              </summary>
+              <div className="px-6 pb-4">
+                <p className="text-sm font-sans text-foreground-muted leading-relaxed">
+                  {item.answer}
+                </p>
               </div>
-            );
-          })}
+            </details>
+          ))}
         </div>
         </ScrollReveal>
       </div>

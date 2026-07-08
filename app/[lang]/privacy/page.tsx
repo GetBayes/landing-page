@@ -1,4 +1,5 @@
 import { getDictionary, hasLocale, type Locale } from "../dictionaries";
+import { localizedPath } from "../slugs";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
@@ -17,7 +18,7 @@ export async function generateMetadata({
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang as Locale);
 
-  const canonicalUrl = `${baseUrl}/${lang}/privacy`;
+  const canonicalUrl = `${baseUrl}${localizedPath("privacy", lang as Locale)}`;
 
   return {
     title: `${dict.legal.privacyTitle} | GetBayes`,
@@ -25,9 +26,9 @@ export async function generateMetadata({
     alternates: {
       canonical: canonicalUrl,
       languages: {
-        en: `${baseUrl}/en/privacy`,
-        tr: `${baseUrl}/tr/privacy`,
-        "x-default": `${baseUrl}/en/privacy`,
+        en: `${baseUrl}${localizedPath("privacy", "en")}`,
+        tr: `${baseUrl}${localizedPath("privacy", "tr")}`,
+        "x-default": `${baseUrl}${localizedPath("privacy", "tr")}`,
       },
     },
     robots: { index: true, follow: true },
@@ -180,7 +181,7 @@ export default async function PrivacyPage({
         "@type": "ListItem",
         position: 2,
         name: dict.legal.privacyTitle,
-        item: `${baseUrl}/${lang}/privacy`,
+        item: `${baseUrl}${localizedPath("privacy", lang as Locale)}`,
       },
     ],
   };

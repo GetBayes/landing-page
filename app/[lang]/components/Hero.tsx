@@ -1,15 +1,17 @@
-import type { Dictionary } from "../dictionaries";
+import type { Dictionary, Locale } from "../dictionaries";
 import { MessageCircle } from "lucide-react";
 import HeroAnimation from "./HeroAnimation";
 import CountUp from "./CountUp";
 
 type HeroProps = {
+  lang: Locale;
   hero: Dictionary["hero"];
   heroPreview: Dictionary["heroPreview"];
   trustBar: Dictionary["trustBar"];
 };
 
-export default function Hero({ hero, trustBar }: HeroProps) {
+export default function Hero({ lang, hero, trustBar }: HeroProps) {
+  const isTr = lang === "tr";
   return (
     <section aria-label="Hero" className="bg-gradient-to-b from-background to-background-warm">
       {/* Split hero */}
@@ -59,21 +61,21 @@ export default function Hero({ hero, trustBar }: HeroProps) {
         <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-16">
           <div className="text-center">
             <p className="text-2xl font-serif font-semibold text-foreground">
-              <CountUp end={500} suffix="+" />
+              <CountUp end={100} suffix="+" />
             </p>
             <p className="text-sm font-sans text-foreground-muted mt-1">{trustBar.analyses}</p>
           </div>
           <div className="hidden sm:block w-px h-10 bg-border-dark" />
           <div className="text-center">
             <p className="text-2xl font-serif font-semibold text-foreground">
-              <CountUp end={15} suffix=" min" />
+              <CountUp end={15} suffix={isTr ? " dk" : " min"} />
             </p>
             <p className="text-sm font-sans text-foreground-muted mt-1">{trustBar.delivery}</p>
           </div>
           <div className="hidden sm:block w-px h-10 bg-border-dark" />
           <div className="text-center">
             <p className="text-2xl font-serif font-semibold text-foreground">
-              <CountUp end={98} suffix="%" />
+              {isTr ? <CountUp end={98} prefix="%" /> : <CountUp end={98} suffix="%" />}
             </p>
             <p className="text-sm font-sans text-foreground-muted mt-1">{trustBar.satisfaction}</p>
           </div>

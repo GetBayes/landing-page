@@ -29,7 +29,17 @@
       "Bash(findstr \":3000\")",
       "mcp__plugin_playwright_playwright__browser_close",
       "Bash(findstr \":3001\")",
-      "mcp__plugin_playwright_playwright__browser_select_option"
+      "mcp__plugin_playwright_playwright__browser_select_option",
+      "WebFetch(domain:www.seobility.net)",
+      "Bash(git checkout *)",
+      "Bash(nslookup www.getbayes.me)",
+      "Bash(nslookup www.getbayes.me 8.8.8.8)",
+      "mcp__plugin_playwright_playwright__browser_console_messages",
+      "PowerShell($c = Get-NetTCPConnection -LocalPort 3199 -State Listen -ErrorAction SilentlyContinue; if \\($c\\) { $c | Select-Object -ExpandProperty OwningProcess -Unique | ForEach-Object { Stop-Process -Id $_ -Force -Confirm:$false } ; \"killed\" } else { \"none\" })",
+      "Skill(artifact-design)",
+      "Bash(python -c \"import sys,re,html; t=sys.stdin.read\\(\\); t=re.sub\\(r'<script[^>]*>.*?</script>','',t,flags=re.S\\); t=re.sub\\(r'<style[^>]*>.*?</style>','',t,flags=re.S\\); t=re.sub\\(r'<[^>]+>',' ',t\\); words=html.unescape\\(t\\).split\\(\\); print\\('TR visible words:',len\\(words\\)\\)\")",
+      "Bash(python -c \"import sys,re,html; t=sys.stdin.read\\(\\); t=re.sub\\(r'<script[^>]*>.*?</script>','',t,flags=re.S\\); t=re.sub\\(r'<style[^>]*>.*?</style>','',t,flags=re.S\\); t=re.sub\\(r'<[^>]+>',' ',t\\); words=html.unescape\\(t\\).split\\(\\); print\\('EN visible words:',len\\(words\\)\\)\")",
+      "Artifact"
     ]
   }
 }

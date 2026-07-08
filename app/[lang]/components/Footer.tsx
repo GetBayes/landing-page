@@ -1,4 +1,5 @@
 import type { Dictionary, Locale } from "../dictionaries";
+import { localizedPath } from "../slugs";
 import { Mail, MessageCircle } from "lucide-react";
 import InstagramIcon from "./InstagramIcon";
 import LanguageToggle from "./LanguageToggle";
@@ -79,10 +80,10 @@ export default function Footer({ lang, nav, footer }: FooterProps) {
             {footer.copyright}
           </p>
           <div className="flex gap-4">
-            <a href={`/${lang}/privacy`} className="text-xs font-sans text-accent-foreground/40 hover:text-accent-foreground transition-colors">
+            <a href={localizedPath("privacy", lang)} className="text-xs font-sans text-accent-foreground/40 hover:text-accent-foreground transition-colors">
               {footer.privacy}
             </a>
-            <a href={`/${lang}/terms`} className="text-xs font-sans text-accent-foreground/40 hover:text-accent-foreground transition-colors">
+            <a href={localizedPath("terms", lang)} className="text-xs font-sans text-accent-foreground/40 hover:text-accent-foreground transition-colors">
               {footer.terms}
             </a>
           </div>

@@ -1,57 +1,48 @@
 import type { MetadataRoute } from "next";
+import { localizedPath, type RouteKey } from "./[lang]/slugs";
+
+const baseUrl = "https://getbayes.me";
+
+function entry(
+  path: { en: string; tr: string },
+  lang: "en" | "tr",
+  lastModified: Date,
+  changeFrequency: "weekly" | "monthly" | "yearly",
+  priority: number
+): MetadataRoute.Sitemap[number] {
+  return {
+    url: `${baseUrl}${path[lang]}`,
+    lastModified,
+    changeFrequency,
+    priority,
+    alternates: {
+      languages: {
+        en: `${baseUrl}${path.en}`,
+        tr: `${baseUrl}${path.tr}`,
+      },
+    },
+  };
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://getbayes.me";
-  const lastModified = new Date("2026-04-24");
+  const lastModified = new Date("2026-07-08");
+
+  const home = { en: "/en", tr: "/tr" };
+  const routePaths = (route: RouteKey) => ({
+    en: localizedPath(route, "en"),
+    tr: localizedPath(route, "tr"),
+  });
 
   return [
-    {
-      url: `${baseUrl}/en`,
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 1.0,
-      alternates: {
-        languages: {
-          en: `${baseUrl}/en`,
-          tr: `${baseUrl}/tr`,
-        },
-      },
-    },
-    {
-      url: `${baseUrl}/tr`,
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 1.0,
-      alternates: {
-        languages: {
-          en: `${baseUrl}/en`,
-          tr: `${baseUrl}/tr`,
-        },
-      },
-    },
-    {
-      url: `${baseUrl}/en/power`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.8,
-      alternates: {
-        languages: {
-          en: `${baseUrl}/en/power`,
-          tr: `${baseUrl}/tr/power`,
-        },
-      },
-    },
-    {
-      url: `${baseUrl}/tr/power`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.8,
-      alternates: {
-        languages: {
-          en: `${baseUrl}/en/power`,
-          tr: `${baseUrl}/tr/power`,
-        },
-      },
-    },
+    entry(home, "tr", lastModified, "weekly", 1.0),
+    entry(home, "en", lastModified, "weekly", 1.0),
+    entry(routePaths("power"), "tr", lastModified, "monthly", 0.8),
+    entry(routePaths("power"), "en", lastModified, "monthly", 0.8),
+    entry(routePaths("info"), "tr", lastModified, "monthly", 0.7),
+    entry(routePaths("info"), "en", lastModified, "monthly", 0.7),
+    entry(routePaths("privacy"), "tr", lastModified, "yearly", 0.3),
+    entry(routePaths("privacy"), "en", lastModified, "yearly", 0.3),
+    entry(routePaths("terms"), "tr", lastModified, "yearly", 0.3),
+    entry(routePaths("terms"), "en", lastModified, "yearly", 0.3),
   ];
 }

@@ -1,4 +1,5 @@
 import { getDictionary, hasLocale, type Locale } from "../dictionaries";
+import { localizedPath } from "../slugs";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
@@ -17,7 +18,7 @@ export async function generateMetadata({
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang as Locale);
 
-  const canonicalUrl = `${baseUrl}/${lang}/terms`;
+  const canonicalUrl = `${baseUrl}${localizedPath("terms", lang as Locale)}`;
 
   return {
     title: `${dict.legal.termsTitle} | GetBayes`,
@@ -25,9 +26,9 @@ export async function generateMetadata({
     alternates: {
       canonical: canonicalUrl,
       languages: {
-        en: `${baseUrl}/en/terms`,
-        tr: `${baseUrl}/tr/terms`,
-        "x-default": `${baseUrl}/en/terms`,
+        en: `${baseUrl}${localizedPath("terms", "en")}`,
+        tr: `${baseUrl}${localizedPath("terms", "tr")}`,
+        "x-default": `${baseUrl}${localizedPath("terms", "tr")}`,
       },
     },
     robots: { index: true, follow: true },
@@ -194,7 +195,7 @@ export default async function TermsPage({
         "@type": "ListItem",
         position: 2,
         name: dict.legal.termsTitle,
-        item: `${baseUrl}/${lang}/terms`,
+        item: `${baseUrl}${localizedPath("terms", lang as Locale)}`,
       },
     ],
   };

@@ -1,4 +1,5 @@
 import { getDictionary, hasLocale, type Locale } from "../dictionaries";
+import { localizedPath } from "../slugs";
 import { notFound } from "next/navigation";
 import { MessageCircle, Clock, ShieldCheck } from "lucide-react";
 import ScrollReveal from "../components/ScrollReveal";
@@ -21,7 +22,7 @@ export async function generateMetadata({
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang as Locale);
 
-  const canonicalUrl = `${baseUrl}/${lang}/info`;
+  const canonicalUrl = `${baseUrl}${localizedPath("info", lang as Locale)}`;
   const ogImageUrl = `${baseUrl}/og-image.png`;
 
   return {
@@ -30,9 +31,9 @@ export async function generateMetadata({
     alternates: {
       canonical: canonicalUrl,
       languages: {
-        en: `${baseUrl}/en/info`,
-        tr: `${baseUrl}/tr/info`,
-        "x-default": `${baseUrl}/en/info`,
+        en: `${baseUrl}${localizedPath("info", "en")}`,
+        tr: `${baseUrl}${localizedPath("info", "tr")}`,
+        "x-default": `${baseUrl}${localizedPath("info", "tr")}`,
       },
     },
     openGraph: {
@@ -86,7 +87,7 @@ export default async function InfoPage({
         "@type": "ListItem",
         position: 2,
         name: info.headline,
-        item: `${baseUrl}/${lang}/info`,
+        item: `${baseUrl}${localizedPath("info", lang as Locale)}`,
       },
     ],
   };
