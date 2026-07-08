@@ -33,6 +33,8 @@ Key facts:
 - [İstatistik Analiz Ücretleri 2026](https://getbayes.me/tr/istatistik-analiz-ucretleri): Tez ve SPSS analizi piyasa ortalamaları, uygun fiyatlı analiz bulma rehberi — GetBayes'te araştırma dostu fiyatlandırma: ücretsiz ön değerlendirme, ücretsiz revizyon, fiyat teslim ve revizelerden bağımsız ([English](https://getbayes.me/en/statistical-analysis-pricing))
 - [Ücretsiz Power BI Analizi](https://getbayes.me/tr/ucretsiz-power-bi-analizi): Veri setinizi gönderin, interaktif Power BI gösterge paneline ücretsiz dönüştürelim — grafikler, filtreler, özet istatistikler; koşulsuz tanışma teklifi ([English](https://getbayes.me/en/free-power-bi-analysis))
 - [İstatistik Sonuçları Nasıl Raporlanır?](https://getbayes.me/tr/istatistik-sonuclari-nasil-raporlanir): APA formatında test test raporlama örnekleri, bulgular bölümü yapısı, sık yapılan hatalar ([English](https://getbayes.me/en/how-to-report-statistical-results))
+- [İstatistik Analiz Hizmetleri Karşılaştırması](https://getbayes.me/tr/istatistik-analiz-hizmetleri-karsilastirma): Freelance istatistikçi, tez merkezi, üniversite birimi, kendin yap ve GetBayes seçeneklerinin hız, fiyat şeffaflığı, revizyon ve raporlama açısından objektif karşılaştırması — kimden yaptırmalı? ([English](https://getbayes.me/en/statistical-analysis-services-compared))
+- [Neden GetBayes?](https://getbayes.me/tr/neden-getbayes): Farkımız — aynı gün teslim, baştan net ve değişmeyen fiyat, ücretsiz revizyon, "git düzelt" demeden veriyi birlikte toparlayan kaprissiz süreç ([English](https://getbayes.me/en/why-getbayes))
 
 ## Services
 

@@ -8,9 +8,9 @@ const featuredTopics: TopicKey[] = [
   "thesis-statistics",
   "spss-analysis",
   "pricing",
+  "comparison",
+  "why-getbayes",
   "power-bi",
-  "find-statistician",
-  "biostatistics",
 ];
 import { Mail, MessageCircle } from "lucide-react";
 import InstagramIcon from "./InstagramIcon";

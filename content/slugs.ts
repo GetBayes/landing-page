@@ -54,6 +54,14 @@ export const topicSlugs = {
     en: "how-to-report-statistical-results",
     tr: "istatistik-sonuclari-nasil-raporlanir",
   },
+  comparison: {
+    en: "statistical-analysis-services-compared",
+    tr: "istatistik-analiz-hizmetleri-karsilastirma",
+  },
+  "why-getbayes": {
+    en: "why-getbayes",
+    tr: "neden-getbayes",
+  },
 } as const;
 
 export type TopicKey = keyof typeof topicSlugs;
@@ -106,6 +114,14 @@ export const topicLabels: Record<TopicKey, Record<Locale, string>> = {
   "reporting-results": {
     en: "Reporting Statistical Results",
     tr: "Sonuçlar Nasıl Raporlanır?",
+  },
+  comparison: {
+    en: "Services Compared",
+    tr: "Hizmet Karşılaştırması",
+  },
+  "why-getbayes": {
+    en: "Why GetBayes?",
+    tr: "Neden GetBayes?",
   },
 };
 

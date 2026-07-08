@@ -70,7 +70,8 @@
       "PowerShell(pnpm build *)",
       "PowerShell(pnpm start *)",
       "PowerShell(pnpm lint *)",
-      "WebSearch"
+      "WebSearch",
+      "PowerShell(npx tsc --noEmit 2>&1 | Select-Object -First 40)"
     ]
   }
 }

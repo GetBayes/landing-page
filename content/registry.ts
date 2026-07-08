@@ -15,6 +15,8 @@ import healthUseCases from "./topics/health-use-cases";
 import pricing from "./topics/pricing";
 import powerBi from "./topics/power-bi";
 import reportingResults from "./topics/reporting-results";
+import comparison from "./topics/comparison";
+import whyGetbayes from "./topics/why-getbayes";
 
 export const topics: Record<TopicKey, Topic> = {
   "thesis-statistics": thesisStatistics,
@@ -29,6 +31,8 @@ export const topics: Record<TopicKey, Topic> = {
   pricing: pricing,
   "power-bi": powerBi,
   "reporting-results": reportingResults,
+  comparison: comparison,
+  "why-getbayes": whyGetbayes,
 };
 
 export const allTopics: Topic[] = Object.values(topics);
