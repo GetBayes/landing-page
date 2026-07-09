@@ -2,10 +2,21 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Script from "next/script";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { localizedPath, type Locale } from "../slugs";
 
 const STORAGE_KEY = "getbayes-analytics-consent";
+
+const CLARITY_ID = "xjoavl55a7";
+
+// Standard Microsoft Clarity snippet; loads only after consent, lazily so it
+// never competes with page rendering.
+const clarityScript = `(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "${CLARITY_ID}");`;
 
 type Consent = "granted" | "denied";
 
@@ -39,7 +50,14 @@ export default function CookieConsent({ lang, gaId, copy }: Props) {
 
   return (
     <>
-      {consent === "granted" && <GoogleAnalytics gaId={gaId} />}
+      {consent === "granted" && (
+        <>
+          <GoogleAnalytics gaId={gaId} />
+          <Script id="ms-clarity" strategy="lazyOnload">
+            {clarityScript}
+          </Script>
+        </>
+      )}
       {consent === null && (
         <div
           role="dialog"
