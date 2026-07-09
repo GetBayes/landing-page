@@ -18,6 +18,7 @@ import powerBi from "./topics/power-bi";
 import reportingResults from "./topics/reporting-results";
 import comparison from "./topics/comparison";
 import whyGetbayes from "./topics/why-getbayes";
+import aiStatistics from "./topics/ai-statistics";
 
 export const topics: Record<TopicKey, Topic> = {
   "thesis-statistics": thesisStatistics,
@@ -35,6 +36,7 @@ export const topics: Record<TopicKey, Topic> = {
   "reporting-results": reportingResults,
   comparison: comparison,
   "why-getbayes": whyGetbayes,
+  "ai-statistics": aiStatistics,
 };
 
 export const allTopics: Topic[] = Object.values(topics);

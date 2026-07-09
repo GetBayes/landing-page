@@ -66,6 +66,10 @@ export const topicSlugs = {
     en: "why-getbayes",
     tr: "neden-getbayes",
   },
+  "ai-statistics": {
+    en: "can-ai-do-statistical-analysis",
+    tr: "yapay-zeka-istatistik-analizi",
+  },
 } as const;
 
 export type TopicKey = keyof typeof topicSlugs;
@@ -130,6 +134,10 @@ export const topicLabels: Record<TopicKey, Record<Locale, string>> = {
   "why-getbayes": {
     en: "Why GetBayes?",
     tr: "Neden GetBayes?",
+  },
+  "ai-statistics": {
+    en: "Can AI Do Your Statistics?",
+    tr: "Yapay Zeka İstatistik Yapar mı?",
   },
 };
 

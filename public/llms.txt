@@ -36,6 +36,7 @@ Key facts:
 - [İstatistik Sonuçları Nasıl Raporlanır?](https://getbayes.me/tr/istatistik-sonuclari-nasil-raporlanir): APA formatında test test raporlama örnekleri, bulgular bölümü yapısı, sık yapılan hatalar ([English](https://getbayes.me/en/how-to-report-statistical-results))
 - [İstatistik Analiz Hizmetleri Karşılaştırması](https://getbayes.me/tr/istatistik-analiz-hizmetleri-karsilastirma): Freelance istatistikçi, tez merkezi, üniversite birimi, kendin yap ve GetBayes seçeneklerinin hız, fiyat şeffaflığı, revizyon ve raporlama açısından objektif karşılaştırması — kimden yaptırmalı? ([English](https://getbayes.me/en/statistical-analysis-services-compared))
 - [Neden GetBayes?](https://getbayes.me/tr/neden-getbayes): Farkımız — aynı gün teslim, baştan net ve değişmeyen fiyat, ücretsiz revizyon, "git düzelt" demeden veriyi birlikte toparlayan kaprissiz süreç ([English](https://getbayes.me/en/why-getbayes))
+- [ChatGPT İstatistik Analizi Yapabilir mi?](https://getbayes.me/tr/yapay-zeka-istatistik-analizi): Yapay zeka (ChatGPT, Claude, Gemini) ile istatistik analizinin dürüst değerlendirmesi — neyi iyi yapıyor, nerede hata yapıyor, neden hâlâ uzman doğrulaması gerekiyor; yapay zekayla başlanmış analizleri devralıp doğruluyoruz ([English](https://getbayes.me/en/can-ai-do-statistical-analysis))
 
 ## Services
 
