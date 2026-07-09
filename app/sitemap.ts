@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { localizedPath, type RouteKey } from "./[lang]/slugs";
 import { topicKeys, topicPath } from "../content/slugs";
+import { topics } from "../content/registry";
 
 const baseUrl = "https://getbayes.me";
 
@@ -48,10 +49,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry(routePaths("info"), "en", lastModified, "monthly", 0.7),
     entry(routePaths("guides"), "tr", lastModified, "weekly", 0.8),
     entry(routePaths("guides"), "en", lastModified, "weekly", 0.8),
-    ...topicKeys.flatMap((key) => [
-      entry(topicPaths(key), "tr", lastModified, "monthly", 0.9),
-      entry(topicPaths(key), "en", lastModified, "monthly", 0.9),
-    ]),
+    ...topicKeys.flatMap((key) => {
+      const topicModified = new Date(topics[key].dateModified);
+      return [
+        entry(topicPaths(key), "tr", topicModified, "monthly", 0.9),
+        entry(topicPaths(key), "en", topicModified, "monthly", 0.9),
+      ];
+    }),
     entry(routePaths("privacy"), "tr", lastModified, "yearly", 0.3),
     entry(routePaths("privacy"), "en", lastModified, "yearly", 0.3),
     entry(routePaths("terms"), "tr", lastModified, "yearly", 0.3),

@@ -213,12 +213,6 @@ function buildStructuredData(lang: string, dict: Awaited<ReturnType<typeof getDi
     priceRange: "$$",
     image: baseUrl + "/og-image.png",
     sameAs: ["https://instagram.com/getbayes.me"],
-    openingHoursSpecification: {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "09:00",
-      closes: "18:00",
-    },
   };
 
   const serviceAudience = {
@@ -256,8 +250,8 @@ function buildStructuredData(lang: string, dict: Awaited<ReturnType<typeof getDi
         ? "Thesis & Dissertation Statistical Analysis"
         : "Tez İstatistik Analizi (Doktora, Yüksek Lisans, Uzmanlık Tezi)",
       description: isEn
-        ? "Complete statistical analysis for PhD dissertations, master's theses, and medical or dental specialty theses — method selection, analysis with SPSS and R, and publication-ready reporting."
-        : "Doktora, yüksek lisans ve tıpta/diş hekimliğinde uzmanlık tezleri için eksiksiz istatistik analizi — yöntem seçimi, SPSS ve R ile analiz, yayına hazır raporlama.",
+        ? "Complete statistical analysis for PhD dissertations, master's theses, and medical or dental specialty theses — method selection, analysis, and SPSS-compatible, publication-ready reporting."
+        : "Doktora, yüksek lisans ve tıpta/diş hekimliğinde uzmanlık tezleri için eksiksiz istatistik analizi — yöntem seçimi, analiz ve SPSS uyumlu, yayına hazır raporlama.",
       provider: { "@type": "Organization", name: "GetBayes" },
       serviceType: "Thesis Statistics",
       areaServed: "Worldwide",
