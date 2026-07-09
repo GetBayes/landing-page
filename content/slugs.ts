@@ -14,6 +14,10 @@ export const topicSlugs = {
     en: "spss-analysis-service",
     tr: "spss-analizi",
   },
+  "survey-analysis": {
+    en: "survey-analysis-service",
+    tr: "anket-analizi",
+  },
   "find-statistician": {
     en: "find-a-statistician",
     tr: "istatistikci-ariyorum",
@@ -74,6 +78,10 @@ export const topicLabels: Record<TopicKey, Record<Locale, string>> = {
   "spss-analysis": {
     en: "SPSS Analysis Service",
     tr: "SPSS Analizi",
+  },
+  "survey-analysis": {
+    en: "Survey Analysis Service",
+    tr: "Anket Analizi",
   },
   "find-statistician": {
     en: "Finding a Statistician",

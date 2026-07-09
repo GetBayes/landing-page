@@ -23,6 +23,7 @@ Key facts:
 - [Bilgi Alın](https://getbayes.me/tr/bilgi): Ücretsiz ön değerlendirme, 24 saat içinde yanıt
 - [Tez İstatistik Analizi](https://getbayes.me/tr/tez-istatistik-analizi): Yüksek lisans, doktora ve uzmanlık tezleri için uçtan uca istatistik analizi — yöntem seçimi, analiz, yayına hazır rapor ([English](https://getbayes.me/en/thesis-statistics-analysis))
 - [SPSS Analizi](https://getbayes.me/tr/spss-analizi): SPSS ile veri analizi hizmeti — veri hazırlığı, test seçimi, APA tabloları, output dosyaları dahil ([English](https://getbayes.me/en/spss-analysis-service))
+- [Anket Analizi](https://getbayes.me/tr/anket-analizi): Anket analizi yaptırma hizmeti — Google Forms/Excel verisi, ters kodlama, ölçek puanları, güvenirlik, Likert analizi, grup karşılaştırmaları, APA tabloları ([English](https://getbayes.me/en/survey-analysis-service))
 - [İstatistikçi mi Arıyorsunuz?](https://getbayes.me/tr/istatistikci-ariyorum): Danışmanı istatistikçi isteyen öğrenciler için rehber — istatistikçi ne yapar, nasıl seçilir, süreç nasıl işler ([English](https://getbayes.me/en/find-a-statistician))
 - [Makale İstatistik Analizi](https://getbayes.me/tr/makale-istatistik-analizi): Dergi makaleleri için istatistik — dergi formatında tablolar, yöntem metni, hakem revizyonu desteği ([English](https://getbayes.me/en/journal-article-statistics))
 - [Biz Kimiz?](https://getbayes.me/tr/biz-kimiz): Veri analizi uzmanlarından oluşan dinamik ekip — neden bu işi yapıyoruz, nasıl çalışıyoruz ([English](https://getbayes.me/en/about-us))

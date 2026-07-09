@@ -72,7 +72,8 @@
       "PowerShell(pnpm lint *)",
       "WebSearch",
       "PowerShell(npx tsc --noEmit 2>&1 | Select-Object -First 40)",
-      "PowerShell(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('app/[lang]/dictionaries/tr.json','utf8'\\)\\); JSON.parse\\(require\\('fs'\\).readFileSync\\('app/[lang]/dictionaries/en.json','utf8'\\)\\); console.log\\('both valid'\\)\")"
+      "PowerShell(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('app/[lang]/dictionaries/tr.json','utf8'\\)\\); JSON.parse\\(require\\('fs'\\).readFileSync\\('app/[lang]/dictionaries/en.json','utf8'\\)\\); console.log\\('both valid'\\)\")",
+      "WebFetch(domain:www.bing.com)"
     ]
   }
 }

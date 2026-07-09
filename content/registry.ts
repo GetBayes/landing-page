@@ -5,6 +5,7 @@ import type { Locale, TopicKey } from "./slugs";
 import { topicSlugs } from "./slugs";
 import thesisStatistics from "./topics/thesis-statistics";
 import spssAnalysis from "./topics/spss-analysis";
+import surveyAnalysis from "./topics/survey-analysis";
 import findStatistician from "./topics/find-statistician";
 import articleStatistics from "./topics/article-statistics";
 import aboutUs from "./topics/about-us";
@@ -21,6 +22,7 @@ import whyGetbayes from "./topics/why-getbayes";
 export const topics: Record<TopicKey, Topic> = {
   "thesis-statistics": thesisStatistics,
   "spss-analysis": spssAnalysis,
+  "survey-analysis": surveyAnalysis,
   "find-statistician": findStatistician,
   "article-statistics": articleStatistics,
   "about-us": aboutUs,
