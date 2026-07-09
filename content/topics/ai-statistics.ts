@@ -93,6 +93,15 @@ const aiStatistics: Topic = {
           ],
         },
         {
+          type: "paragraphs",
+          heading: "Belki de en büyük tehlike: kapsamı yapay zekanın kendisi seçer",
+          body: [
+            "Bir istatistikçiye verinizi teslim ettiğinizde iş bir çerçeve içinde başlar: araştırma sorularınız, hipotezleriniz, değişkenlerinizin ölçüm düzeyleri ve alanınızın raporlama beklentileri analizin kapsamını baştan belirler. Yapay zekaya \"şu veriye istatistik analizi yap\" dediğinizde ise böyle bir çerçeve yoktur. Ortada teknik olarak yapılabilecek onlarca analiz vardır ve model, hangilerinin sizin çalışmanız için gerekli olduğunu bilmeden aralarından kendince bir seçim yapar. Sonuç çoğu zaman rastgeledir: aynı veriye bir oturumda bambaşka, diğerinde bambaşka bir analiz seti uygulanabilir.",
+            "Pratikte bu en sık eksik bırakma olarak karşınıza çıkar: model birkaç ortalama, yüzde ve grafik üretir — yani yalnızca betimsel istatistik yapar — ve bunu tamamlanmış bir analiz gibi sunar. Oysa tezinizin asıl ihtiyacı olan hipotez testleri, grup karşılaştırmaları veya ilişki analizleri hiç yapılmamıştır. Üstelik bunu çoğu zaman değişkenlerin tipini bile incelemeden yapar: kategorik bir değişkenin ortalamasını almak, sıralı (ordinal) bir ölçeği sürekliymiş gibi işlemek bu yüzden sık görülen hatalardır. Tersi de olur: gerekli gereksiz onlarca test üst üste çalıştırılır, rapor şişer ve düzeltme yapılmadan çoklu test yürütmek anlamlı çıkan sonuçların güvenilirliğini zedeler.",
+            "Bunu bu kadar tehlikeli yapan şey, çıktının her iki durumda da derli toplu ve bitmiş görünmesidir. Eksik olanın ne olduğunu görmek, yapılanın yanlışını bulmaktan daha zordur — çünkü ortada size \"burada bir sorun var\" diyecek bir işaret yoktur. Bir istatistikçinin işinin ilk adımı tam da budur: analize başlamadan önce \"bu araştırma sorusu neyi gerektiriyor, bu veri neye izin veriyor?\" sorusunu sormak ve kapsamı ona göre kurmak. Yapay zeka bu direktifi kendi kendine veremez; birinin ona vermesi gerekir.",
+          ],
+        },
+        {
           type: "bullets",
           heading: "Yapay zekanın istatistikte hâlâ zorlandığı yerler",
           intro:
@@ -273,6 +282,15 @@ const aiStatistics: Topic = {
               "None",
               "\"ChatGPT said so\" is not a defense; the signature on the thesis is yours",
             ],
+          ],
+        },
+        {
+          type: "paragraphs",
+          heading: "Perhaps the biggest danger: AI chooses the scope by itself",
+          body: [
+            "When you hand your data to a statistician, the work starts inside a frame: your research questions, hypotheses, the measurement levels of your variables and your field's reporting expectations define the scope of the analysis up front. When you tell an AI \"run statistical analysis on this data,\" no such frame exists. There are dozens of technically possible analyses, and the model — without knowing which ones your study actually requires — picks among them on its own. The result is often arbitrary: the same dataset can get one set of analyses in one session and a completely different set in another.",
+            "In practice this most often shows up as underdoing: the model produces a few means, percentages and charts — descriptive statistics only — and presents it as a finished analysis, while the hypothesis tests, group comparisons or association analyses your thesis actually needs were never run. Worse, it frequently does this without even examining variable types: taking the mean of a categorical variable, or treating an ordinal scale as continuous, are common failures of exactly this kind. The opposite happens too: it overdoes, stacking dozens of tests whether needed or not, bloating the report — and running many tests without correction undermines the credibility of whatever comes out significant.",
+            "What makes this so dangerous is that in both cases the output looks tidy and complete. Spotting what's missing is harder than spotting what's wrong — there is no signal telling you \"something is off here.\" This is precisely the first step of a statistician's job: before any analysis, asking \"what does this research question require, and what does this data allow?\" and setting the scope accordingly. AI cannot give itself that directive; someone has to give it.",
           ],
         },
         {

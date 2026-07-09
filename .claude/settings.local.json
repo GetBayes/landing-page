@@ -76,7 +76,8 @@
       "WebFetch(domain:www.bing.com)",
       "Bash(git push *)",
       "PowerShell(npx tsc --noEmit 2>&1 | Select-Object -First 20)",
-      "PowerShell(npm run *)"
+      "PowerShell(npm run *)",
+      "PowerShell(npx tsc --noEmit)"
     ]
   }
 }
