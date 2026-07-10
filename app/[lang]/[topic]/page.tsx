@@ -69,6 +69,22 @@ export async function generateMetadata({
   };
 }
 
+// Minimal inline emphasis for topic copy: **bold** and *italic*. Content is
+// static and authored by us (never user input), so a tiny parser is enough —
+// no need for a full markdown/HTML pipeline.
+function renderRichText(text: string) {
+  const parts = text.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g).filter(Boolean);
+  return parts.map((part, i) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return <strong key={i}>{part.slice(2, -2)}</strong>;
+    }
+    if (part.startsWith("*") && part.endsWith("*")) {
+      return <em key={i}>{part.slice(1, -1)}</em>;
+    }
+    return part;
+  });
+}
+
 function SectionBlock({ section }: { section: Section }) {
   switch (section.type) {
     case "paragraphs":
@@ -84,7 +100,7 @@ function SectionBlock({ section }: { section: Section }) {
               key={i}
               className="text-base font-sans text-foreground-muted leading-relaxed mb-4"
             >
-              {paragraph}
+              {renderRichText(paragraph)}
             </p>
           ))}
         </div>
@@ -139,7 +155,7 @@ function SectionBlock({ section }: { section: Section }) {
                   aria-hidden="true"
                 />
                 <p className="text-base font-sans text-foreground-muted leading-relaxed">
-                  {item}
+                  {renderRichText(item)}
                 </p>
               </li>
             ))}
@@ -329,7 +345,7 @@ export default async function TopicPage({
                     : "text-base text-foreground-muted"
                 }`}
               >
-                {paragraph}
+                {renderRichText(paragraph)}
               </p>
             ))}
           </ScrollReveal>
@@ -380,7 +396,7 @@ export default async function TopicPage({
                       {item.question}
                     </h3>
                     <p className="text-base font-sans text-foreground-muted leading-relaxed">
-                      {item.answer}
+                      {renderRichText(item.answer)}
                     </p>
                   </div>
                 ))}

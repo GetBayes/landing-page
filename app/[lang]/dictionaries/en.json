@@ -194,6 +194,7 @@
       "Power validation with your existing data",
       "Delivered within hours, even minutes"
     ],
+    "directContact": "Prefer to reach us directly?",
     "form": {
       "email": "Email",
       "emailPlaceholder": "your@email.com",

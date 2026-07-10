@@ -1,8 +1,9 @@
 import { getDictionary, hasLocale, type Locale } from "../dictionaries";
 import { localizedPath } from "../slugs";
 import { notFound } from "next/navigation";
-import { Target, TrendingUp, Clock } from "lucide-react";
+import { Target, TrendingUp, Clock, Mail, MessageCircle } from "lucide-react";
 import ScrollReveal from "../components/ScrollReveal";
+import InstagramIcon from "../components/InstagramIcon";
 import PowerForm from "./PowerForm";
 import type { Metadata } from "next";
 
@@ -70,7 +71,7 @@ export default async function PowerPage({
   const { lang } = await params;
   if (!hasLocale(lang)) notFound();
   const dict = await getDictionary(lang as Locale);
-  const { power } = dict;
+  const { power, contact } = dict;
 
   // Structured data built from our own static strings and dictionary —
   // no user-supplied content, safe to serialize directly.
@@ -177,6 +178,54 @@ export default async function PowerPage({
 
           {/* Form */}
           <PowerForm form={power.form} />
+
+          {/* Direct contact links */}
+          <ScrollReveal>
+            <div className="mt-10 text-center">
+              <p className="text-xs font-sans uppercase tracking-[0.2em] text-foreground-muted mb-4">
+                {power.directContact}
+              </p>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+                <a
+                  href="https://wa.me/905016510674"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 px-5 py-2.5 bg-[#25D366]/5 border border-[#25D366]/30 rounded-xl hover:border-[#25D366] hover:shadow-sm transition-all group"
+                >
+                  <div className="w-8 h-8 bg-[#25D366]/15 rounded-lg flex items-center justify-center group-hover:bg-[#25D366]/25 transition-colors">
+                    <MessageCircle size={16} className="text-[#25D366]" />
+                  </div>
+                  <span className="text-sm font-sans font-medium text-foreground">
+                    {contact.info.whatsappLabel}
+                  </span>
+                </a>
+                <a
+                  href="mailto:info@getbayes.me"
+                  className="inline-flex items-center gap-3 px-5 py-2.5 bg-background border border-border rounded-xl hover:border-accent hover:shadow-sm transition-all group"
+                >
+                  <div className="w-8 h-8 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                    <Mail size={16} className="text-foreground" />
+                  </div>
+                  <span className="text-sm font-sans font-medium text-foreground">
+                    {contact.info.emailLabel}
+                  </span>
+                </a>
+                <a
+                  href="https://instagram.com/getbayes.me"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 px-5 py-2.5 bg-background border border-border rounded-xl hover:border-accent hover:shadow-sm transition-all group"
+                >
+                  <div className="w-8 h-8 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                    <InstagramIcon size={16} className="text-foreground" />
+                  </div>
+                  <span className="text-sm font-sans font-medium text-foreground">
+                    {contact.info.instagramLabel}
+                  </span>
+                </a>
+              </div>
+            </div>
+          </ScrollReveal>
         </div>
       </main>
     </div>

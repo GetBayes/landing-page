@@ -202,6 +202,7 @@
       "Mevcut verilerinizle güç doğrulama",
       "Teslim saatler, hatta dakikalar içinde"
     ],
+    "directContact": "Doğrudan ulaşmayı mı tercih edersiniz?",
     "form": {
       "email": "E-posta",
       "emailPlaceholder": "email@adresiniz.com",

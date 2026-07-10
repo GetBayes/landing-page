@@ -24,7 +24,8 @@ const q1SuccessStory: Topic = {
       headline: "Q1 Cerrahi Dergisinde Yayın: Revizyonsuz İstatistik Onayı",
       lead: [
         "GetBayes'in istatistik analizini üstlendiği bir cerrahi araştırma makalesi, Q1 (SCIE, birinci çeyrek) endeksli uluslararası bir cerrahi dergisinde yayımlandı; hakem süreci boyunca istatistiksel yöntemle ilgili tek bir revizyon talebi bile gelmedi — tüm revizyon yorumları çalışmanın giriş ve tartışma gibi diğer bölümlerine yönelikti. İstatistik bölümü ilk gönderimde olduğu gibi kabul edildi.",
-        "Bu, çoğu araştırmacının aşina olduğu deneyimin tam tersi: hakemlerin istatistik nedeniyle 'ek analiz yapın', 'etki büyüklüğü ekleyin' veya 'nonparametrik testle doğrulayın' gibi talepler döndürmesi, özellikle Q1 dergilerde neredeyse standarttır. Bu sayfada sürecin nasıl işlediğini ve sonucun tesadüf olmadığını gösteren somut unsurları anlatıyoruz.",
+        "Hakemden istatistik nedeniyle ek analiz, etki büyüklüğü ekleme veya farklı bir test isteği gelmesi *son derece yaygın ve tamamen normal* bir durumdur — özellikle Q1 dergilerde neredeyse standart bir adımdır ve **bunun gelmesi çalışmanın hatalı ya da eksik yapıldığı anlamına gelmez**; aksine hakem sürecinin sağlıklı işlediğinin bir göstergesidir. Bu vakada böyle bir talebin hiç gelmemiş olmasını kusursuzluk iddiasıyla değil, süreç baştan doğru kurulduğunda elde edilebilecek bir sonucun örneği olarak paylaşıyoruz.",
+        "Bu sayfada sürecin nasıl işlediğini ve bu sonuca nasıl ulaşıldığını gösteren somut unsurları anlatıyoruz.",
       ],
       audience: {
         heading: "Bu vaka kimler için bir referans noktası?",
@@ -50,6 +51,7 @@ const q1SuccessStory: Topic = {
           body: [
             "Hakem raporları döndüğünde, revizyon yorumlarının tamamı çalışmanın giriş, tartışma ve kaynakça gibi bölümlerine yönelikti. İstatistiksel yöntem, tablolar veya sonuçların raporlanma biçimiyle ilgili tek bir soru ya da düzeltme talebi gelmedi — istatistik bölümü ilk gönderimdeki hâliyle kabul edildi.",
             "Q1 dergilerde hakemlerin istatistik konusunda son derece titiz olduğu, çoğu makalenin en az bir turda istatistik kaynaklı revizyon aldığı düşünüldüğünde, bu sonucun rastlantı olmadığını, baştan doğru kurulmuş bir analiz sürecinin göstergesi olduğunu düşünüyoruz.",
+            "*Bunu netleştirmek isteriz:* istatistik kaynaklı bir revizyon turu almak da **son derece normal** ve bilimsel hakem sürecinin sağlıklı işlediğinin bir göstergesidir — danışmanlık verdiğimiz makalelerin önemli bir kısmında bu tür revizyon taleplerini rutin biçimde karşılıyor ve çözüyoruz. Bu vaka istisnai bir sonuçtur, bir kural ya da beklenti değil.",
           ],
         },
         {
@@ -110,6 +112,7 @@ const q1SuccessStory: Topic = {
           heading: "Bu neden önemli?",
           body: [
             "Q1, bir derginin atıf etkisine göre alanındaki en yüksek çeyrek dilime (SCIE/Scopus sınıflandırmasında ilk %25) girdiği anlamına gelir; bu dergilerin hakem havuzu genellikle istatistik konusunda en titiz gruptur. İstatistik kaynaklı bir revizyon turu almamak, hem makalenin daha hızlı kabul edilmesi hem de yöntemin baştan sağlam kurulduğunun bağımsız bir doğrulaması anlamına gelir — bu da istatistik danışmanlığının kalitesine dair, sözle değil sonuçla verilmiş bir kanıttır.",
+            "*Yine de net olalım:* istatistik kaynaklı bir revizyon turu almış olmak **asla kötü bir iş yapıldığı anlamına gelmez** — bu, bilimsel hakem sürecinin doğal ve beklenen bir parçasıdır. Biz de danışmanlık verdiğimiz çalışmaların önemli bir kısmında bu tür revizyonları rutin olarak yönetiyoruz; bu sayfa revizyonu kötüleyen değil, mümkün olan en iyi sonucu örnekleyen bir vakayı paylaşıyor.",
           ],
         },
       ],
@@ -128,7 +131,7 @@ const q1SuccessStory: Topic = {
         {
           question: "Her makale bu sonucu alır mı?",
           answer:
-            "Hayır, bunu garanti edemeyiz — sonuç çalışma tasarımına, veri kalitesine ve derginin/hakemlerin özel beklentilerine de bağlıdır. Ama doğru test seçimi, etki büyüklüğü/güven aralığı raporlaması, varsayım kontrolleri ve dergi formatına uygun tablolar gibi unsurları baştan yerine koymak, istatistik kaynaklı bir revizyon riskini belirgin şekilde azaltır.",
+            "**Hayır, bunu garanti edemeyiz** — ve zaten kimse edemez: sonuç çalışma tasarımına, veri kalitesine ve derginin/hakemlerin özel beklentilerine de bağlıdır. Doğru test seçimi, etki büyüklüğü/güven aralığı raporlaması, varsayım kontrolleri ve dergi formatına uygun tablolar gibi unsurları baştan yerine koymak riski belirgin şekilde azaltır — ama *istatistik kaynaklı bir revizyon turu almak son derece normaldir ve kötü bir iş yapıldığı anlamına asla gelmez*; bilimsel hakem sürecinin doğal bir parçasıdır ve biz de bu tür revizyonları rutin olarak yönetiyoruz.",
         },
         {
           question: "Bu sadece cerrahi dergiler için mi geçerli?",
@@ -162,7 +165,8 @@ const q1SuccessStory: Topic = {
       headline: "Published in a Q1 Surgical Journal With Zero Statistics Revisions",
       lead: [
         "A surgical research manuscript for which GetBayes handled the statistical analysis was published in a Q1 (SCIE, first-quartile)-indexed international surgical journal — and throughout peer review, not a single revision request concerned the statistical methodology. Every revision comment addressed other sections, such as the introduction and discussion. The statistics section was accepted exactly as submitted.",
-        "That's the opposite of what most researchers are used to: reviewers asking for additional analyses, effect sizes, or nonparametric confirmation for statistical reasons is close to standard practice, especially at Q1 journals. This page walks through how the process worked and the concrete reasons this wasn't luck.",
+        "Reviewers asking for additional analyses, effect sizes, or a different test for statistical reasons is *extremely common and completely normal* — close to standard practice at Q1 journals — and **getting such a request never means the work was done poorly**; if anything, it's a sign that peer review is doing its job. We're not sharing the absence of such a request here as a claim of perfection, but as one example of what's possible when the process is built correctly from the start.",
+        "This page walks through how the process worked and the concrete factors behind this outcome.",
       ],
       audience: {
         heading: "Who is this case a reference point for?",
@@ -188,6 +192,7 @@ const q1SuccessStory: Topic = {
           body: [
             "When the reviewer reports came back, every revision comment addressed sections like the introduction, discussion and references. Not one question or correction concerned the statistical method, the tables, or how the results were reported — the statistics section was accepted exactly as first submitted.",
             "Given how rigorous reviewers at Q1 journals typically are about statistics — most manuscripts get at least one statistics-driven revision round — we don't think this was chance. We see it as evidence of an analysis process that was built correctly from the start.",
+            "*To be clear:* getting a statistics-driven revision round is also **completely normal** and a sign that scientific peer review is working as intended — we routinely handle exactly these kinds of revision requests for a large share of the manuscripts we support. This case is the exception, not the rule or the expectation.",
           ],
         },
         {
@@ -248,6 +253,7 @@ const q1SuccessStory: Topic = {
           heading: "Why this matters",
           body: [
             "Q1 means a journal sits in the top quartile (top 25%) of its field by citation impact, in classifications like SCIE/Scopus — and those journals' reviewer pools tend to be the most rigorous on statistics. Not getting a statistics-driven revision round means both a faster path to acceptance and an independent confirmation that the method was built correctly from the start — proof of consulting quality delivered through an outcome, not a claim.",
+            "*To be clear:* having received a statistics-driven revision round **never means the work was done badly** — it's a natural, expected part of scientific peer review. We routinely manage exactly this kind of revision for a large share of the manuscripts we support; this page shares one case with the best possible outcome, not a judgment on revisions themselves.",
           ],
         },
       ],
@@ -266,7 +272,7 @@ const q1SuccessStory: Topic = {
         {
           question: "Does every manuscript get this result?",
           answer:
-            "No, we can't guarantee that — the outcome also depends on study design, data quality, and a given journal's or reviewer's specific expectations. But putting the right test choices, effect sizes/confidence intervals, assumption checks and journal-formatted tables in place from the start meaningfully lowers the risk of a statistics-driven revision.",
+            "**No, we can't guarantee that** — and no one honestly can: the outcome also depends on study design, data quality, and a given journal's or reviewer's specific expectations. Putting the right test choices, effect sizes/confidence intervals, assumption checks and journal-formatted tables in place from the start meaningfully lowers the risk — but *getting a statistics-driven revision round is completely normal and never means the work was done badly*; it's a natural part of scientific peer review, and we routinely handle exactly these requests.",
         },
         {
           question: "Does this only apply to surgical journals?",
