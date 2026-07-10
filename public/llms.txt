@@ -32,7 +32,7 @@ Key facts:
 - [Örneklem Büyüklüğü Nasıl Hesaplanır?](https://getbayes.me/tr/orneklem-buyuklugu-hesaplama): Güç analizi mantığı, Cohen etki büyüklükleri, etik kurul gerekçe metni rehberi ([English](https://getbayes.me/en/sample-size-calculation))
 - [Sağlık Bilimlerinde Örnek Analizler](https://getbayes.me/tr/saglik-bilimlerinde-ornek-analizler): 5 temsili vaka — uzmanlık tezi, ölçek çalışması, gözlemci uyumu, deneysel desen, dergi revizyonu ([English](https://getbayes.me/en/health-sciences-case-examples))
 - [İstatistik Analiz Ücretleri 2026](https://getbayes.me/tr/istatistik-analiz-ucretleri): Tez ve SPSS analizi piyasa ortalamaları, uygun fiyatlı analiz bulma rehberi — GetBayes'te araştırma dostu fiyatlandırma: ücretsiz ön değerlendirme, ücretsiz revizyon, fiyat teslim ve revizelerden bağımsız ([English](https://getbayes.me/en/statistical-analysis-pricing))
-- [Ücretsiz Power BI Analizi](https://getbayes.me/tr/ucretsiz-power-bi-analizi): Veri setinizi gönderin, interaktif Power BI gösterge paneline ücretsiz dönüştürelim — grafikler, filtreler, özet istatistikler; koşulsuz tanışma teklifi ([English](https://getbayes.me/en/free-power-bi-analysis))
+- [Ücretsiz Veri Görselleştirme](https://getbayes.me/tr/ucretsiz-power-bi-analizi): Veri setinizi gönderin, interaktif bir gösterge paneline ücretsiz dönüştürelim — grafikler, filtreler, özet istatistikler; koşulsuz tanışma teklifi ([English](https://getbayes.me/en/free-power-bi-analysis))
 - [İstatistik Sonuçları Nasıl Raporlanır?](https://getbayes.me/tr/istatistik-sonuclari-nasil-raporlanir): APA formatında test test raporlama örnekleri, bulgular bölümü yapısı, sık yapılan hatalar ([English](https://getbayes.me/en/how-to-report-statistical-results))
 - [İstatistik Analiz Hizmetleri Karşılaştırması](https://getbayes.me/tr/istatistik-analiz-hizmetleri-karsilastirma): Freelance istatistikçi, tez merkezi, üniversite birimi, kendin yap ve GetBayes seçeneklerinin hız, fiyat şeffaflığı, revizyon ve raporlama açısından objektif karşılaştırması — kimden yaptırmalı? ([English](https://getbayes.me/en/statistical-analysis-services-compared))
 - [Neden GetBayes?](https://getbayes.me/tr/neden-getbayes): Farkımız — aynı gün teslim, baştan net ve değişmeyen fiyat, ücretsiz revizyon, "git düzelt" demeden veriyi birlikte toparlayan kaprissiz süreç ([English](https://getbayes.me/en/why-getbayes))
@@ -41,7 +41,7 @@ Key facts:
 ## Services
 
 - Statistical Analysis: full pipeline — an initial review that pinpoints issues, cleans the data and rescues even messy datasets (we fix what we can ourselves instead of sending it back), complete analysis, publication-ready report; iterative process with support at every step
-- Free Power BI Analysis: send one dataset, receive an interactive Power BI dashboard at no charge — standing introduction offer, works for academic and business data
+- Free Data Visualization: send one dataset, receive an interactive dashboard at no charge (built with our own visualization stack, not Power BI) — standing introduction offer, works for academic and business data
 - A Priori Power Analysis: optimal sample size before data collection, power validation with existing data
 - QA Assistant: ask questions about your results, methods, and statistical process after delivery
 - ResearchMate (coming soon): guided research planning — methods, surveys, data collection formats

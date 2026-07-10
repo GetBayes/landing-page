@@ -4,7 +4,7 @@ const sampleSize: Topic = {
   key: "sample-size",
   kind: "guide",
   datePublished: "2026-07-08",
-  dateModified: "2026-07-08",
+  dateModified: "2026-07-10",
   related: ["which-test", "thesis-statistics", "biostatistics"],
   locales: {
     tr: {
@@ -13,8 +13,8 @@ const sampleSize: Topic = {
         "Tez ve etik kurul başvurusu için örneklem büyüklüğü hesaplama rehberi: güç analizi mantığı, gereken bilgiler, G*Power, yaygın hatalar ve hazır gerekçe metni desteği.",
       headline: "Örneklem Büyüklüğü Nasıl Hesaplanır?",
       lead: [
-        "Örneklem büyüklüğü, çalışmaya başlamadan önce a priori güç analiziyle hesaplanır ve dört bilgiye dayanır: kullanacağınız istatistiksel test, beklenen etki büyüklüğü (literatürden veya pilot çalışmadan), anlamlılık düzeyi (genellikle α = 0.05) ve hedeflenen güç (genellikle 0.80, sağlıkta sıklıkla 0.90). Bu dört değer belirlendiğinde gereken minimum katılımcı sayısı G*Power gibi araçlarla hesaplanır — etik kurulların başvuruda istediği 'örneklem gerekçesi' tam olarak budur.",
-        "Bu rehber hesabın mantığını ve adımlarını anlatır. Değerlerinizi bize gönderirseniz hesabı yapar, etik kurul başvurunuza doğrudan yapıştırabileceğiniz gerekçe metniyle birlikte teslim ederiz.",
+        "Örneklem büyüklüğü, çalışmaya başlamadan önce a priori güç analiziyle hesaplanır ve dört bilgiye dayanır: kullanacağınız istatistiksel test, beklenen etki büyüklüğü (literatürden veya pilot çalışmadan), anlamlılık düzeyi (genellikle α = 0.05) ve hedeflenen güç (genellikle 0.80, sağlıkta sıklıkla 0.90). Bu dört değer belirlendiğinde gereken minimum katılımcı sayısı hesaplanır — etik kurulların başvuruda istediği 'örneklem gerekçesi' tam olarak budur.",
+        "Bu rehber hesabın mantığını ve adımlarını anlatır. Değerlerinizi bize gönderirseniz hesabı kendi Python tabanlı analiz altyapımızla yapar; farklı etki büyüklüğü varsayımları altında gereken örneklemin nasıl değiştiğini gösteren duyarlılık (sensitivity) analizi ve grafiklerle birlikte, etik kurul başvurunuza doğrudan yapıştırabileceğiniz gerekçe metniyle teslim ederiz.",
       ],
       audience: {
         heading: "Bu rehber kimler için?",
@@ -48,7 +48,7 @@ const sampleSize: Topic = {
             {
               title: "Hesaplayın ve kayıp payı ekleyin",
               description:
-                "G*Power (ücretsiz) ile hesaplayın. Anket ve takip çalışmalarında %10-20 veri kaybı payı ekleyerek hedef sayıyı belirleyin.",
+                "Değerleri girip hesaplayın — kendiniz yapacaksanız G*Power (ücretsiz) yaygın bir araçtır. Anket ve takip çalışmalarında %10-20 veri kaybı payı ekleyerek hedef sayıyı belirleyin.",
             },
           ],
         },
@@ -70,7 +70,7 @@ const sampleSize: Topic = {
           type: "table",
           heading: "Örnek: yaygın senaryolar için gereken örneklem",
           intro:
-            "α = 0.05, güç = 0.80, iki yönlü test için yaklaşık değerler (G*Power ile hesaplanmıştır):",
+            "α = 0.05, güç = 0.80, iki yönlü test için yaklaşık değerler (Python tabanlı hesaplamayla üretilmiştir):",
           columns: ["Senaryo", "Etki büyüklüğü", "Gereken toplam n"],
           rows: [
             ["Bağımsız t-testi, orta etki", "d = 0.50", "128 (grup başına 64)"],
@@ -104,7 +104,7 @@ const sampleSize: Topic = {
         {
           question: "Etik kurul başvurusu için örneklem hesabını yapıyor musunuz?",
           answer:
-            "Evet — en sık verdiğimiz hizmetlerden biri. Çalışma tasarımınızı ve planladığınız analizi bize iletin; hesabı yapar, başvuru formuna doğrudan yapıştırabileceğiniz gerekçe paragrafıyla (test, etki büyüklüğü kaynağı, α, güç, hesaplanan n ve kayıp payı) teslim ederiz.",
+            "Evet — en sık verdiğimiz hizmetlerden biri. Çalışma tasarımınızı ve planladığınız analizi bize iletin; hesabı Python tabanlı analizlerimizle yapar, duyarlılık (sensitivity) grafikleriyle desteklenmiş bir rapor ve başvuru formuna doğrudan yapıştırabileceğiniz gerekçe paragrafıyla (test, etki büyüklüğü kaynağı, α, güç, hesaplanan n ve kayıp payı) teslim ederiz.",
         },
         {
           question: "Pilot çalışmam yok, etki büyüklüğünü nereden bulacağım?",
@@ -141,8 +141,8 @@ const sampleSize: Topic = {
         "Sample size calculation for theses and ethics applications: the logic of power analysis, required inputs, G*Power, common mistakes and ready-to-paste justification text.",
       headline: "How Is Sample Size Calculated?",
       lead: [
-        "Sample size is calculated before a study begins using a priori power analysis, and it rests on four inputs: the statistical test you will use, the expected effect size (from the literature or a pilot study), the significance level (usually α = 0.05), and the target power (usually 0.80, often 0.90 in health research). Once these four are set, the minimum number of participants is computed with tools like G*Power — this is exactly the “sample size justification” ethics committees ask for.",
-        "This guide explains the logic and the steps. Send us your study details and we'll run the calculation and deliver it with a justification paragraph you can paste straight into your ethics application.",
+        "Sample size is calculated before a study begins using a priori power analysis, and it rests on four inputs: the statistical test you will use, the expected effect size (from the literature or a pilot study), the significance level (usually α = 0.05), and the target power (usually 0.80, often 0.90 in health research). Once these four are set, the minimum number of participants required is computed — this is exactly the “sample size justification” ethics committees ask for.",
+        "This guide explains the logic and the steps. Send us your study details and we'll run the calculation with our own Python-based analysis stack, deliver it with sensitivity-analysis graphs showing how the required sample shifts under different effect-size assumptions, and a justification paragraph you can paste straight into your ethics application.",
       ],
       audience: {
         heading: "Who is this guide for?",
@@ -176,7 +176,7 @@ const sampleSize: Topic = {
             {
               title: "Compute and add attrition",
               description:
-                "Calculate with G*Power (free). For surveys and follow-up studies add a 10-20% attrition margin to set the recruitment target.",
+                "Run the calculation — if doing it yourself, G*Power (free) is a common tool. For surveys and follow-up studies add a 10-20% attrition margin to set the recruitment target.",
             },
           ],
         },
@@ -197,7 +197,7 @@ const sampleSize: Topic = {
           type: "table",
           heading: "Example: required samples for common scenarios",
           intro:
-            "Approximate values for α = 0.05, power = 0.80, two-tailed (computed with G*Power):",
+            "Approximate values for α = 0.05, power = 0.80, two-tailed (produced with a Python-based calculation):",
           columns: ["Scenario", "Effect size", "Total n required"],
           rows: [
             ["Independent t-test, medium effect", "d = 0.50", "128 (64 per group)"],
@@ -231,7 +231,7 @@ const sampleSize: Topic = {
         {
           question: "Do you run sample size calculations for ethics applications?",
           answer:
-            "Yes — it's one of our most requested services. Send your study design and planned analysis; we run the calculation and deliver it with a justification paragraph (test, effect size source, α, power, computed n and attrition margin) ready to paste into the application form.",
+            "Yes — it's one of our most requested services. Send your study design and planned analysis; we run the calculation with our own Python-based analysis stack and deliver it with sensitivity-analysis graphs plus a justification paragraph (test, effect size source, α, power, computed n and attrition margin) ready to paste into the application form.",
         },
         {
           question: "I have no pilot study — where do I get an effect size?",

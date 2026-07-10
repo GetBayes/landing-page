@@ -70,6 +70,10 @@ export const topicSlugs = {
     en: "can-ai-do-statistical-analysis",
     tr: "yapay-zeka-istatistik-analizi",
   },
+  "regression-interpretation": {
+    en: "how-to-interpret-regression-results",
+    tr: "regresyon-sonuclari-nasil-yorumlanir",
+  },
 } as const;
 
 export type TopicKey = keyof typeof topicSlugs;
@@ -120,8 +124,8 @@ export const topicLabels: Record<TopicKey, Record<Locale, string>> = {
     tr: "İstatistik Analiz Ücretleri",
   },
   "power-bi": {
-    en: "Free Power BI Analysis",
-    tr: "Ücretsiz Power BI Analizi",
+    en: "Free Data Visualization",
+    tr: "Ücretsiz Veri Görselleştirme",
   },
   "reporting-results": {
     en: "Reporting Statistical Results",
@@ -138,6 +142,10 @@ export const topicLabels: Record<TopicKey, Record<Locale, string>> = {
   "ai-statistics": {
     en: "Can AI Do Your Statistics?",
     tr: "Yapay Zeka İstatistik Yapar mı?",
+  },
+  "regression-interpretation": {
+    en: "Interpreting Regression Results",
+    tr: "Regresyon Sonuçları Nasıl Yorumlanır?",
   },
 };
 

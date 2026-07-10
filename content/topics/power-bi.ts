@@ -1,27 +1,28 @@
 import type { Topic } from "../types";
 
-// Genuinely free introductory offer: one dataset → interactive Power BI
-// dashboard at no charge. Positioned as a way to experience report quality
-// before commissioning paid statistical analysis. Keep the "free, no
-// obligation" promise intact — it is the page's whole point.
+// Genuinely free introductory offer: one dataset -> interactive dashboard +
+// PDF report at no charge. Built with GetBayes' own visualization stack, NOT
+// Microsoft Power BI — "Power BI" stays in metaDescription/FAQ purely as a
+// keyword hook for that search intent (same pattern as the SPSS rule). Never
+// claim a .pbix file or Power BI Desktop deliverable.
 
 const powerBi: Topic = {
   key: "power-bi",
   kind: "service",
   datePublished: "2026-07-08",
-  dateModified: "2026-07-08",
-  serviceType: "Power BI Dashboard & Data Visualization",
+  dateModified: "2026-07-10",
+  serviceType: "Interactive Dashboard & Data Visualization",
   related: ["thesis-statistics", "health-use-cases", "about-us"],
   locales: {
     tr: {
       metaTitle:
-        "Ücretsiz Power BI Analizi: Verinizi İnteraktif Panele Dönüştürün | GetBayes",
+        "Ücretsiz Veri Görselleştirme: Verinizi İnteraktif Panele Dönüştürün | GetBayes",
       metaDescription:
-        "Verinizi gönderin, Power BI ile interaktif gösterge paneline ücretsiz dönüştürelim. Grafikler, filtreler, özet istatistikler — gerçekten ücretsiz, koşulsuz.",
-      headline: "Ücretsiz Power BI Analizi: Verinizi Panele Dönüştürelim",
+        "Verinizi gönderin, interaktif bir gösterge paneline ücretsiz dönüştürelim — Power BI panolarına benzer grafikler, filtreler, özet istatistikler; gerçekten ücretsiz, koşulsuz.",
+      headline: "Ücretsiz Veri Görselleştirme: Verinizi Panele Dönüştürelim",
       lead: [
-        "Elinizde bir veri seti varsa — anket sonuçları, hasta kayıtları, satış verileri, kurum içi ölçümler — bize gönderin, Power BI ile interaktif bir gösterge paneline ücretsiz dönüştürelim. Grafikler, filtrelenebilir görünümler ve özet istatistiklerle verinizin fotoğrafını çekiyoruz; herhangi bir ücret ödemeden, herhangi bir taahhüt vermeden. Bu bir kampanya süresi olan promosyon değil, kalıcı bir tanışma teklifi: işimizin kalitesini önce görün istiyoruz.",
-        "Bu sayfada neyi teslim ettiğimizi, sürecin nasıl işlediğini ve hangi verilerin Power BI paneline uygun olduğunu anlattık.",
+        "Elinizde bir veri seti varsa — anket sonuçları, hasta kayıtları, satış verileri, kurum içi ölçümler — bize gönderin, kendi görselleştirme altyapımızla interaktif bir gösterge paneline ücretsiz dönüştürelim. Grafikler, filtrelenebilir görünümler ve özet istatistiklerle verinizin fotoğrafını çekiyoruz; herhangi bir ücret ödemeden, herhangi bir taahhüt vermeden. Bu bir kampanya süresi olan promosyon değil, kalıcı bir tanışma teklifi: işimizin kalitesini önce görün istiyoruz.",
+        "Not: Power BI lisansımız veya Power BI dosyası (.pbix) teslimatımız yok — panelinizi kendi analiz araçlarımızla (Python tabanlı) hazırlıyoruz ve Power BI panolarıyla aynı işlevi gören interaktif bir görünüm + PDF rapor olarak teslim ediyoruz. Bu sayfada neyi teslim ettiğimizi, sürecin nasıl işlediğini ve hangi verilerin panele uygun olduğunu anlattık.",
       ],
       audience: {
         heading: "Kimler yararlanabilir?",
@@ -39,11 +40,10 @@ const powerBi: Topic = {
           intro:
             "\"Ücretsiz\" deyince akla gelen kırpılmış deneme sürümü değil bu — teslim ettiğimiz gerçek bir çalışma:",
           items: [
-            "Verinize uygun seçilmiş grafiklerle interaktif bir Power BI gösterge paneli",
+            "Verinize uygun seçilmiş grafiklerle interaktif bir gösterge paneli",
             "Değişkenlere göre filtreleme ve kırılım (ör. yaş grubu, bölüm, tarih aralığı)",
             "Özet istatistikler: sayılar, ortalamalar, dağılımlar, eğilimler",
             "Panelin PDF dışa aktarımı — sunum ve rapora doğrudan eklenebilir",
-            "İsterseniz Power BI dosyasının (.pbix) kendisi — panel sizde kalır, kendiniz güncelleyebilirsiniz",
             "Panelde ne görüldüğüne dair kısa bir açıklama notu",
           ],
         },
@@ -64,12 +64,12 @@ const powerBi: Topic = {
             {
               title: "Panel hazırlanır",
               description:
-                "Gösterge panelinizi hazırlar, çoğunlukla aynı gün içinde teslim ederiz.",
+                "Gösterge panelinizi kendi analiz altyapımızla hazırlar, çoğunlukla aynı gün içinde teslim ederiz.",
             },
             {
               title: "Teslim ve sonrası",
               description:
-                "PDF ve dilerseniz .pbix dosyasını alırsınız. Panel üzerine sorularınızı yanıtlarız. Hepsi bu — devamında bir zorunluluk yok.",
+                "İnteraktif görünümü ve PDF çıktısını alırsınız. Panel üzerine sorularınızı yanıtlarız. Hepsi bu — devamında bir zorunluluk yok.",
             },
           ],
         },
@@ -126,9 +126,9 @@ const powerBi: Topic = {
             "Gerçekten ücretsiz. Panel, PDF çıktısı ve soru-cevap desteği için hiçbir ücret ödemezsiniz; kart bilgisi, abonelik veya taahhüt de istemeyiz. Ücretli olan, ayrı bir ihtiyaç olarak talep ederseniz istatistiksel analiz ve akademik raporlama hizmetimizdir.",
         },
         {
-          question: "Power BI nedir, panele bakmak için lisans gerekir mi?",
+          question: "Power BI kullanıyor musunuz?",
           answer:
-            "Power BI, Microsoft'un veri görselleştirme aracıdır. Size gönderdiğimiz PDF için hiçbir yazılım gerekmez. .pbix dosyasını açmak isterseniz ücretsiz Power BI Desktop yeterlidir.",
+            "Hayır — panelinizi kendi görselleştirme altyapımızla (Python tabanlı) hazırlıyoruz, Power BI lisansımız ve Power BI dosyası (.pbix) teslimatımız yok. Teslim ettiğimiz interaktif görünüm ve PDF rapor, Power BI panolarıyla aynı işlevi görür: aynı grafik ve filtreleme deneyimini farklı bir altyapıyla sunuyoruz.",
         },
         {
           question: "Verim güvende mi?",
@@ -161,13 +161,13 @@ const powerBi: Topic = {
     },
     en: {
       metaTitle:
-        "Free Power BI Analysis: Turn Your Data into a Dashboard | GetBayes",
+        "Free Data Visualization: Turn Your Data into a Dashboard | GetBayes",
       metaDescription:
-        "Send us your data and we'll turn it into an interactive Power BI dashboard for free. Charts, filters, summary statistics — genuinely free, no strings attached.",
-      headline: "Free Power BI Analysis: Let's Turn Your Data into a Dashboard",
+        "Send us your data and we'll turn it into an interactive dashboard for free — Power BI-style charts, filters, summary statistics; genuinely free, no strings attached.",
+      headline: "Free Data Visualization: Let's Turn Your Data into a Dashboard",
       lead: [
-        "If you have a dataset — survey responses, patient records, sales figures, internal metrics — send it to us and we'll turn it into an interactive Power BI dashboard, free of charge. Charts, filterable views and summary statistics that give you the full picture of your data, with nothing to pay and nothing to commit to. This isn't a limited-time promotion; it's a standing introduction offer — we'd rather show you the quality of our work than tell you about it.",
-        "This page explains exactly what we deliver, how the process works, and which kinds of data suit a Power BI dashboard.",
+        "If you have a dataset — survey responses, patient records, sales figures, internal metrics — send it to us and we'll turn it into an interactive dashboard using our own visualization stack, free of charge. Charts, filterable views and summary statistics that give you the full picture of your data, with nothing to pay and nothing to commit to. This isn't a limited-time promotion; it's a standing introduction offer — we'd rather show you the quality of our work than tell you about it.",
+        "Note: we don't hold a Power BI license or deliver a Power BI file (.pbix) — we build your dashboard with our own tooling (Python-based) and deliver an interactive view plus a PDF report that does the same job a Power BI dashboard would. This page explains exactly what we deliver, how the process works, and which kinds of data suit a dashboard.",
       ],
       audience: {
         heading: "Who can use this?",
@@ -185,11 +185,10 @@ const powerBi: Topic = {
           intro:
             "This isn't a stripped-down trial — it's a real piece of delivered work:",
           items: [
-            "An interactive Power BI dashboard with charts chosen to fit your data",
+            "An interactive dashboard with charts chosen to fit your data",
             "Filtering and breakdowns by your variables (e.g. age group, department, date range)",
             "Summary statistics: counts, means, distributions, trends",
             "A PDF export of the dashboard — drops straight into presentations and reports",
-            "The Power BI file (.pbix) itself if you want it — the dashboard is yours to keep and update",
             "A short note explaining what the dashboard shows",
           ],
         },
@@ -210,12 +209,12 @@ const powerBi: Topic = {
             {
               title: "We build the dashboard",
               description:
-                "Your dashboard is prepared and usually delivered the same day.",
+                "Your dashboard is prepared with our own analysis stack and usually delivered the same day.",
             },
             {
               title: "Delivery and after",
               description:
-                "You receive the PDF and, if you like, the .pbix file. We answer your questions about the dashboard. That's it — no obligation afterwards.",
+                "You receive the interactive view and the PDF export. We answer your questions about the dashboard. That's it — no obligation afterwards.",
             },
           ],
         },
@@ -272,9 +271,9 @@ const powerBi: Topic = {
             "Really free. You pay nothing for the dashboard, the PDF export or the follow-up Q&A, and we ask for no card details, subscription or commitment. What is paid is our statistical analysis and academic reporting service — and only if you separately request it.",
         },
         {
-          question: "What is Power BI, and do I need a license to view the dashboard?",
+          question: "Do you use Power BI?",
           answer:
-            "Power BI is Microsoft's data visualization tool. The PDF we send needs no software at all. If you want to open the .pbix file yourself, the free Power BI Desktop is enough.",
+            "No — we build your dashboard with our own visualization stack (Python-based); we don't hold a Power BI license and don't deliver a Power BI file (.pbix). The interactive view and PDF report we deliver do the same job as a Power BI dashboard: the same charting and filtering experience, on different tooling.",
         },
         {
           question: "Is my data safe?",

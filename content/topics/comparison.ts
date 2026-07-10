@@ -11,7 +11,7 @@ const comparison: Topic = {
   key: "comparison",
   kind: "guide",
   datePublished: "2026-07-08",
-  dateModified: "2026-07-08",
+  dateModified: "2026-07-10",
   related: ["find-statistician", "pricing", "why-getbayes"],
   locales: {
     tr: {
@@ -149,7 +149,7 @@ const comparison: Topic = {
             "Güçlü yön: analiz genelde 15 dakikada biter, teslim aynı gün olur; fiyat ön değerlendirme sonrası yazılı ve sabittir, revizyon ücretsizdir.",
             "Güçlü yön: \"verin hatalı, git düzelt\" demeyiz — sorunları tek tek gösterir, elimizden geleni kendimiz düzeltir, dağınık veriyi kurtarmaya çalışırız; her aşamada bize yazabilirsiniz.",
             "Güçlü yön: APA/dergi formatında tablo, yöntem gerekçesi ve yorum içeren yayına hazır rapor; SPSS ile birebir tutarlı sonuçlar.",
-            "Dürüst sınır: ücretli bir hizmetiz — bütçeniz sıfırsa ve zamanınız bolsa, kendiniz yapmak sizin için daha uygun olabilir; ücretsiz Power BI analizimizle önce tanışabilirsiniz.",
+            "Dürüst sınır: ücretli bir hizmetiz — bütçeniz sıfırsa ve zamanınız bolsa, kendiniz yapmak sizin için daha uygun olabilir; ücretsiz veri görselleştirme teklifimizle önce tanışabilirsiniz.",
             "Uygun senaryo: doğru, savunulabilir bir rapora hızlı ve öngörülebilir bir fiyatla, kaprissiz bir süreçle ulaşmak istiyorsanız.",
           ],
         },
@@ -207,7 +207,7 @@ const comparison: Topic = {
         {
           question: "En ucuz seçenek hangisi?",
           answer:
-            "Doğrudan maliyet olarak analizi kendiniz yapmak en ucuzudur (yalnızca zaman ve varsa yazılım maliyeti). Dışarıdan destekte ise \"en ucuz\" başlık fiyatı değil, en düşük toplam maliyettir: revizyon, ek analiz ve acil teslim farkları eklendiğinde düşük görünen bir teklif pahalıya gelebilir. GetBayes'te revizyon, ön değerlendirme ve Power BI analizi ücretsiz olduğu için toplam maliyet öngörülebilir kalır.",
+            "Doğrudan maliyet olarak analizi kendiniz yapmak en ucuzudur (yalnızca zaman ve varsa yazılım maliyeti). Dışarıdan destekte ise \"en ucuz\" başlık fiyatı değil, en düşük toplam maliyettir: revizyon, ek analiz ve acil teslim farkları eklendiğinde düşük görünen bir teklif pahalıya gelebilir. GetBayes'te revizyon, ön değerlendirme ve veri görselleştirme paneli ücretsiz olduğu için toplam maliyet öngörülebilir kalır.",
         },
         {
           question: "GetBayes bu listede neden var?",
@@ -358,7 +358,7 @@ const comparison: Topic = {
             "Strength: the analysis usually finishes in 15 minutes with same-day delivery; the price is written and fixed after a free assessment, and revisions are free.",
             "Strength: we don't say \"your data is wrong, go fix it\" — we pinpoint issues, fix what we can ourselves, and try to rescue messy datasets; you can write to us at every stage.",
             "Strength: publication-ready reports with APA/journal-format tables, method rationale and interpretation; results fully consistent with SPSS.",
-            "Honest limit: we are a paid service — if your budget is zero and you have plenty of time, doing it yourself may suit you better; you can start with our free Power BI analysis.",
+            "Honest limit: we are a paid service — if your budget is zero and you have plenty of time, doing it yourself may suit you better; you can start with our free data visualization offer.",
             "Good fit: you want a correct, defensible report at a fast, predictable price through a hassle-free process.",
           ],
         },
@@ -416,7 +416,7 @@ const comparison: Topic = {
         {
           question: "Which option is cheapest?",
           answer:
-            "In direct cost, doing it yourself is cheapest (only your time and any software cost). For outside help, \"cheapest\" is not the headline price but the lowest total cost: once revision, additional-analysis and rush fees are added, a low-looking quote can end up expensive. At GetBayes, revisions, the initial assessment and the Power BI analysis are free, so total cost stays predictable.",
+            "In direct cost, doing it yourself is cheapest (only your time and any software cost). For outside help, \"cheapest\" is not the headline price but the lowest total cost: once revision, additional-analysis and rush fees are added, a low-looking quote can end up expensive. At GetBayes, revisions, the initial assessment and the data visualization dashboard are free, so total cost stays predictable.",
         },
         {
           question: "Why is GetBayes on this list?",

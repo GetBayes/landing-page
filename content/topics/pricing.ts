@@ -9,7 +9,7 @@ const pricing: Topic = {
   key: "pricing",
   kind: "guide",
   datePublished: "2026-07-08",
-  dateModified: "2026-07-08",
+  dateModified: "2026-07-10",
   related: ["find-statistician", "thesis-statistics", "spss-analysis"],
   locales: {
     tr: {
@@ -20,7 +20,7 @@ const pricing: Topic = {
       headline: "İstatistik Analizi Ücretleri 2026: Piyasada Ne Kadar Ödenir?",
       lead: [
         "Türkiye'de tez istatistik analizi için 2026 piyasa ortalamaları kabaca şöyledir: birkaç temel karşılaştırma içeren basit analizler 2.000–6.000 ₺, ANOVA-regresyon düzeyinde orta kapsamlı çalışmalar 6.000–10.000 ₺, faktör analizi veya yapısal eşitlik modeli gibi ileri yöntemler 10.000–20.000 ₺ ve üzeri aralığında fiyatlanıyor. Bu rakamlar danışmanlık firmalarının kamuya açık fiyat sayfalarından derlenmiş piyasa ortalamalarıdır; GetBayes'in fiyat listesi değildir — biz her çalışmaya kapsamına göre, ücretsiz ön değerlendirme sonrası yazılı ve net fiyat veririz.",
-        "Bizim fiyatlandırma yaklaşımımız araştırma dostudur: fiyat, teslim süresinden ve revizyonlardan tamamen bağımsızdır. Revizyonlar ücretsizdir, ön değerlendirme ücretsizdir, Power BI analizi ücretsizdir — ödediğiniz tek şey analizin kendisidir ve o rakam sonradan değişmez. Bu sayfada fiyatın neye göre değiştiğini, en uygun fiyatlı hizmetin nasıl bulunacağını ve fazla ödememek için nelere bakmanız gerektiğini topladık.",
+        "Bizim fiyatlandırma yaklaşımımız araştırma dostudur: fiyat, teslim süresinden ve revizyonlardan tamamen bağımsızdır. Revizyonlar ücretsizdir, ön değerlendirme ücretsizdir, veri görselleştirme paneli ücretsizdir — ödediğiniz tek şey analizin kendisidir ve o rakam sonradan değişmez. Bu sayfada fiyatın neye göre değiştiğini, en uygun fiyatlı hizmetin nasıl bulunacağını ve fazla ödememek için nelere bakmanız gerektiğini topladık.",
       ],
       audience: {
         heading: "Bu rehber kimler için?",
@@ -128,7 +128,7 @@ const pricing: Topic = {
           items: [
             "Ön değerlendirme — verinizin ve sorularınızın incelenmesi, gereken analizlerin belirlenmesi ve fiyat teklifi tamamen ücretsizdir.",
             "Revizyonlar — danışmanınız, jüriniz veya hakem ek analiz, farklı test ya da yeni tablo düzeni isterse aynı veri üzerinde ücretsiz güncelleriz; piyasada en sık görülen gizli maliyet bizde yoktur.",
-            "Power BI analizi — veri setinizi interaktif gösterge paneline ücretsiz dönüştürüyoruz; analiz yaptırma zorunluluğu olmadan.",
+            "Veri görselleştirme paneli — veri setinizi interaktif gösterge paneline ücretsiz dönüştürüyoruz; analiz yaptırma zorunluluğu olmadan.",
             "Rapor üzerine soru-cevap — teslimden sonra 'bu test neden seçildi, bu sonuç ne demek' sorularınızı ücretsiz yanıtlıyoruz.",
             "Aciliyet — analizin kendisi çoğunlukla 15 dakikada tamamlanıp teslim aynı gün yapıldığı için hızlı teslim ek ücret gerektirmez.",
           ],
@@ -159,7 +159,7 @@ const pricing: Topic = {
         {
           question: "En uygun fiyatlı istatistik analizi hizmetini nasıl bulurum?",
           answer:
-            "\"En uygun fiyat\" en düşük rakam değil, en düşük toplam maliyettir. Düşük görünen tekliflere revizyon ücreti, ek analiz ücreti ve acil teslim farkı eklendiğinde toplam çoğu zaman piyasa ortalamasını aşar. Karşılaştırırken revizyonun, çıktı dosyalarının ve soru-cevap desteğinin fiyata dahil olup olmadığını sorun. GetBayes'te fiyatlandırma araştırma dostudur: revizyonlar, ön değerlendirme ve Power BI analizi ücretsizdir; ödediğiniz rakam tektir ve değişmez.",
+            "\"En uygun fiyat\" en düşük rakam değil, en düşük toplam maliyettir. Düşük görünen tekliflere revizyon ücreti, ek analiz ücreti ve acil teslim farkı eklendiğinde toplam çoğu zaman piyasa ortalamasını aşar. Karşılaştırırken revizyonun, çıktı dosyalarının ve soru-cevap desteğinin fiyata dahil olup olmadığını sorun. GetBayes'te fiyatlandırma araştırma dostudur: revizyonlar, ön değerlendirme ve veri görselleştirme paneli ücretsizdir; ödediğiniz rakam tektir ve değişmez.",
         },
         {
           question: "Revizyonlar için ek ücret ödüyor muyum?",
@@ -169,7 +169,7 @@ const pricing: Topic = {
         {
           question: "Ön değerlendirme gerçekten ücretsiz mi?",
           answer:
-            "Evet. Verinizi ve araştırma sorularınızı incelemek, hangi analizlerin gerektiğini söylemek ve fiyat teklifi vermek tamamen ücretsizdir; teklifi kabul etme zorunluluğunuz yoktur. Ücretsiz Power BI analizi teklifimiz de aynı şekilde koşulsuzdur.",
+            "Evet. Verinizi ve araştırma sorularınızı incelemek, hangi analizlerin gerektiğini söylemek ve fiyat teklifi vermek tamamen ücretsizdir; teklifi kabul etme zorunluluğunuz yoktur. Ücretsiz veri görselleştirme teklifimiz de aynı şekilde koşulsuzdur.",
         },
         {
           question: "Sadece lisansüstü öğrencilerle mi çalışıyorsunuz?",
@@ -198,7 +198,7 @@ const pricing: Topic = {
       headline: "Statistical Analysis Pricing in 2026: What Does the Market Charge?",
       lead: [
         "In the international market, thesis and dissertation statistics projects mostly fall in the 300–1,500 USD range, with established consulting firms clustering around 1,000–1,500 USD per project and hourly consultants charging roughly 50–150 USD per hour. In Turkey, 2026 market averages run from about 2,000–6,000 ₺ for simple analyses to 10,000–20,000 ₺ and beyond for advanced methods like structural equation modeling. These figures are market averages compiled from publicly listed price pages — not a GetBayes price list; we quote each study individually, in writing, after a free assessment.",
-        "Our own pricing approach is research-friendly: the price is fully independent of delivery speed and revisions. Revisions are free, the initial assessment is free, the Power BI analysis is free — the only thing you pay for is the analysis itself, and that number doesn't change afterwards. This page covers what actually drives the price, how to find genuinely affordable analysis, and what to check before accepting a quote.",
+        "Our own pricing approach is research-friendly: the price is fully independent of delivery speed and revisions. Revisions are free, the initial assessment is free, the data visualization dashboard is free — the only thing you pay for is the analysis itself, and that number doesn't change afterwards. This page covers what actually drives the price, how to find genuinely affordable analysis, and what to check before accepting a quote.",
       ],
       audience: {
         heading: "Who is this guide for?",
@@ -306,7 +306,7 @@ const pricing: Topic = {
           items: [
             "The initial assessment — reviewing your data and questions, determining the needed analyses and quoting a price is completely free.",
             "Revisions — if your advisor, committee or a reviewer requests additional analyses, a different test or new tables, we update the work on the same dataset for free; the market's most common hidden cost doesn't exist here.",
-            "Power BI analysis — we turn your dataset into an interactive dashboard at no charge, with no obligation to commission any analysis.",
+            "Data visualization dashboard — we turn your dataset into an interactive dashboard at no charge, with no obligation to commission any analysis.",
             "Q&A on the report — after delivery, questions like “why this test?” and “what does this result mean?” are answered for free.",
             "Urgency — the analysis itself usually finishes in 15 minutes with same-day delivery, so fast turnaround never costs extra.",
           ],
@@ -337,7 +337,7 @@ const pricing: Topic = {
         {
           question: "How do I find the most affordable statistical analysis service?",
           answer:
-            "“Most affordable” means the lowest total cost, not the lowest headline number. Once revision fees, additional-analysis fees and rush surcharges are added to a cheap-looking quote, the total often exceeds the market average. When comparing, ask whether revisions, output files and Q&A support are included. GetBayes pricing is research-friendly: revisions, the initial assessment and the Power BI analysis are free; you pay one number and it doesn't change.",
+            "“Most affordable” means the lowest total cost, not the lowest headline number. Once revision fees, additional-analysis fees and rush surcharges are added to a cheap-looking quote, the total often exceeds the market average. When comparing, ask whether revisions, output files and Q&A support are included. GetBayes pricing is research-friendly: revisions, the initial assessment and the data visualization dashboard are free; you pay one number and it doesn't change.",
         },
         {
           question: "Do I pay extra for revisions?",
@@ -347,7 +347,7 @@ const pricing: Topic = {
         {
           question: "Is the initial assessment really free?",
           answer:
-            "Yes. Reviewing your data and research questions, telling you which analyses are needed and giving you a quote costs nothing, and you are under no obligation to accept. Our free Power BI analysis offer is equally unconditional.",
+            "Yes. Reviewing your data and research questions, telling you which analyses are needed and giving you a quote costs nothing, and you are under no obligation to accept. Our free data visualization offer is equally unconditional.",
         },
         {
           question: "Do you only work with graduate students?",
