@@ -10,7 +10,7 @@ const featuredTopics: TopicKey[] = [
   "pricing",
   "comparison",
   "why-getbayes",
-  "power-bi",
+  "data-visualization",
 ];
 import { Mail, MessageCircle } from "lucide-react";
 import InstagramIcon from "./InstagramIcon";

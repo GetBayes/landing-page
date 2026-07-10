@@ -5,13 +5,14 @@ const sampleSize: Topic = {
   kind: "guide",
   datePublished: "2026-07-08",
   dateModified: "2026-07-10",
-  related: ["which-test", "thesis-statistics", "biostatistics"],
+  related: ["which-test", "thesis-statistics", "biostatistics", "data-visualization", "reliability-analysis"],
   locales: {
     tr: {
-      metaTitle: "Örneklem Büyüklüğü Nasıl Hesaplanır? Etik Kurul Rehberi | GetBayes",
+      metaTitle:
+        "Örneklem Büyüklüğü ve Power Analizi Hesaplama | GetBayes",
       metaDescription:
-        "Tez ve etik kurul başvurusu için örneklem büyüklüğü hesaplama rehberi: güç analizi mantığı, gereken bilgiler, G*Power, yaygın hatalar ve hazır gerekçe metni desteği.",
-      headline: "Örneklem Büyüklüğü Nasıl Hesaplanır?",
+        "Tez ve etik kurul başvurusu için örneklem büyüklüğü ve power analizi (güç analizi) hesaplama rehberi: gereken bilgiler, G*Power, yaygın hatalar ve hazır gerekçe metni desteği.",
+      headline: "Örneklem Büyüklüğü ve Power Analizi Nasıl Hesaplanır?",
       lead: [
         "Örneklem büyüklüğü, çalışmaya başlamadan önce a priori güç analiziyle hesaplanır ve dört bilgiye dayanır: kullanacağınız istatistiksel test, beklenen etki büyüklüğü (literatürden veya pilot çalışmadan), anlamlılık düzeyi (genellikle α = 0.05) ve hedeflenen güç (genellikle 0.80, sağlıkta sıklıkla 0.90). Bu dört değer belirlendiğinde gereken minimum katılımcı sayısı hesaplanır — etik kurulların başvuruda istediği 'örneklem gerekçesi' tam olarak budur.",
         "Bu rehber hesabın mantığını ve adımlarını anlatır. Değerlerinizi bize gönderirseniz hesabı kendi Python tabanlı analiz altyapımızla yapar; farklı etki büyüklüğü varsayımları altında gereken örneklemin nasıl değiştiğini gösteren duyarlılık (sensitivity) analizi ve grafiklerle birlikte, etik kurul başvurunuza doğrudan yapıştırabileceğiniz gerekçe metniyle teslim ederiz.",
@@ -136,10 +137,11 @@ const sampleSize: Topic = {
       relatedHeading: "İlgili hizmetler ve rehberler",
     },
     en: {
-      metaTitle: "How to Calculate Sample Size — Ethics Committee Guide | GetBayes",
+      metaTitle:
+        "Sample Size & Power Analysis Calculation | GetBayes",
       metaDescription:
-        "Sample size calculation for theses and ethics applications: the logic of power analysis, required inputs, G*Power, common mistakes and ready-to-paste justification text.",
-      headline: "How Is Sample Size Calculated?",
+        "Sample size and power analysis calculation for theses and ethics applications: required inputs, G*Power, common mistakes and ready-to-paste justification text.",
+      headline: "How Are Sample Size and Power Analysis Calculated?",
       lead: [
         "Sample size is calculated before a study begins using a priori power analysis, and it rests on four inputs: the statistical test you will use, the expected effect size (from the literature or a pilot study), the significance level (usually α = 0.05), and the target power (usually 0.80, often 0.90 in health research). Once these four are set, the minimum number of participants required is computed — this is exactly the “sample size justification” ethics committees ask for.",
         "This guide explains the logic and the steps. Send us your study details and we'll run the calculation with our own Python-based analysis stack, deliver it with sensitivity-analysis graphs showing how the required sample shifts under different effect-size assumptions, and a justification paragraph you can paste straight into your ethics application.",

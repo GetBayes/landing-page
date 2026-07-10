@@ -4,9 +4,9 @@ const surveyAnalysis: Topic = {
   key: "survey-analysis",
   kind: "service",
   datePublished: "2026-07-09",
-  dateModified: "2026-07-09",
+  dateModified: "2026-07-10",
   serviceType: "Survey Data Analysis Service",
-  related: ["spss-analysis", "thesis-statistics", "sample-size"],
+  related: ["spss-analysis", "thesis-statistics", "sample-size", "reliability-analysis"],
   locales: {
     tr: {
       metaTitle:

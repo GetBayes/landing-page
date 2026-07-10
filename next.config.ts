@@ -51,6 +51,20 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      {
+        source: "/tr/ucretsiz-power-bi-analizi",
+        destination: "/tr/ucretsiz-veri-gorsellestirme",
+        permanent: true,
+      },
+      {
+        source: "/en/free-power-bi-analysis",
+        destination: "/en/free-data-visualization",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

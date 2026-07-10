@@ -4,8 +4,8 @@ const whichTest: Topic = {
   key: "which-test",
   kind: "guide",
   datePublished: "2026-07-08",
-  dateModified: "2026-07-08",
-  related: ["sample-size", "thesis-statistics", "spss-analysis"],
+  dateModified: "2026-07-10",
+  related: ["sample-size", "thesis-statistics", "spss-analysis", "reliability-analysis"],
   locales: {
     tr: {
       metaTitle: "Hangi İstatistik Testi Kullanılır? Test Seçim Rehberi | GetBayes",

@@ -50,9 +50,9 @@ export const topicSlugs = {
     en: "statistical-analysis-pricing",
     tr: "istatistik-analiz-ucretleri",
   },
-  "power-bi": {
-    en: "free-power-bi-analysis",
-    tr: "ucretsiz-power-bi-analizi",
+  "data-visualization": {
+    en: "free-data-visualization",
+    tr: "ucretsiz-veri-gorsellestirme",
   },
   "reporting-results": {
     en: "how-to-report-statistical-results",
@@ -77,6 +77,10 @@ export const topicSlugs = {
   "q1-success-story": {
     en: "q1-surgical-journal-success-story",
     tr: "q1-cerrahi-dergi-basari-hikayesi",
+  },
+  "reliability-analysis": {
+    en: "scale-reliability-analysis",
+    tr: "olcek-guvenilirlik-analizi",
   },
 } as const;
 
@@ -127,7 +131,7 @@ export const topicLabels: Record<TopicKey, Record<Locale, string>> = {
     en: "Statistical Analysis Pricing",
     tr: "İstatistik Analiz Ücretleri",
   },
-  "power-bi": {
+  "data-visualization": {
     en: "Free Data Visualization",
     tr: "Ücretsiz Veri Görselleştirme",
   },
@@ -154,6 +158,10 @@ export const topicLabels: Record<TopicKey, Record<Locale, string>> = {
   "q1-success-story": {
     en: "Q1 Surgical Journal Success Story",
     tr: "Q1 Cerrahi Dergi Başarı Hikayesi",
+  },
+  "reliability-analysis": {
+    en: "Scale Reliability Analysis",
+    tr: "Ölçek Güvenilirlik Analizi",
   },
 };
 
