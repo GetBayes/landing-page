@@ -254,10 +254,10 @@
   "legal": {
     "backToHome": "Ana Sayfaya Dön",
     "lastUpdated": "Son güncelleme",
-    "privacyTitle": "Gizlilik Politikası",
-    "privacyDescription": "GetBayes Gizlilik Politikası — verilerinizi nasıl topladığımız, kullandığımız ve koruduğumuz hakkında bilgi.",
-    "termsTitle": "Kullanım Koşulları",
-    "termsDescription": "GetBayes Kullanım Koşulları — hizmetlerimizi kullanma kuralları ve koşulları."
+    "privacyTitle": "Gizlilik Politikası ve Veri Koruma",
+    "privacyDescription": "GetBayes olarak kişisel verilerinizi hangi amaçlarla topladığımız, nasıl kullandığımız, kimlerle paylaştığımız ve KVKK kapsamındaki haklarınız hakkında bilgi.",
+    "termsTitle": "Kullanım Koşulları ve Hizmet Şartları",
+    "termsDescription": "GetBayes istatistik danışmanlık hizmetlerini kullanırken geçerli olan kurallar, ödeme koşulları, sorumluluk sınırları ve fikri mülkiyet hakları hakkında bilgi."
   },
   "chatWidget": {
     "welcome": "Merhaba! 👋",

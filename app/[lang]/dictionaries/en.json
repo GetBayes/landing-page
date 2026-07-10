@@ -246,10 +246,10 @@
   "legal": {
     "backToHome": "Back to Home",
     "lastUpdated": "Last updated",
-    "privacyTitle": "Privacy Policy",
-    "privacyDescription": "GetBayes Privacy Policy — how we collect, use, and protect your data.",
-    "termsTitle": "Terms of Service",
-    "termsDescription": "GetBayes Terms of Service — rules and conditions for using our services."
+    "privacyTitle": "Privacy Policy & Data Protection",
+    "privacyDescription": "How GetBayes collects, uses, shares, and protects your personal data, and what rights you have over your information under applicable privacy law.",
+    "termsTitle": "Terms of Service & Service Conditions",
+    "termsDescription": "The rules, payment terms, liability limits, and intellectual property conditions that apply when using GetBayes statistical consulting services."
   },
   "chatWidget": {
     "welcome": "Hi there! 👋",
