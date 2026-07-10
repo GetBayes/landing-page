@@ -6,7 +6,7 @@ const biostatistics: Topic = {
   datePublished: "2026-07-08",
   dateModified: "2026-07-08",
   serviceType: "Biostatistics Consulting",
-  related: ["q1-success-story", "health-use-cases", "article-statistics"],
+  related: ["q1-success-story", "health-use-cases", "article-statistics", "nursing-statistics"],
   locales: {
     tr: {
       metaTitle: "Biyoistatistik Danışmanlık — Tıp ve Sağlık Araştırmaları | GetBayes",

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import HowItWorks from "./components/HowItWorks";
+import SpeedQuality from "./components/SpeedQuality";
 import Services from "./components/Services";
 import FAQ from "./components/FAQ";
 import Testimonials from "./components/Testimonials";
@@ -71,6 +72,7 @@ export default async function Home({
           trustBar={dict.trustBar}
         />
         <HowItWorks howItWorks={dict.howItWorks} />
+        <SpeedQuality lang={lang as Locale} speedQuality={dict.speedQuality} />
         <Services services={dict.services} />
         <FAQ faq={dict.faq} />
         <Testimonials testimonials={dict.testimonials} />

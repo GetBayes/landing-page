@@ -56,6 +56,27 @@
       }
     ]
   },
+  "speedQuality": {
+    "eyebrow": "Sık Sorulan Bir Soru",
+    "headline": "Hız Bizi Kalitesiz mi Yapıyor?",
+    "subtext": "Hayır — tam tersi. İstatistiksel analiz, aslında haftalarca sürmesi gereken bir iş değil; biz kendi geliştirdiğimiz araçlar ve standartlaştırdığımız süreçle bu işi olması gereken hıza kavuşturduk. Hızımız atladığımız adımlardan değil, ortadan kaldırdığımız gereksiz beklemeden geliyor.",
+    "items": [
+      {
+        "title": "Kendi Geliştirdiğimiz Araçlar",
+        "description": "Veri temizleme, test seçimi ve rapor/tablo oluşturma gibi tekrar eden adımları yıllar içinde kendi araçlarımızla standartlaştırdık. Bu sayede zamanımızın çoğunu asıl değeri yaratan kısma — doğru yöntemi seçmeye ve sonucu doğru yorumlamaya — ayırabiliyoruz."
+      },
+      {
+        "title": "Aynı Kalite Kontrolü, Her Seferinde",
+        "description": "Her rapor varsayım kontrolleri, gerekçeli test seçimi, etki büyüklükleri ve yayın standardında tablolardan geçer. Hız bu adımları atlamaz — sadece aralarındaki beklemeyi ortadan kaldırır."
+      },
+      {
+        "title": "İddia Değil, Kanıt",
+        "description": "Kalitemizin en somut kanıtı: istatistiğini üstlendiğimiz bir cerrahi makale, Q1 (SCIE) endeksli bir dergide hakemden istatistik yöntemiyle ilgili tek bir revizyon talebi almadan kabul edildi.",
+        "linkKey": "q1-success-story",
+        "linkText": "Hikayeyi okuyun"
+      }
+    ]
+  },
   "services": {
     "eyebrow": "Hizmetlerimiz",
     "headline": "Araştırmanızın İhtiyacı Olan Her Şey",
@@ -93,7 +114,7 @@
       },
       {
         "question": "Bu kadar hızlı teslim kaliteyi düşürmez mi?",
-        "answer": "Hayır — tam tersi. Hız bir hedef değil, yılların birikimiyle standartlaştırdığımız ön inceleme-analiz-raporlama sürecinin ve modern araçların doğal sonucu. Her rapor aynı kalite kontrolünden geçer: varsayım kontrolleri, gerekçeli test seçimi, etki büyüklükleri ve yayın standardında tablolar. Teslim hızlı olsa da rapor, savunmada ve hakem sürecinde arkanızda durabileceğiniz akademik derinliktedir. %98 memnuniyet oranımız da buradan geliyor."
+        "answer": "Hayır — tam tersi. Hız bir hedef değil, kendi geliştirdiğimiz araçların ve yılların birikimiyle standartlaştırdığımız ön inceleme-analiz-raporlama sürecinin doğal sonucu — aslında bu iş bu kadar uzun sürmek zorunda değil, biz süreci optimize ettik. Her rapor aynı kalite kontrolünden geçer: varsayım kontrolleri, gerekçeli test seçimi, etki büyüklükleri ve yayın standardında tablolar. Karmaşık tez veya klinik çalışmalarda 15 dakika sadece analizin çalışma süresidir — yöntem tartışması, ek kontroller ve revizyonlar için ihtiyaç kadar zaman ayırırız; standart bir analiz için bu süre kısalır. Teslim hızlı olsa da rapor, savunmada ve hakem sürecinde arkanızda durabileceğiniz akademik derinliktedir: örneğin danışmanlığını yaptığımız bir cerrahi makale, Q1 (SCIE) endeksli bir dergide hakemden istatistik yöntemiyle ilgili tek bir revizyon talebi almadan kabul edildi — detaylarını 'Q1 Cerrahi Dergisinde Yayın: Revizyonsuz İstatistik Onayı' sayfamızda paylaştık."
       },
       {
         "question": "İstatistiksel raporda neler yer alır?",

@@ -6,7 +6,7 @@ const articleStatistics: Topic = {
   datePublished: "2026-07-08",
   dateModified: "2026-07-08",
   serviceType: "Journal Article Statistical Analysis",
-  related: ["q1-success-story", "thesis-statistics", "spss-analysis"],
+  related: ["q1-success-story", "thesis-statistics", "spss-analysis", "sample-report"],
   locales: {
     tr: {
       metaTitle: "Makale İstatistik Analizi — Dergi ve Revizyon Desteği | GetBayes",

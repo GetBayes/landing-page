@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GetBayes — English GEO Expansion Plan</title>
+<meta name="robots" content="noindex, nofollow">
+<style>
+  :root {
+    --bg: #0f1115;
+    --panel: #171a21;
+    --panel-2: #1e222b;
+    --border: #2a2f3a;
+    --text: #e6e8ec;
+    --text-dim: #9aa1ad;
+    --accent: #7dd3c0;
+    --accent-2: #e0b872;
+    --claude: #7dd3c0;
+    --user: #e0a35f;
+    --danger: #e07a7a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.55;
+    padding: 0 0 80px 0;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 48px 24px; }
+  header.hero {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 28px;
+    margin-bottom: 36px;
+  }
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 12px;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  h1 { font-size: 30px; margin: 0 0 10px 0; letter-spacing: -0.01em; }
+  .sub { color: var(--text-dim); font-size: 15px; max-width: 640px; }
+  .meta-row { display: flex; gap: 18px; margin-top: 18px; flex-wrap: wrap; font-size: 13px; color: var(--text-dim); }
+  .meta-row span b { color: var(--text); }
+
+  h2 { font-size: 20px; margin: 44px 0 6px 0; display: flex; align-items: center; gap: 10px; }
+  h2 .num { color: var(--accent); font-family: monospace; font-size: 15px; }
+  .section-note { color: var(--text-dim); font-size: 14px; margin-bottom: 18px; max-width: 700px; }
+
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 12px;
+  }
+  .card h3 { margin: 0 0 6px 0; font-size: 15px; }
+  .card p { margin: 4px 0; color: var(--text-dim); font-size: 14px; }
+  .card p.why { color: var(--text); }
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag.claude { background: rgba(125,211,192,0.15); color: var(--claude); border: 1px solid rgba(125,211,192,0.35); }
+  .tag.user { background: rgba(224,163,95,0.15); color: var(--user); border: 1px solid rgba(224,163,95,0.35); }
+  .tag.both { background: rgba(230,232,236,0.1); color: var(--text); border: 1px solid var(--border); }
+
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 13.5px; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--text-dim); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.03em; }
+  tr:last-child td { border-bottom: none; }
+  td.owner-claude { color: var(--claude); font-weight: 600; white-space: nowrap; }
+  td.owner-user { color: var(--user); font-weight: 600; white-space: nowrap; }
+  td.owner-both { color: var(--text-dim); font-weight: 600; white-space: nowrap; }
+
+  .split-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 16px;
+  }
+  @media (max-width: 720px) { .split-grid { grid-template-columns: 1fr; } }
+  .split-col {
+    border-radius: 10px;
+    padding: 18px 20px;
+    border: 1px solid var(--border);
+  }
+  .split-col.claude-col { background: rgba(125,211,192,0.06); border-color: rgba(125,211,192,0.3); }
+  .split-col.user-col { background: rgba(224,163,95,0.06); border-color: rgba(224,163,95,0.3); }
+  .split-col h3 { margin-top: 0; font-size: 14px; text-transform: uppercase; letter-spacing: 0.04em; }
+  .split-col ul { margin: 8px 0 0 0; padding-left: 18px; }
+  .split-col li { margin-bottom: 8px; font-size: 14px; }
+  .split-col li b { display: block; font-size: 14px; }
+  .split-col li span { color: var(--text-dim); font-size: 13px; }
+
+  .wave-list { list-style: none; margin: 0; padding: 0; }
+  .wave-list li {
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  .wave-list li .slug { color: var(--text-dim); font-family: monospace; font-size: 12.5px; }
+
+  .priority { font-family: monospace; font-size: 12px; padding: 2px 6px; border-radius: 4px; }
+  .priority.p1 { background: rgba(224,122,122,0.15); color: var(--danger); }
+  .priority.p2 { background: rgba(224,184,114,0.15); color: var(--accent-2); }
+  .priority.p3 { background: rgba(154,161,173,0.15); color: var(--text-dim); }
+
+  .callout {
+    border: 1px solid rgba(224,163,95,0.4);
+    background: rgba(224,163,95,0.07);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 20px 0;
+    font-size: 14px;
+  }
+  .callout b { color: var(--user); }
+
+  footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 12.5px; }
+  code { background: var(--panel-2); padding: 1px 6px; border-radius: 4px; font-size: 12.5px; border: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="eyebrow">Internal planning doc — not part of the site build</div>
+    <h1>English GEO Expansion Plan</h1>
+    <div class="sub">GetBayes is TR-first by deliberate design (100+ analyses, doctoral/medical/nursing/psychology thesis students). This plan adds a parallel English track aimed at AI answer engines (ChatGPT, Perplexity, Copilot, Claude web search) and international/English-speaking searchers — without touching the TR priority.</div>
+    <div class="meta-row">
+      <span>Created <b>2026-07-10</b></span>
+      <span>Status <b>In progress — Wave B shipped, off-site copy drafted</b></span>
+      <span>Scope <b>Content + off-site, no redesign</b></span>
+    </div>
+  </header>
+
+  <h2><span class="num">00</span> Why this matters, and why it's not urgent-urgent</h2>
+  <div class="section-note">
+    AI engines answer in the language of the query and lean hard on whatever indexable, quotable text exists in that language — they don't "translate" a Turkish page to answer an English question, they find a different source or ignore you. Google Maps/Business Profile is a separate, lower-priority lever here: it's inherently local-intent, so it stays Turkish-first regardless of this plan.
+  </div>
+  <div class="card">
+    <p class="why"><b>Current EN state:</b> every TR page has an EN mirror (hreflang, sitemap, same schema types), robots.txt already allows GPTBot / OAI-SearchBot / ClaudeBot / PerplexityBot / Google-Extended. So GetBayes is <i>crawlable</i> in English today — and the existing EN copy is already written natively per-locale (not machine-translated from TR), so it reads naturally to English speakers.</p>
+    <p class="why"><b>The real gaps:</b> (1) coverage — five field-specific query clusters (nursing, psychology, education, etc.) had no dedicated page in either language; (2) off-site presence — AI engines weight Reddit/Quora/review-site mentions heavily for "who should I hire" queries, and GetBayes has zero English-language footprint there. Neither is a rewrite problem.</p>
+  </div>
+
+  <h2><span class="num">01</span> Work split — who does what</h2>
+  <div class="section-note">Two lanes: I can write and ship code/content changes directly. Anything off-site (accounts, listings, community posting, payments) needs you — I can draft the copy, but the actual posting/registering has to come from your accounts.</div>
+
+  <div class="split-grid">
+    <div class="split-col claude-col">
+      <h3>Claude — in the codebase</h3>
+      <ul>
+        <li><b>Rewrite EN content, not translate it</b><span>New answer-first leads phrased around actual English query patterns, per topic. Keep TR untouched.</span></li>
+        <li><b>New EN-angled topics</b><span>International-facing pages (see Wave list below) — some are EN-only, no TR equivalent needed.</span></li>
+        <li><b>EN-specific FAQ items</b><span>Add English query variants to FAQPage schema per page (e.g. "do you use SPSS", "how much does dissertation stats cost" phrased the way English speakers ask it).</span></li>
+        <li><b>Meta titles/descriptions</b><span>Keyword-first EN titles matched to English search volume, not literal TR translations.</span></li>
+        <li><b>llms.txt EN section</b><span>Expand with English who-it's-for + typical-request lines, matching the TR section already there.</span></li>
+        <li><b>Internal linking</b><span>Cross-link new EN pages into related[] so they're discoverable, add to sitemap automatically via existing registry system.</span></li>
+      </ul>
+    </div>
+    <div class="split-col user-col">
+      <h3>You — off-site / accounts</h3>
+      <ul>
+        <li><b>Reddit presence</b><span>Genuine, non-spammy answers in r/AskStatistics, r/PhD, r/statistics, r/AskAcademia when someone asks a relevant question — link only when it's actually the best answer.</span></li>
+        <li><b>Quora</b><span>Same principle — answer 5-10 real questions ("who can help with my dissertation stats") with a genuinely useful answer, GetBayes mentioned once, not spammed.</span></li>
+        <li><b>Review/directory listings (EN)</b><span>Clutch, GoodFirms, UpCity — these are exactly the sources AI engines cite for "best statistical consulting service" type queries. I can draft the listing copy; submission needs your account.</span></li>
+        <li><b>LinkedIn company page</b><span>English posts/updates — increasingly crawled and cited by AI engines. I can draft post copy.</span></li>
+        <li><b>Google Search Console + Bing Webmaster</b><span>Submit EN URLs for indexing (still pending from the TR SEO audit too — same task, do both together).</span></li>
+        <li><b>English testimonials/reviews</b><span>Once real client reviews exist, an EN Trustpilot or G2-style profile matters more for GEO than another content page.</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="callout">
+    <b>Note on Google Business Profile:</b> not part of this plan. GBP is location/local-intent driven — someone searching in English for a statistics consultant in Ankara is a rare case, not worth restructuring the listing for. Its pending fix (setup/verification) stays filed under the general TR SEO backlog, not this plan.
+  </div>
+
+  <h2><span class="num">02</span> New EN content — target query archetypes</h2>
+  <div class="section-note">These are query shapes English speakers actually use — deliberately not 1:1 with the TR archetype list, because phrasing and intent differ.</div>
+  <table>
+    <tr><th>Archetype</th><th>Example query</th><th>Target page</th><th>Priority</th></tr>
+    <tr><td>Where-to-find</td><td>"hire a statistician for my dissertation"</td><td>find-statistician (EN rewrite)</td><td><span class="priority p1">P1</span></td></tr>
+    <tr><td>Price</td><td>"how much does dissertation statistics cost"</td><td>pricing (EN rewrite, intl bands already in playbook)</td><td><span class="priority p1">P1</span></td></tr>
+    <tr><td>Service-specific</td><td>"SPSS analysis service for thesis"</td><td>spss-analysis (EN rewrite)</td><td><span class="priority p1">P1</span></td></tr>
+    <tr><td>Trust/vetting</td><td>"is it safe to send my data to a statistician"</td><td>FAQ block, all EN pages</td><td><span class="priority p2">P2</span></td></tr>
+    <tr><td>Field-specific (new)</td><td>"nursing dissertation statistics help", "medical thesis biostatistics consultant"</td><td>new EN field pages</td><td><span class="priority p2">P2</span></td></tr>
+    <tr><td>Comparison (new)</td><td>"statistician vs statistics software vs DIY for dissertation"</td><td>comparison (EN rewrite, honest neutral table already exists in TR)</td><td><span class="priority p2">P2</span></td></tr>
+    <tr><td>How-to (new)</td><td>"how to report p-values APA style", "which statistical test should I use"</td><td>reporting-results, which-test (EN rewrite)</td><td><span class="priority p3">P3</span></td></tr>
+    <tr><td>Free-tool bait</td><td>"free dashboard for my research data"</td><td>power-bi page (EN rewrite, same free-offer honesty rules apply)</td><td><span class="priority p3">P3</span></td></tr>
+  </table>
+
+  <h2><span class="num">03</span> Rollout waves</h2>
+  <div class="section-note">Same mechanics as the TR content system — one file per topic, registered once, route/sitemap/hreflang/schema all automatic. No new infrastructure needed, this is a content wave, not a rebuild.</div>
+
+  <h3 style="font-size:15px; margin-top:24px;">Wave A — targeted FAQ/keyword additions on existing pages <span class="priority p3" style="margin-left:6px;">not yet started</span></h3>
+  <div class="section-note" style="margin-top:-4px;">Downgraded from a full rewrite after review: the existing EN copy on find-statistician/pricing/spss-analysis/comparison is already natively written, not translated. What's actually missing is a handful of EN-phrased long-tail FAQ entries these pages don't yet answer.</div>
+  <ul class="wave-list">
+    <li>find-statistician <span class="slug">/en/find-a-statistician</span> — add FAQ entries for "hire a statistician for dissertation" phrasing</li>
+    <li>pricing <span class="slug">/en/statistical-analysis-pricing</span> — already covers intl bands; check for "cost to hire a statistician" phrasing gap</li>
+    <li>spss-analysis <span class="slug">/en/spss-analysis-service</span> — check for "SPSS analysis service" vs "SPSS help" phrasing gap</li>
+  </ul>
+
+  <h3 style="font-size:15px; margin-top:24px;">Wave B — new field pages (dual-locale) <span class="priority p1" style="margin-left:6px; background:rgba(125,211,192,0.15); color:var(--claude);">shipped 2026-07-10</span></h3>
+  <div class="section-note" style="margin-top:-4px;">Built as dual-locale topics (the content system requires both TR+EN per page), so this wave also closed 3 of the 5 pending TR "Wave 2" field pages from the SEO backlog — one build, two goals. Swapped the originally planned "medical thesis" page for <b>education</b>: biostatistics.ts already targets medical/dental specialty residents directly, so a second page on the same audience would have cannibalized rather than added coverage.</div>
+  <ul class="wave-list">
+    <li>Nursing dissertation statistics <span class="slug">/en/nursing-dissertation-statistics · /tr/hemsirelik-tez-istatistik-analizi</span></li>
+    <li>Psychology dissertation statistics <span class="slug">/en/psychology-dissertation-statistics · /tr/psikoloji-tez-istatistik-analizi</span></li>
+    <li>Education thesis statistics <span class="slug">/en/education-thesis-statistics · /tr/egitim-bilimleri-tez-istatistik-analizi</span></li>
+  </ul>
+  <div class="section-note">Still open from the original 5-field backlog: <b>diş hekimliği (dentistry)</b> — dentistry overlaps biostatistics too but less completely than medicine did, worth a dedicated page later if this wave performs.</div>
+
+  <h3 style="font-size:15px; margin-top:24px;">Wave C — off-site copy <span class="priority p1" style="margin-left:6px; background:rgba(125,211,192,0.15); color:var(--claude);">drafted 2026-07-10, see §05</span></h3>
+  <ul class="wave-list">
+    <li>llms.txt — 3 new pages added</li>
+    <li>Reddit / Quora answer templates — drafted, ready for you to post from your own account</li>
+    <li>Directory listing blurb (Clutch/GoodFirms/UpCity style) — drafted</li>
+    <li>LinkedIn post draft — drafted</li>
+  </ul>
+
+  <h2><span class="num">04</span> What "done" looks like</h2>
+  <table>
+    <tr><th>Signal</th><th>How to check</th><th>Owner</th></tr>
+    <tr><td>EN pages indexed</td><td>Google Search Console + Bing Webmaster coverage report, EN URLs</td><td class="owner-user">You</td></tr>
+    <tr><td>AI engines citing GetBayes on EN queries</td><td>Manually test 5-10 target queries in ChatGPT/Perplexity/Copilot periodically</td><td class="owner-both">Both</td></tr>
+    <tr><td>Off-site EN mentions</td><td>Reddit/Quora answers live, directory listings approved</td><td class="owner-user">You</td></tr>
+    <tr><td>Content parity</td><td>EN pages have real answer-first leads + full FAQ sets, not thin translations</td><td class="owner-claude">Claude</td></tr>
+  </table>
+
+  <h2><span class="num">05</span> Off-site copy — ready to post</h2>
+  <div class="section-note">Drafted so you can paste and adapt. Post these as yourself, from your own accounts, only where the question is genuinely relevant — one honest mention beats ten spammy ones for how AI engines weight this content. Swap in specifics (a real subreddit thread, a real question) before posting.</div>
+
+  <div class="card">
+    <h3>Reddit — r/AskStatistics / r/PhD style answer</h3>
+    <p>Use when someone asks "where do I find a statistician for my thesis/dissertation" or similar. Answer the question generally first, mention GetBayes once at the end, not as the whole answer.</p>
+    <p class="why" style="white-space:pre-wrap; font-family:monospace; font-size:12.5px; background:var(--panel-2); padding:12px; border-radius:6px; border:1px solid var(--border);">A few things worth checking before you pick anyone:
+- Ask for a sample report (with method justification, not just output tables) — that's the single best quality signal.
+- Get the price in writing before they start, and ask specifically what happens if your advisor/committee wants revisions — that's where costs usually balloon.
+- If your study needs anything beyond basic tests (SEM, survival analysis, mixed models), ask if they've actually delivered that before, not just "can do it."
+
+Options range from freelance statisticians (personal but variable quality) to university stats units (often free but slow/unpredictable) to paid services. I run/use GetBayes (getbayes.me) for this — free initial assessment before you commit to anything either way, worth getting a second opinion regardless of who you end up using.</p>
+  </div>
+
+  <div class="card">
+    <h3>Quora — "How much does statistical analysis for a dissertation cost?" style answer</h3>
+    <p class="why" style="white-space:pre-wrap; font-family:monospace; font-size:12.5px; background:var(--panel-2); padding:12px; border-radius:6px; border:1px solid var(--border);">It varies a lot more than people expect — the real driver isn't the software (SPSS vs R vs Python all give identical results), it's the number of hypotheses and method complexity. A simple two-group comparison and a structural equation model are not the same job.
+
+Rough market ranges: simple analyses run $300-500, moderate scope (ANOVA/regression/reliability) $400-800, advanced methods (SEM, survival analysis, multilevel models) $1,000-1,500+. Hourly consultants charge $50-150/hr for student work.
+
+Two things that matter more than the headline number: whether revisions are included (this is the most common hidden cost — your advisor WILL ask for changes), and whether the price is fixed in writing before work starts vs. "we'll know once we start."
+
+I've used GetBayes (getbayes.me) for this — free assessment before any commitment, worth getting a quote to calibrate even if you go elsewhere.</p>
+  </div>
+
+  <div class="card">
+    <h3>Directory listing blurb (Clutch / GoodFirms / UpCity style, ~60 words)</h3>
+    <p class="why">GetBayes provides statistical analysis for academic research — theses, dissertations, journal articles and survey data. We handle data cleaning, test selection, and publication-ready reporting with full method justification, delivered same-day with free revisions. Built for graduate students, medical/dental specialty candidates, and researchers who need results they can defend at a viva or to a peer reviewer. Free initial assessment, written fixed pricing, no SPSS license required.</p>
+  </div>
+
+  <div class="card">
+    <h3>LinkedIn post draft</h3>
+    <p class="why">If you're staring at a dataset and a deadline: the analysis itself for most theses takes about 15 minutes once the data is clean — the real time sink is almost always data cleaning and figuring out which test actually fits your design. That's usually where we come in. Free assessment, written price before we start, free revisions after. getbayes.me</p>
+  </div>
+
+  <footer>
+    GetBayes / SEO — internal doc, <code>SEO/en-geo-plan.html</code>. Not linked from the site, not deployed, safe to keep local only.
+  </footer>
+
+</div>
+</body>
+</html>

@@ -57,38 +57,46 @@ const contentEn = {
       ],
     },
     {
-      title: "4. Data Security",
+      title: "4. Project and Research Data",
+      paragraphs: [
+        "When you engage us for a statistical analysis project, you may send us a dataset (e.g., an Excel, SPSS, or CSV file) and related research materials. This project data is used solely to perform the analysis you requested, is never used for any other purpose, is never used to train any model, and is never shared with any third party.",
+        "Access to project data is limited to the analyst(s) assigned to your engagement. See \"8. Data Retention\" below for how long project data is kept and how to request its deletion.",
+      ],
+    },
+    {
+      title: "5. Data Security",
       paragraphs: [
         "We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction. All communications through our website are encrypted via HTTPS.",
       ],
     },
     {
-      title: "5. Cookies and Tracking",
+      title: "6. Cookies and Tracking",
       paragraphs: [
         "Our website uses Google Analytics to understand visitor traffic, but only with your explicit consent. Analytics cookies are set solely if you accept them via the consent banner; if you decline, no analytics or tracking cookies are placed. You can change your choice at any time by clearing your browser's site data. We do not use cookies for advertising purposes.",
       ],
     },
     {
-      title: "6. Your Rights",
+      title: "7. Your Rights",
       paragraphs: [
         "You have the right to access, correct, or delete your personal data at any time. If you are located in Turkey, your rights are also protected under the Personal Data Protection Law (KVKK, Law No. 6698). If you are located in the European Economic Area, you have rights under the General Data Protection Regulation (GDPR).",
         "To exercise any of these rights, contact us at info@getbayes.me.",
       ],
     },
     {
-      title: "7. Data Retention",
+      title: "8. Data Retention",
       paragraphs: [
-        "We retain your personal data only for as long as necessary to fulfill the purposes for which it was collected, including to satisfy any legal or reporting requirements. Contact form submissions are retained for up to 12 months after the last communication.",
+        "Contact form submissions are retained for up to 12 months after the last communication.",
+        "Project data you send us for analysis (datasets and related research materials) is retained only for as long as needed to complete your engagement and any active revisions, and is automatically deleted no later than 90 days after final delivery. You can request earlier deletion at any time by writing to info@getbayes.me or via WhatsApp — we delete it the same day and confirm.",
       ],
     },
     {
-      title: "8. Changes to This Policy",
+      title: "9. Changes to This Policy",
       paragraphs: [
         "We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated revision date. Continued use of our services after changes are posted constitutes acceptance of the revised policy.",
       ],
     },
     {
-      title: "9. Contact",
+      title: "10. Contact",
       paragraphs: [
         "If you have questions about this Privacy Policy, contact us at info@getbayes.me.",
       ],
@@ -118,38 +126,46 @@ const contentTr = {
       ],
     },
     {
-      title: "4. Veri Güvenliği",
+      title: "4. Proje ve Araştırma Verisi",
+      paragraphs: [
+        "Bizden istatistiksel analiz hizmeti talep ettiğinizde bize bir veri seti (ör. Excel, SPSS veya CSV dosyası) ve ilgili araştırma materyallerini gönderebilirsiniz. Bu proje verisi yalnızca talep ettiğiniz analizi gerçekleştirmek için kullanılır, başka hiçbir amaçla kullanılmaz, herhangi bir modelin eğitiminde kullanılmaz ve hiçbir üçüncü tarafla paylaşılmaz.",
+        "Proje verisine erişim, projenize atanan analist(ler) ile sınırlıdır. Proje verisinin ne kadar süre saklandığı ve nasıl silinmesini talep edebileceğiniz için aşağıdaki \"8. Veri Saklama\" bölümüne bakınız.",
+      ],
+    },
+    {
+      title: "5. Veri Güvenliği",
       paragraphs: [
         "Kişisel verilerinizi yetkisiz erişim, değiştirme, ifşa veya imhaya karşı korumak için uygun teknik ve organizasyonel önlemler uyguluyoruz. Web sitemiz üzerinden yapılan tüm iletişimler HTTPS ile şifrelenmektedir.",
       ],
     },
     {
-      title: "5. Çerezler ve İzleme",
+      title: "6. Çerezler ve İzleme",
       paragraphs: [
         "Web sitemiz, ziyaretçi trafiğini anlamak için yalnızca açık onayınızla Google Analytics kullanmaktadır. Analiz çerezleri sadece onay bandı üzerinden kabul etmeniz halinde yerleştirilir; reddederseniz hiçbir analiz veya izleme çerezi kullanılmaz. Tercihinizi tarayıcınızın site verilerini temizleyerek istediğiniz zaman değiştirebilirsiniz. Reklam amaçlı çerez kullanmıyoruz.",
       ],
     },
     {
-      title: "6. Haklarınız",
+      title: "7. Haklarınız",
       paragraphs: [
         "Kişisel verilerinize erişme, düzeltme veya silme hakkına her zaman sahipsiniz. Türkiye'de bulunan kullanıcılar için haklarınız 6698 Sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında da korunmaktadır. Avrupa Ekonomik Alanı'nda bulunan kullanıcılar Genel Veri Koruma Tüzüğü (GDPR) kapsamındaki haklara sahiptir.",
         "Bu haklarınızı kullanmak için info@getbayes.me adresinden bize ulaşabilirsiniz.",
       ],
     },
     {
-      title: "7. Veri Saklama",
+      title: "8. Veri Saklama",
       paragraphs: [
-        "Kişisel verilerinizi yalnızca toplandığı amaçların yerine getirilmesi için gerekli olan süre boyunca saklıyoruz. Bu süre, yasal veya raporlama gereksinimlerini de kapsar. İletişim formu gönderimleri, son iletişimden itibaren 12 aya kadar saklanır.",
+        "İletişim formu gönderimleri, son iletişimden itibaren 12 aya kadar saklanır.",
+        "Analiz için bize gönderdiğiniz proje verisi (veri setleri ve ilgili araştırma materyalleri), yalnızca projenizin ve devam eden revizyonların tamamlanması için gerekli süre boyunca saklanır ve nihai teslimattan en geç 90 gün sonra otomatik olarak silinir. info@getbayes.me adresinden veya WhatsApp üzerinden yazarak istediğiniz an daha erken silinmesini talep edebilirsiniz — aynı gün siler ve onaylarız.",
       ],
     },
     {
-      title: "8. Politika Değişiklikleri",
+      title: "9. Politika Değişiklikleri",
       paragraphs: [
         "Bu Gizlilik Politikası'nı zaman zaman güncelleyebiliriz. Değişiklikler, güncellenmiş tarih ile bu sayfada yayınlanacaktır. Değişiklikler yayınlandıktan sonra hizmetlerimizi kullanmaya devam etmeniz, revize edilmiş politikayı kabul ettiğiniz anlamına gelir.",
       ],
     },
     {
-      title: "9. İletişim",
+      title: "10. İletişim",
       paragraphs: [
         "Bu Gizlilik Politikası hakkında sorularınız varsa info@getbayes.me adresinden bize ulaşabilirsiniz.",
       ],
@@ -213,7 +229,7 @@ export default async function PrivacyPage({
             {dict.legal.privacyTitle}
           </h1>
           <p className="text-sm font-sans text-foreground-muted mb-10">
-            {dict.legal.lastUpdated}: 2026-04-27
+            {dict.legal.lastUpdated}: 2026-07-10
           </p>
 
           <div className="space-y-8">

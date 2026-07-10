@@ -56,6 +56,27 @@
       }
     ]
   },
+  "speedQuality": {
+    "eyebrow": "A Question We Hear Often",
+    "headline": "Does Speed Mean Lower Quality?",
+    "subtext": "No — quite the opposite. Statistical analysis doesn't inherently need to take weeks; we built our own tools and standardized process to bring it down to the speed it should actually take. Our speed comes from removing unnecessary waiting, not from skipping steps.",
+    "items": [
+      {
+        "title": "Tools We Built Ourselves",
+        "description": "We've spent years standardizing repetitive steps — data cleaning, test selection, table and report generation — with tools we developed ourselves. That frees up our time for what actually matters: choosing the right method and interpreting the result correctly."
+      },
+      {
+        "title": "The Same Quality Control, Every Time",
+        "description": "Every report goes through assumption testing, justified test selection, effect sizes, and publication-standard tables. Speed doesn't skip these steps — it just removes the waiting between them."
+      },
+      {
+        "title": "Proof, Not a Claim",
+        "description": "The clearest evidence of our quality: a surgical manuscript we handled statistics for was accepted at a Q1 (SCIE)-indexed journal with zero reviewer revision requests on the statistical methodology.",
+        "linkKey": "q1-success-story",
+        "linkText": "Read the story"
+      }
+    ]
+  },
   "services": {
     "eyebrow": "Our Services",
     "headline": "Everything Your Research Needs",
@@ -93,7 +114,7 @@
       },
       {
         "question": "Doesn't such fast delivery hurt quality?",
-        "answer": "No — quite the opposite. Speed isn't a goal; it's the natural result of a review-analysis-reporting process we've standardized over years, plus modern tooling. Every report goes through the same quality checks: assumption testing, justified test selection, effect sizes, and publication-standard tables. Delivery is fast, but the report has the academic depth to stand behind you at your defense and under peer review. That's where our 98% satisfaction rate comes from."
+        "answer": "No — quite the opposite. Speed isn't a goal; it's the natural result of tools we built ourselves and a review-analysis-reporting process we've standardized over years — this work doesn't inherently need to take as long as it usually does, we optimized the process. Every report goes through the same quality checks: assumption testing, justified test selection, effect sizes, and publication-standard tables. For a complex thesis or clinical study, 15 minutes is just the analysis runtime — we take whatever time is needed for method discussion, extra checks, and revisions; a standard analysis is where that time shrinks. Delivery is fast, but the report has the academic depth to stand behind you at your defense and under peer review: for example, a surgical manuscript we handled statistics for was accepted at a Q1 (SCIE)-indexed journal with zero reviewer revision requests on the statistical methodology — we cover that case on our 'Published in a Q1 Surgery Journal With Zero Stats Revisions' page."
       },
       {
         "question": "What's included in the statistical report?",

@@ -82,6 +82,26 @@ export const topicSlugs = {
     en: "scale-reliability-analysis",
     tr: "olcek-guvenilirlik-analizi",
   },
+  "nursing-statistics": {
+    en: "nursing-dissertation-statistics",
+    tr: "hemsirelik-tez-istatistik-analizi",
+  },
+  "psychology-statistics": {
+    en: "psychology-dissertation-statistics",
+    tr: "psikoloji-tez-istatistik-analizi",
+  },
+  "education-statistics": {
+    en: "education-thesis-statistics",
+    tr: "egitim-bilimleri-tez-istatistik-analizi",
+  },
+  "sample-report": {
+    en: "sample-report",
+    tr: "ornek-rapor",
+  },
+  "analysis-process-case": {
+    en: "how-an-analysis-project-unfolds",
+    tr: "bir-analiz-projesi-nasil-ilerler",
+  },
 } as const;
 
 export type TopicKey = keyof typeof topicSlugs;
@@ -162,6 +182,26 @@ export const topicLabels: Record<TopicKey, Record<Locale, string>> = {
   "reliability-analysis": {
     en: "Scale Reliability Analysis",
     tr: "Ölçek Güvenilirlik Analizi",
+  },
+  "nursing-statistics": {
+    en: "Nursing Dissertation Statistics",
+    tr: "Hemşirelik Tez İstatistiği",
+  },
+  "psychology-statistics": {
+    en: "Psychology Dissertation Statistics",
+    tr: "Psikoloji Tez İstatistiği",
+  },
+  "education-statistics": {
+    en: "Education Thesis Statistics",
+    tr: "Eğitim Bilimleri Tez İstatistiği",
+  },
+  "sample-report": {
+    en: "Sample Report",
+    tr: "Örnek Rapor",
+  },
+  "analysis-process-case": {
+    en: "How an Analysis Project Unfolds",
+    tr: "Bir Analiz Projesi Nasıl İlerler?",
   },
 };
 

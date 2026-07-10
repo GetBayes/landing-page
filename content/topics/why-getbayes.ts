@@ -12,7 +12,7 @@ const whyGetbayes: Topic = {
   key: "why-getbayes",
   kind: "guide",
   datePublished: "2026-07-08",
-  dateModified: "2026-07-08",
+  dateModified: "2026-07-10",
   related: ["q1-success-story", "comparison", "about-us"],
   locales: {
     tr: {
@@ -94,7 +94,7 @@ const whyGetbayes: Topic = {
           type: "paragraphs",
           heading: "Hız değil, gerçek memnuniyet önceliğimiz",
           body: [
-            "Hızlı olmamız sık sorulan bir soruyu getiriyor: \"Bu kadar hızlıysa, kalite düşük müdür?\" Bizim için hız bir hedef değil, doğru kurgulanmış bir sürecin doğal sonucu. Asıl önceliğimiz, teslim süresinden bağımsız olarak doğru test seçimi, savunulabilir yöntem ve temiz raporlama. Nitekim %98 memnuniyet oranımız, işi hızlı bitirmemizden değil, araştırmacının süreç sonunda gerçekten rahatlamasından geliyor.",
+            "Hızlı olmamız sık sorulan bir soruyu getiriyor: \"Bu kadar hızlıysa, kalite düşük müdür?\" Hayır — tam tersi. İstatistiksel analiz aslında bu kadar uzun sürmesi gereken bir iş değil; biz kendi geliştirdiğimiz araçlar ve standartlaştırdığımız süreçle bu işi olması gereken hıza kavuşturduk. Hız bir hedef değil, doğru kurgulanmış bir sürecin doğal sonucu. Asıl önceliğimiz, teslim süresinden bağımsız olarak doğru test seçimi, savunulabilir yöntem ve temiz raporlama. Nitekim %98 memnuniyet oranımız, işi hızlı bitirmemizden değil, araştırmacının süreç sonunda gerçekten rahatlamasından geliyor.",
             "Bir işi \"olsun da geçsin\" diye yapmanın araştırmacıya faydası yok — savunmada sorulan \"bu testi neden kullandınız?\" sorusunda sizi yalnız bırakan bir rapor, işi iki kez yaptırmak demektir. Biz baştan doğru yapıp, sorularınıza sonuna kadar cevap vermeyi tercih ediyoruz. Farkımızı diğer seçeneklerle yan yana görmek isterseniz hizmet karşılaştırması sayfamıza, hikâyemiz için Biz Kimiz sayfamıza bakabilirsiniz.",
           ],
         },
@@ -109,7 +109,7 @@ const whyGetbayes: Topic = {
         {
           question: "Bu kadar hızlı teslim kaliteyi düşürmez mi?",
           answer:
-            "Hayır. Hız, iyi kurgulanmış bir sürecin sonucu; hedefimiz değil. Öncelik her zaman doğru test seçimi, savunulabilir yöntem ve temiz raporlama. Teslim hızlı olsa da rapor, savunmada ve hakem sürecinde arkanızda durabileceğiniz akademik derinliktedir. %98 memnuniyet oranımız da buradan geliyor.",
+            "Hayır. Hız, iyi kurgulanmış bir sürecin sonucu; hedefimiz değil. Öncelik her zaman doğru test seçimi, savunulabilir yöntem ve temiz raporlama. Karmaşık bir tez ya da klinik çalışmada 15 dakika yalnızca analizin çalışma süresidir; yöntem tartışması ve ek kontroller için ihtiyaç kadar zaman ayırırız. Teslim hızlı olsa da rapor, savunmada ve hakem sürecinde arkanızda durabileceğiniz akademik derinliktedir — bunun somut bir kanıtı olarak Q1 Cerrahi Dergisinde Yayın vaka sayfamıza bakabilirsiniz: istatistiği tarafımızca yapılan bir makale, hakemden istatistik yöntemiyle ilgili tek bir revizyon talebi almadan kabul edildi.",
         },
         {
           question: "Verimde eksik veya hata varsa geri mi çevirirsiniz?",
@@ -218,7 +218,7 @@ const whyGetbayes: Topic = {
           type: "paragraphs",
           heading: "Genuine satisfaction, not just speed, is our priority",
           body: [
-            "Our speed prompts a common question: \"If it's this fast, is the quality low?\" For us speed is not a goal but the natural result of a well-designed process. The real priority is correct test choice, defensible method and clean reporting, independent of delivery time. Our 98% satisfaction rate comes not from finishing fast but from researchers genuinely feeling relieved at the end.",
+            "Our speed prompts a common question: \"If it's this fast, is the quality low?\" No — quite the opposite. Statistical analysis doesn't inherently need to take as long as it usually does; we built our own tools and standardized process to bring it down to the speed it should actually take. Speed is not a goal but the natural result of a well-designed process. The real priority is correct test choice, defensible method and clean reporting, independent of delivery time. Our 98% satisfaction rate comes not from finishing fast but from researchers genuinely feeling relieved at the end.",
             "Doing a job just to get it over with helps no one — a report that leaves you alone when the committee asks \"why did you use this test?\" means doing the work twice. We prefer to do it right from the start and answer your questions all the way through. To see our difference side by side with other options, visit our services-compared page; for our story, see our About Us page.",
           ],
         },
@@ -233,7 +233,7 @@ const whyGetbayes: Topic = {
         {
           question: "Doesn't such fast delivery lower quality?",
           answer:
-            "No. Speed is the result of a well-designed process, not our goal. The priority is always correct test choice, defensible method and clean reporting. Even with fast delivery, the report has the academic depth you can stand behind at your defense and in review — that's where our 98% satisfaction rate comes from.",
+            "No. Speed is the result of a well-designed process, not our goal. The priority is always correct test choice, defensible method and clean reporting. For a complex thesis or clinical study, 15 minutes is just the analysis runtime — we take whatever time is needed for method discussion and extra checks. Even with fast delivery, the report has the academic depth you can stand behind at your defense and in review — for concrete evidence, see our Q1 Surgery Journal case page: a manuscript we handled statistics for was accepted with zero reviewer revision requests on the statistical methodology.",
         },
         {
           question: "Will you turn me away if my data has gaps or errors?",

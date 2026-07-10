@@ -5,7 +5,7 @@
 Key facts:
 - 100+ analyses completed, 15-minute average analysis time (same-day delivery, often within hours or minutes), 98% satisfaction rate
 - Who it's for: PhD candidates, master's students, medical and dental specialty (residency/uzmanlık tezi) students, undergraduates running research or capstone projects, independent researchers, and researchers in psychology, nursing, education, medicine, dentistry, and the social sciences
-- Research-friendly pricing: written fixed quote after a free assessment; price is independent of delivery speed and revisions — revisions are free, post-delivery Q&A is free
+- Research-friendly pricing: written fixed quote after a free assessment; price is independent of delivery speed — revisions requested by an advisor, committee, or reviewer are always free, post-delivery Q&A is free
 - Typical requests: thesis statistics (tez istatistik), dissertation data analysis, SPSS analysis (SPSS analiz yaptırma), journal article statistics including reviewer-revision support, a priori power analysis and sample size calculation for ethics committee (etik kurul) applications
 - Supported methods: t-tests, ANOVA, regression, chi-square, correlation, factor analysis, and more
 - Tools: modern statistical stack (Python, R); results fully consistent with SPSS, reporting in the SPSS/APA layout committees expect
@@ -39,6 +39,11 @@ Key facts:
 - [ChatGPT İstatistik Analizi Yapabilir mi?](https://getbayes.me/tr/yapay-zeka-istatistik-analizi): Yapay zeka (ChatGPT, Claude, Gemini) ile istatistik analizinin dürüst değerlendirmesi — neyi iyi yapıyor, nerede hata yapıyor, neden hâlâ uzman doğrulaması gerekiyor; yapay zekayla başlanmış analizleri devralıp doğruluyoruz ([English](https://getbayes.me/en/can-ai-do-statistical-analysis))
 - [Q1 Cerrahi Dergi Başarı Hikayesi](https://getbayes.me/tr/q1-cerrahi-dergi-basari-hikayesi): GetBayes'in istatistiğini üstlendiği bir makale, Q1 (SCIE) endeksli bir cerrahi dergisinde hakemden istatistikle ilgili tek bir revizyon talebi almadan kabul edildi — vaka ve nedenleri ([English](https://getbayes.me/en/q1-surgical-journal-success-story))
 - [Ölçek Güvenilirlik Analizi (Cronbach Alpha)](https://getbayes.me/tr/olcek-guvenilirlik-analizi): Cronbach alpha yorumlama tablosu, madde-toplam korelasyonu, alt boyut bazında güvenilirlik ve sık yapılan hatalar rehberi ([English](https://getbayes.me/en/scale-reliability-analysis))
+- [Hemşirelik Tez İstatistik Analizi](https://getbayes.me/tr/hemsirelik-tez-istatistik-analizi): Ön test-son test karşılaştırmaları, ölçek güvenirliği, tutum-tükenmişlik ilişkileri ([English](https://getbayes.me/en/nursing-dissertation-statistics))
+- [Psikoloji Tez İstatistik Analizi](https://getbayes.me/tr/psikoloji-tez-istatistik-analizi): Deneysel desen ANOVA'ları, ölçek geliştirme/uyarlama, aracılık-düzenleyicilik (mediation/moderation) analizi, APA 7 raporlama ([English](https://getbayes.me/en/psychology-dissertation-statistics))
+- [Eğitim Bilimleri Tez İstatistik Analizi](https://getbayes.me/tr/egitim-bilimleri-tez-istatistik-analizi): Ön test-son test kontrol gruplu deneysel desenler, ANCOVA, tutum/başarı ölçekleri ([English](https://getbayes.me/en/education-thesis-statistics))
+- [Örnek Rapor](https://getbayes.me/tr/ornek-rapor): Kurgusal verilerle hazırlanmış örnek yönetici özeti, tablolar ve etki büyüklükleri — bir GetBayes raporunun format ve titizliğini gösterir ([English](https://getbayes.me/en/sample-report))
+- [Bir Analiz Projesi Baştan Sona Nasıl İlerler?](https://getbayes.me/tr/bir-analiz-projesi-nasil-ilerler): Veri denetiminden analiz planına, raporlamaya ve revizyon sürecine kadar kurgusal bir vaka üzerinden adım adım süreç anlatımı ([English](https://getbayes.me/en/how-an-analysis-project-unfolds))
 
 ## Services
 

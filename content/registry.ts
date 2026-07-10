@@ -22,6 +22,11 @@ import aiStatistics from "./topics/ai-statistics";
 import regressionInterpretation from "./topics/regression-interpretation";
 import q1SuccessStory from "./topics/q1-success-story";
 import reliabilityAnalysis from "./topics/reliability-analysis";
+import nursingStatistics from "./topics/nursing-statistics";
+import psychologyStatistics from "./topics/psychology-statistics";
+import educationStatistics from "./topics/education-statistics";
+import sampleReport from "./topics/sample-report";
+import analysisProcessCase from "./topics/analysis-process-case";
 
 export const topics: Record<TopicKey, Topic> = {
   "thesis-statistics": thesisStatistics,
@@ -43,6 +48,11 @@ export const topics: Record<TopicKey, Topic> = {
   "regression-interpretation": regressionInterpretation,
   "q1-success-story": q1SuccessStory,
   "reliability-analysis": reliabilityAnalysis,
+  "nursing-statistics": nursingStatistics,
+  "psychology-statistics": psychologyStatistics,
+  "education-statistics": educationStatistics,
+  "sample-report": sampleReport,
+  "analysis-process-case": analysisProcessCase,
 };
 
 export const allTopics: Topic[] = Object.values(topics);

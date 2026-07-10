@@ -78,7 +78,10 @@
       "PowerShell(npx tsc --noEmit 2>&1 | Select-Object -First 20)",
       "PowerShell(npm run *)",
       "PowerShell(npx tsc --noEmit)",
-      "Bash(pnpm run *)"
+      "Bash(pnpm run *)",
+      "Bash(npx eslint *)",
+      "Bash(powershell -NoProfile -Command 'Get-Process -Name node -ErrorAction SilentlyContinue | Where-Object {$_.MainWindowTitle -eq '\\\\'''\\\\''} | Select-Object Id,Path')",
+      "Bash(powershell -NoProfile -Command \"Stop-Process -Id 42560 -Force\")"
     ]
   }
 }

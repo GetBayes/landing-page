@@ -4,8 +4,8 @@ const aboutUs: Topic = {
   key: "about-us",
   kind: "about",
   datePublished: "2026-07-08",
-  dateModified: "2026-07-08",
-  related: ["thesis-statistics", "health-use-cases", "find-statistician"],
+  dateModified: "2026-07-10",
+  related: ["thesis-statistics", "health-use-cases", "find-statistician", "sample-report", "analysis-process-case"],
   locales: {
     tr: {
       metaTitle: "Biz Kimiz? Veri Analizi Uzmanı Ekip — GetBayes | GetBayes",
@@ -13,7 +13,7 @@ const aboutUs: Topic = {
         "GetBayes: akademik araştırmalar için istatistik analizi yapan veri analizi uzmanı ekip. Neden bu işi yapıyoruz, nasıl çalışıyoruz, bizi farklı kılan nedir — tanışın.",
       headline: "Biz Kimiz?",
       lead: [
-        "GetBayes, akademik araştırmalar için istatistiksel analiz hizmeti veren, veri analizi uzmanlarından oluşan dinamik bir ekiptir. İstatistik, biyoistatistik ve veri bilimi alanlarında deneyimli ekibimiz; yüksek lisans ve doktora tezlerinden uzmanlık tezlerine, dergi makalelerinden kongre bildirilerine kadar nicel araştırmaların analiz yükünü üstlenir — analizin kendisini çoğunlukla 15 dakikada tamamlar, yayına hazır raporu aynı gün, çoğu zaman saatler hatta dakikalar içinde teslim eder.",
+        "GetBayes, akademik araştırmalar için istatistiksel analiz hizmeti veren, veri analizi uzmanlarından oluşan dinamik bir ekiptir. Uygulamalı istatistiksel analizde uzmanlaşan ekibimiz; yüksek lisans ve doktora tezlerinden uzmanlık tezlerine, dergi makalelerinden kongre bildirilerine kadar nicel araştırmaların analiz yükünü üstlenir — analizin kendisini çoğunlukla 15 dakikada tamamlar, yayına hazır raporu aynı gün, çoğu zaman saatler hatta dakikalar içinde teslim eder.",
         "Bugüne kadar 100'den fazla analizi tamamladık ve tek bir ilkeyle çalışıyoruz: araştırmacı analizle değil, araştırmasıyla uğraşmalı.",
       ],
       audience: {
@@ -46,7 +46,7 @@ const aboutUs: Topic = {
             "Şeffaf fiyat: kapsam netleşmeden iş başlamaz; fiyat baştan yazılı olarak verilir, sonradan değişmez",
             "Yayın standardı: tablolar ve grafikler APA veya hedef derginizin formatında hazırlanır",
             "Süreç boyunca erişilebilirlik: analiz iteratif bir süreçtir — eksikler, düzeltmeler ve eklemelerde her durumda bize yazabilirsiniz; teslimat sonrası da sorularınızı yanıtlamaya devam ederiz",
-            "Gizlilik: veriniz üçüncü kişilerle paylaşılmaz, talep hâlinde teslimat sonrası silinir",
+            "Gizlilik: veriniz üçüncü kişilerle paylaşılmaz, yalnızca projeniz için kullanılır; teslimattan en geç 90 gün sonra otomatik silinir, dilerseniz daha erken silinmesini istediğiniz an talep edebilirsiniz",
           ],
         },
         {
@@ -88,7 +88,7 @@ const aboutUs: Topic = {
         {
           question: "GetBayes ekibi kimlerden oluşuyor?",
           answer:
-            "İstatistik, biyoistatistik ve veri bilimi alanlarında deneyimli, akademik araştırma süreçlerinin içinden gelen veri analizi uzmanlarından oluşan dinamik bir ekibiz. Ankara merkezliyiz; Türkiye'nin ve dünyanın her yerindeki araştırmacılarla çevrimiçi çalışıyoruz.",
+            "100'den fazla akademik analiz tamamlamış, uygulamalı istatistiksel analizde uzmanlaşan, akademik araştırma süreçlerinin içinden gelen dinamik bir ekibiz. Ankara merkezliyiz; Türkiye'nin ve dünyanın her yerindeki araştırmacılarla çevrimiçi çalışıyoruz.",
         },
         {
           question: "Bu kadar hızlı olmanız kaliteden ödün verdiğiniz anlamına mı geliyor?",
@@ -110,6 +110,16 @@ const aboutUs: Topic = {
           answer:
             "İletişim formu, info@getbayes.me, WhatsApp (+90 501 651 0674) veya Instagram (@getbayes.me) üzerinden ulaşabilirsiniz. Mesajlara genellikle 1 saat içinde, ön değerlendirmelere 24 saat içinde dönüş yapıyoruz.",
         },
+        {
+          question: "Verilerim ne kadar süre saklanır, nasıl silinir?",
+          answer:
+            "Veriniz yalnızca projeniz için kullanılır ve üçüncü kişilerle paylaşılmaz. Teslimattan en geç 90 gün sonra otomatik olarak silinir; revizyon süreci devam ediyorsa bu süre revizyon bitene kadar uzar. Daha erken silinmesini isterseniz info@getbayes.me veya WhatsApp üzerinden talep etmeniz yeterli, aynı gün silip onaylıyoruz.",
+        },
+        {
+          question: "Revizyonlar gerçekten ücretsiz mi?",
+          answer:
+            "Danışmanınızın veya jürinin/hakemin istediği revizyonlar her zaman ücretsizdir — ayrı bir teklif çıkarmayız, aynı süreç içinde güncelleyip göndeririz. Kapsam gerçekten değişmediği sürece süreç boyunca gelen ek taleplerde de sizinle birlikte bir çözüm buluyoruz; amacımız savunmaya veya yayına siz hazır çıkana kadar yanınızda olmak, katı bir revizyon duvarı çıkarmak değil.",
+        },
       ],
       cta: {
         heading: "Tanışalım",
@@ -125,7 +135,7 @@ const aboutUs: Topic = {
         "GetBayes: a dynamic team of data analysis experts providing statistical analysis for academic research. Why we do this work, how we work, and what makes us different.",
       headline: "Who We Are",
       lead: [
-        "GetBayes is a dynamic team of data analysis experts providing statistical analysis services for academic research. With backgrounds in statistics, biostatistics and data science, we take on the analysis workload of quantitative research — from master's and PhD theses to specialty theses, journal manuscripts and conference abstracts. The analysis itself usually takes 15 minutes; publication-ready reports are delivered the same day, often within hours or even minutes.",
+        "GetBayes is a dynamic team of data analysis experts providing statistical analysis services for academic research. Specialized in applied statistical analysis, we take on the analysis workload of quantitative research — from master's and PhD theses to specialty theses, journal manuscripts and conference abstracts. The analysis itself usually takes 15 minutes; publication-ready reports are delivered the same day, often within hours or even minutes.",
         "We have completed more than 100 analyses to date, guided by a single principle: researchers should wrestle with their research, not with their analysis.",
       ],
       audience: {
@@ -158,7 +168,7 @@ const aboutUs: Topic = {
             "Transparent pricing: work never starts before scope is agreed; the price is given in writing up front and doesn't change",
             "Publication standard: tables and figures are formatted to APA or your target journal",
             "Reachable throughout: analysis is an iterative process — for gaps, corrections and additions you can write to us at any point, and we keep answering questions after delivery too",
-            "Confidentiality: your data is never shared with third parties and is deleted after delivery on request",
+            "Confidentiality: your data is never shared with third parties and is used only for your project; it's automatically deleted no later than 90 days after delivery, and you can request earlier deletion at any time",
           ],
         },
         {
@@ -200,7 +210,7 @@ const aboutUs: Topic = {
         {
           question: "Who is behind GetBayes?",
           answer:
-            "A dynamic team of data analysis experts with backgrounds in statistics, biostatistics and data science, who come from inside academic research. We're based in Ankara and work online with researchers across Türkiye and worldwide.",
+            "A dynamic team specialized in applied statistical analysis, with 100+ academic analyses completed, coming from inside academic research. We're based in Ankara and work online with researchers across Türkiye and worldwide.",
         },
         {
           question: "Does being this fast mean you compromise on quality?",
@@ -221,6 +231,16 @@ const aboutUs: Topic = {
           question: "How can I reach you?",
           answer:
             "Through the contact form, info@getbayes.me, WhatsApp (+90 501 651 0674) or Instagram (@getbayes.me). We typically reply to messages within an hour and to assessment requests within 24 hours.",
+        },
+        {
+          question: "How long is my data kept, and how does deletion work?",
+          answer:
+            "Your data is used only for your project and never shared with third parties. It's automatically deleted no later than 90 days after delivery; if a revision is still in progress, that window extends until the revision is done. Want it deleted sooner? Just ask via info@getbayes.me or WhatsApp — we delete it the same day and confirm.",
+        },
+        {
+          question: "Are revisions really free?",
+          answer:
+            "Revisions requested by your advisor or a committee/reviewer are always free — we don't send a new quote, we update the same delivery. As long as the scope genuinely hasn't changed, we also work through additional requests together as they come up during the process; the goal is staying with you until you're ready for the defense or publication, not putting up a rigid revision wall.",
         },
       ],
       cta: {
