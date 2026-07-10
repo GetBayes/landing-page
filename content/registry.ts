@@ -20,6 +20,7 @@ import comparison from "./topics/comparison";
 import whyGetbayes from "./topics/why-getbayes";
 import aiStatistics from "./topics/ai-statistics";
 import regressionInterpretation from "./topics/regression-interpretation";
+import q1SuccessStory from "./topics/q1-success-story";
 
 export const topics: Record<TopicKey, Topic> = {
   "thesis-statistics": thesisStatistics,
@@ -39,6 +40,7 @@ export const topics: Record<TopicKey, Topic> = {
   "why-getbayes": whyGetbayes,
   "ai-statistics": aiStatistics,
   "regression-interpretation": regressionInterpretation,
+  "q1-success-story": q1SuccessStory,
 };
 
 export const allTopics: Topic[] = Object.values(topics);

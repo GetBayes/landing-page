@@ -74,6 +74,10 @@ export const topicSlugs = {
     en: "how-to-interpret-regression-results",
     tr: "regresyon-sonuclari-nasil-yorumlanir",
   },
+  "q1-success-story": {
+    en: "q1-surgical-journal-success-story",
+    tr: "q1-cerrahi-dergi-basari-hikayesi",
+  },
 } as const;
 
 export type TopicKey = keyof typeof topicSlugs;
@@ -146,6 +150,10 @@ export const topicLabels: Record<TopicKey, Record<Locale, string>> = {
   "regression-interpretation": {
     en: "Interpreting Regression Results",
     tr: "Regresyon Sonuçları Nasıl Yorumlanır?",
+  },
+  "q1-success-story": {
+    en: "Q1 Surgical Journal Success Story",
+    tr: "Q1 Cerrahi Dergi Başarı Hikayesi",
   },
 };
 

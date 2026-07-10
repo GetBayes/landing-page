@@ -13,7 +13,7 @@ const whyGetbayes: Topic = {
   kind: "guide",
   datePublished: "2026-07-08",
   dateModified: "2026-07-08",
-  related: ["comparison", "about-us", "find-statistician"],
+  related: ["q1-success-story", "comparison", "about-us"],
   locales: {
     tr: {
       metaTitle:
