@@ -94,6 +94,10 @@ export const topicSlugs = {
     en: "education-thesis-statistics",
     tr: "egitim-bilimleri-tez-istatistik-analizi",
   },
+  "dentistry-statistics": {
+    en: "dentistry-thesis-statistics",
+    tr: "dis-hekimligi-tez-istatistik-analizi",
+  },
   "sample-report": {
     en: "sample-report",
     tr: "ornek-rapor",
@@ -194,6 +198,10 @@ export const topicLabels: Record<TopicKey, Record<Locale, string>> = {
   "education-statistics": {
     en: "Education Thesis Statistics",
     tr: "Eğitim Bilimleri Tez İstatistiği",
+  },
+  "dentistry-statistics": {
+    en: "Dentistry Thesis Statistics",
+    tr: "Diş Hekimliği Tez İstatistiği",
   },
   "sample-report": {
     en: "Sample Report",

@@ -25,6 +25,7 @@ import reliabilityAnalysis from "./topics/reliability-analysis";
 import nursingStatistics from "./topics/nursing-statistics";
 import psychologyStatistics from "./topics/psychology-statistics";
 import educationStatistics from "./topics/education-statistics";
+import dentistryStatistics from "./topics/dentistry-statistics";
 import sampleReport from "./topics/sample-report";
 import analysisProcessCase from "./topics/analysis-process-case";
 
@@ -51,6 +52,7 @@ export const topics: Record<TopicKey, Topic> = {
   "nursing-statistics": nursingStatistics,
   "psychology-statistics": psychologyStatistics,
   "education-statistics": educationStatistics,
+  "dentistry-statistics": dentistryStatistics,
   "sample-report": sampleReport,
   "analysis-process-case": analysisProcessCase,
 };

@@ -5,7 +5,7 @@ const healthUseCases: Topic = {
   kind: "guide",
   datePublished: "2026-07-08",
   dateModified: "2026-07-08",
-  related: ["biostatistics", "thesis-statistics", "article-statistics", "sample-report", "analysis-process-case"],
+  related: ["biostatistics", "thesis-statistics", "article-statistics", "dentistry-statistics", "sample-report", "analysis-process-case"],
   locales: {
     tr: {
       metaTitle: "Sağlık Bilimlerinde Örnek Analizler — 5 Vaka Çalışması | GetBayes",
