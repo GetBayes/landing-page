@@ -236,6 +236,43 @@
       "error": "Bir hata oluştu. Lütfen tekrar deneyin."
     }
   },
+  "stats": {
+    "logoText": "GetBayes",
+    "backToHome": "Ana Sayfaya Dön",
+    "meta": {
+      "title": "İstatistik Analizi Talebi ve Hızlı Ön Değerlendirme | GetBayes",
+      "description": "Çalışmanızın başlığını, verinizi ve amacınızı paylaşın; hızlıca ön değerlendirme yapıp size net bir fiyat teklifi sunalım. Saatler içinde dönüş."
+    },
+    "headline": "İstatistik Analizi Talebi",
+    "subtext": "Çalışmanızın başlığını, verinizi ve ulaşmak istediğiniz amacı paylaşın — hızlıca ön değerlendirme yapıp size net bir fiyat teklifiyle dönelim.",
+    "features": [
+      "Verinize hızlı ön inceleme",
+      "Amacınıza göre net fiyat teklifi",
+      "Dönüş saatler, hatta dakikalar içinde"
+    ],
+    "directContact": "Doğrudan ulaşmayı mı tercih edersiniz?",
+    "form": {
+      "fullName": "Ad Soyad",
+      "fullNamePlaceholder": "Adınız Soyadınız (isteğe bağlı)",
+      "title": "Çalışma Başlığı",
+      "titlePlaceholder": "Örn. Diyabet hastalarında uyku kalitesi ve HbA1c ilişkisi",
+      "contact": "E-posta veya Telefon",
+      "contactPlaceholder": "email@adresiniz.com veya telefon numaranız",
+      "dataFile": "Veri Dosyaları",
+      "dataFileHint": "Veri setiniz — Excel, CSV, SPSS (.sav) ve benzeri. En fazla 5 dosya, her biri 15 MB'a kadar.",
+      "docFile": "Dokümanlar (proje özeti, anket bilgileri, çalışma bilgileri vb.)",
+      "docFileHint": "Elinizdeki yardımcı dosyalar — proje özeti, anket/ölçek dokümanları, çalışma bilgileri ve diğer dokümanlar. PDF, Word ve daha fazlası. En fazla 5 dosya, her biri 15 MB'a kadar. İsteğe bağlı, ancak paylaşırsanız daha hızlı ve isabetli değerlendiririz.",
+      "fileButton": "Dosya Ekle",
+      "fileNone": "Henüz dosya seçilmedi",
+      "purpose": "Amacınız",
+      "purposePlaceholder": "Bu analizle neyi göstermek istiyorsunuz? Hangi karşılaştırmalar, hangi değişkenler, hangi sorular? Kısaca anlatın.",
+      "submit": "Analiz Talebi Gönder",
+      "success": "Talebiniz gönderildi! Ön değerlendirme ve fiyat için en kısa sürede size döneceğiz.",
+      "error": "Bir hata oluştu. Lütfen tekrar deneyin.",
+      "fileTooLarge": "Dosya çok büyük (her biri en fazla 15 MB). Lütfen daha küçük bir dosya seçin veya bize doğrudan gönderin.",
+      "fileTooMany": "En fazla 5 dosya ekleyebilirsiniz."
+    }
+  },
   "info": {
     "logoText": "GetBayes",
     "backToHome": "Ana Sayfaya Dön",

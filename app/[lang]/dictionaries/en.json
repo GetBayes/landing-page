@@ -228,6 +228,43 @@
       "error": "Something went wrong. Please try again."
     }
   },
+  "stats": {
+    "logoText": "GetBayes",
+    "backToHome": "Back to Home",
+    "meta": {
+      "title": "Statistical Analysis Request & Fast Preliminary Assessment | GetBayes",
+      "description": "Share your study title, your data, and your goal — we'll run a quick preliminary assessment and send you a clear quote. Reply within hours."
+    },
+    "headline": "Statistical Analysis Request",
+    "subtext": "Share your study title, your data, and what you want to achieve — we'll run a quick preliminary assessment and get back to you with a clear quote.",
+    "features": [
+      "Fast preliminary review of your data",
+      "A clear quote based on your goal",
+      "Reply within hours, even minutes"
+    ],
+    "directContact": "Prefer to reach us directly?",
+    "form": {
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Your full name (optional)",
+      "title": "Study Title",
+      "titlePlaceholder": "e.g. Sleep quality and HbA1c in patients with diabetes",
+      "contact": "Email or Phone",
+      "contactPlaceholder": "your@email.com or your phone number",
+      "dataFile": "Data Files",
+      "dataFileHint": "Your dataset — Excel, CSV, SPSS (.sav) and similar. Up to 5 files, 15 MB each.",
+      "docFile": "Documents (project summary, survey info, study details, etc.)",
+      "docFileHint": "Any supporting files you have — project summary, survey/scale documents, study details and other documents. PDF, Word and more. Up to 5 files, 15 MB each. Optional, but sharing them lets us assess faster and more accurately.",
+      "fileButton": "Add Files",
+      "fileNone": "No files selected yet",
+      "purpose": "Your Goal",
+      "purposePlaceholder": "What do you want this analysis to show? Which comparisons, which variables, which questions? Describe it briefly.",
+      "submit": "Send Analysis Request",
+      "success": "Request submitted! We'll get back to you shortly with a preliminary assessment and a quote.",
+      "error": "Something went wrong. Please try again.",
+      "fileTooLarge": "File is too large (max 15 MB each). Please choose a smaller file or send it to us directly.",
+      "fileTooMany": "You can attach up to 5 files."
+    }
+  },
   "info": {
     "logoText": "GetBayes",
     "backToHome": "Back to Home",

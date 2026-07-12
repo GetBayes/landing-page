@@ -45,6 +45,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry(home, "en", lastModified, "weekly", 1.0),
     entry(routePaths("power"), "tr", lastModified, "monthly", 0.8),
     entry(routePaths("power"), "en", lastModified, "monthly", 0.8),
+    entry(routePaths("stats"), "tr", lastModified, "monthly", 0.8),
+    entry(routePaths("stats"), "en", lastModified, "monthly", 0.8),
     entry(routePaths("info"), "tr", lastModified, "monthly", 0.7),
     entry(routePaths("info"), "en", lastModified, "monthly", 0.7),
     entry(routePaths("guides"), "tr", lastModified, "weekly", 0.8),
