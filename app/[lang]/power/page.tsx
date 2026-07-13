@@ -124,7 +124,10 @@ export default async function PowerPage({
 
       {/* Top bar with logo */}
       <header className="px-6 py-5">
-        <nav aria-label="Power page navigation">
+        <nav
+          aria-label="Power page navigation"
+          className="flex items-center justify-between gap-4"
+        >
           <a
             href={`/${lang}`}
             className="inline-flex items-center gap-2 text-foreground hover:opacity-70 transition-opacity"
@@ -136,12 +139,18 @@ export default async function PowerPage({
               &larr; {power.backToHome}
             </span>
           </a>
+          <a
+            href={localizedPath("powerCalculator", lang as Locale)}
+            className="text-xs font-sans text-foreground-muted hover:text-foreground transition-colors whitespace-nowrap"
+          >
+            {power.calculatorLink} &rarr;
+          </a>
         </nav>
       </header>
 
       {/* Main content */}
       <main id="main-content" className="flex-1 flex items-center justify-center px-6 py-12">
-        <div className="w-full max-w-lg">
+        <div className="w-full max-w-2xl">
           {/* Context strip */}
           <ScrollReveal>
             <div className="text-center mb-10">

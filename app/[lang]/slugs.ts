@@ -9,6 +9,10 @@ export type Locale = "en" | "tr";
 
 export const routeSlugs = {
   power: { en: "power", tr: "guc-analizi" },
+  powerCalculator: {
+    en: "power-calculator",
+    tr: "guc-analizi-hesaplayici",
+  },
   stats: { en: "stats-request", tr: "istatistik-talebi" },
   info: { en: "info", tr: "bilgi" },
   guides: { en: "guides", tr: "rehberler" },

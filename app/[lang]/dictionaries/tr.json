@@ -224,15 +224,52 @@
       "Teslim saatler, hatta dakikalar içinde"
     ],
     "directContact": "Doğrudan ulaşmayı mı tercih edersiniz?",
+    "calculatorLink": "Kendim hesaplayayım",
     "form": {
       "email": "E-posta",
       "emailPlaceholder": "email@adresiniz.com",
       "contact": "Instagram / WhatsApp",
       "contactPlaceholder": "@kullaniciadi veya telefon numarası",
-      "description": "Kısa Açıklama",
-      "descriptionPlaceholder": "Kısaca çalışmanızdan bahsedin — detayları birlikte konuşalım.",
-      "submit": "Güç Analizi Talep Et",
-      "success": "Talebiniz gönderildi! En kısa sürede size dönüş yapacağız.",
+
+      "summary": "Neyi araştırıyorsunuz?",
+      "summaryHelp": "Çalışmanızı kısaca, kendi cümlelerinizle anlatın. Amaç nedir, kimlerle çalışıyorsunuz?",
+      "summaryPlaceholder": "Örn. Diyabet hastalarında yeni bir diyet programının kan şekeri üzerindeki etkisini araştırıyorum.",
+
+      "comparison": "Kimi kimle / neyi neyle karşılaştıracaksınız?",
+      "comparisonHelp": "Çalışmanızda karşılaştırma nasıl olacak? Kaç grup var, ya da aynı kişileri öncesi–sonrası mı ölçeceksiniz?",
+      "comparisonPlaceholder": "Örn. Diyet uygulayan grup ile uygulamayan grubu karşılaştıracağım. / Aynı hastaların tedavi öncesi ve sonrası değerlerine bakacağım.",
+
+      "primary": "Asıl ölçmek istediğiniz sonuç nedir?",
+      "primaryHelp": "Çalışmanızın başarısını gösterecek en önemli ölçüm hangisi?",
+      "primaryPlaceholder": "Örn. Açlık kan şekeri değeri (mg/dL).",
+
+      "effect": "Beklediğiniz fark / etki",
+      "effectHelp": "Bir fikriniz varsa seçin; emin değilseniz sizin için biz tahmin ederiz.",
+      "effectUnknown": "Bilmiyorum",
+      "effectSmall": "Küçük",
+      "effectMedium": "Orta",
+      "effectLarge": "Büyük",
+      "effectCustom": "Kendim belirteceğim…",
+      "effectPlaceholder": "Örn. ortalama 15 mg/dL düşüş",
+
+      "secondary": "Ayrıca bakmak istediğiniz yan sonuçlar",
+      "secondaryHelp": "Varsa yazın; hesaplama için zorunlu değil.",
+      "secondaryPlaceholder": "Örn. Kilo değişimi, tansiyon.",
+
+      "references": "Referans çalışmalar",
+      "referencesWarning": "Lütfen yalnızca çalışmanızla en yakından örtüşen çalışmaları paylaşın. Popülasyonu, ölçüm yöntemi veya sonucu farklı çalışmalar güç hesabında güvenilir şekilde kullanılamaz ve sonucu yanıltabilir.",
+      "referenceFilesHelp": "En yakın 1-3 makaleyi PDF veya Word olarak yükleyin.",
+      "referenceFilesPlaceholder": "PDF / Word seçin",
+      "filesSelected": "{n} dosya seçildi",
+      "filesTooMany": "En fazla 5 dosya yükleyebilirsiniz.",
+
+      "dataFile": "Pilot / ön veriniz",
+      "dataFileHelp": "Elinizde pilot veya ön çalışma verisi varsa yükleyin — değişkenliği sizin yerinize hesaplarız.",
+      "dataFilePlaceholder": "CSV, Excel, SPSS, Stata…",
+
+      "optional": "opsiyonel",
+      "submit": "Talebi Gönder",
+      "success": "Talebiniz alındı! En kısa sürede size dönüş yapacağız.",
       "error": "Bir hata oluştu. Lütfen tekrar deneyin."
     }
   },

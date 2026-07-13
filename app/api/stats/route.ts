@@ -1,9 +1,19 @@
 import { Resend } from "resend";
 import { type NextRequest } from "next/server";
+import {
+  runAssessment,
+  formatAssessment,
+  priceHeadline,
+  type AssessmentInput,
+} from "./assess";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-// In-memory rate limiting: max 3 requests per IP per hour
+// Where the request (and its preliminary assessment) is sent.
+const RECIPIENT = "kutay@getbayes.me";
+
+// In-memory rate limiting: max 3 requests per IP per hour. This also caps how
+// often the assessment model runs, so spam can't run up the API bill.
 const rateMap = new Map<string, number[]>();
 const RATE_LIMIT = 3;
 const RATE_WINDOW = 60 * 60 * 1000; // 1 hour
@@ -13,6 +23,19 @@ const RATE_WINDOW = 60 * 60 * 1000; // 1 hour
 const MAX_FILE_BYTES = 15 * 1024 * 1024;
 const MAX_TOTAL_BYTES = 30 * 1024 * 1024;
 const MAX_FILES = 5;
+
+// Limits for what we hand to the assessment model (keeps latency + cost down).
+const MAX_PREVIEW_CHARS = 6000; // per text-like data file
+const MAX_PDF_BYTES = 10 * 1024 * 1024; // skip larger PDFs
+const MAX_PDFS = 3; // at most this many PDFs to the model
+const TEXT_PREVIEW_EXTS = new Set([
+  "csv",
+  "tsv",
+  "txt",
+  "json",
+  "md",
+  "rtf",
+]);
 
 setInterval(() => {
   const now = Date.now();
@@ -41,6 +64,11 @@ function isRateLimited(ip: string): boolean {
 }
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+function extOf(name: string): string {
+  const dot = name.lastIndexOf(".");
+  return dot === -1 ? "" : name.slice(dot + 1).toLowerCase();
+}
 
 export async function POST(request: NextRequest) {
   const ip =
@@ -89,6 +117,11 @@ export async function POST(request: NextRequest) {
   const docNames: string[] = [];
   let totalBytes = 0;
 
+  // Assessment inputs, gathered from the same buffers we read for attachments.
+  const dataPreviews: AssessmentInput["dataPreviews"] = [];
+  const pdfDocs: AssessmentInput["pdfDocs"] = [];
+  const otherFiles: AssessmentInput["otherFiles"] = [];
+
   // Prefix filenames so data and documents stay distinguishable in the inbox.
   for (const [file, prefix, names] of [
     ...dataFiles.map((f) => [f, "data", dataNames] as const),
@@ -109,38 +142,84 @@ export async function POST(request: NextRequest) {
     }
     const filename = file.name || `${prefix}-file`;
     names.push(filename);
-    attachments.push({
-      filename: `${prefix}-${filename}`,
-      content: Buffer.from(await file.arrayBuffer()),
-    });
+    const buffer = Buffer.from(await file.arrayBuffer());
+    attachments.push({ filename: `${prefix}-${filename}`, content: buffer });
+
+    // Feed the assessment model: text preview, native PDF, or a note.
+    const ext = extOf(filename);
+    const label = prefix === "data" ? "veri" : "doküman";
+    if (ext === "pdf") {
+      if (file.size <= MAX_PDF_BYTES && pdfDocs.length < MAX_PDFS) {
+        pdfDocs.push({
+          name: `[${label}] ${filename}`,
+          base64: buffer.toString("base64"),
+        });
+      } else {
+        otherFiles.push({
+          name: `[${label}] ${filename}`,
+          note: "PDF, model için fazla büyük — önizlenmedi",
+        });
+      }
+    } else if (TEXT_PREVIEW_EXTS.has(ext)) {
+      const text = buffer.toString("utf8").slice(0, MAX_PREVIEW_CHARS);
+      dataPreviews.push({ name: `[${label}] ${filename}`, text });
+    } else {
+      otherFiles.push({
+        name: `[${label}] ${filename}`,
+        note: `${ext || "bilinmeyen"} dosyası, ${(file.size / 1024).toFixed(0)} KB — önizlenemedi`,
+      });
+    }
   }
+
+  // Run the preliminary assessment. Never let a failure here block the email.
+  const assessment = await runAssessment({
+    title,
+    purpose,
+    fullName: fullName || undefined,
+    contact,
+    dataPreviews,
+    pdfDocs,
+    otherFiles,
+  });
 
   // Only use the contact as a reply-to if it's a valid email address;
   // otherwise it's a phone number and we surface it in the body instead.
   const replyTo = contact && EMAIL_RE.test(contact) ? contact : undefined;
 
+  const subject = assessment
+    ? `Analiz Talebi: ${title} — ~${priceHeadline(assessment)}${
+        fullName ? ` — ${fullName}` : ""
+      }`
+    : `Analiz Talebi: ${title}${fullName ? ` — ${fullName}` : ""}`;
+
+  const body = [
+    fullName ? `Ad Soyad: ${fullName}` : null,
+    `Çalışma başlığı: ${title}`,
+    `İletişim: ${contact}`,
+    `Veri dosyaları (${dataNames.length}): ${
+      dataNames.length ? dataNames.join(", ") : "(yok)"
+    }`,
+    `Dokümanlar (${docNames.length}): ${
+      docNames.length ? docNames.join(", ") : "(yok)"
+    }`,
+    ``,
+    `Amaç:`,
+    purpose,
+    ``,
+    assessment
+      ? formatAssessment(assessment)
+      : "(Ön değerlendirme bu talep için oluşturulamadı — talebi elle inceleyin.)",
+  ]
+    .filter((line) => line !== null)
+    .join("\n");
+
   try {
     await resend.emails.send({
       from: "GetBayes Stats <contact@getbayes.me>",
-      to: "info@getbayes.me",
+      to: RECIPIENT,
       replyTo,
-      subject: `Analysis Request: ${title}${fullName ? ` — ${fullName}` : ""}`,
-      text: [
-        fullName ? `Name: ${fullName}` : null,
-        `Study title: ${title}`,
-        `Contact: ${contact}`,
-        `Data files (${dataNames.length}): ${
-          dataNames.length ? dataNames.join(", ") : "(none)"
-        }`,
-        `Documents (${docNames.length}): ${
-          docNames.length ? docNames.join(", ") : "(none)"
-        }`,
-        ``,
-        `Goal:`,
-        purpose,
-      ]
-        .filter((line) => line !== null)
-        .join("\n"),
+      subject,
+      text: body,
       attachments: attachments.length ? attachments : undefined,
     });
 

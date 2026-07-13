@@ -216,15 +216,52 @@
       "Delivered within hours, even minutes"
     ],
     "directContact": "Prefer to reach us directly?",
+    "calculatorLink": "Calculate it yourself",
     "form": {
       "email": "Email",
       "emailPlaceholder": "your@email.com",
       "contact": "Instagram / WhatsApp",
       "contactPlaceholder": "@yourhandle or phone number",
-      "description": "Brief Description",
-      "descriptionPlaceholder": "Briefly describe your study — we'll discuss the details together.",
-      "submit": "Request Power Analysis",
-      "success": "Request submitted! We'll get back to you soon.",
+
+      "summary": "What are you researching?",
+      "summaryHelp": "Describe your study briefly in your own words. What's the goal, and who are you studying?",
+      "summaryPlaceholder": "e.g. I'm studying the effect of a new diet program on blood sugar in diabetic patients.",
+
+      "comparison": "Who or what will you compare?",
+      "comparisonHelp": "How does the comparison work? How many groups are there, or will you measure the same people before and after?",
+      "comparisonPlaceholder": "e.g. I'll compare a group on the diet with a group that isn't. / I'll look at the same patients before and after treatment.",
+
+      "primary": "What's the main outcome you want to measure?",
+      "primaryHelp": "Which single measurement best shows whether your study succeeded?",
+      "primaryPlaceholder": "e.g. Fasting blood glucose (mg/dL).",
+
+      "effect": "Expected difference / effect",
+      "effectHelp": "Pick one if you have a sense of it; if not, we'll estimate it for you.",
+      "effectUnknown": "Not sure",
+      "effectSmall": "Small",
+      "effectMedium": "Medium",
+      "effectLarge": "Large",
+      "effectCustom": "I'll specify…",
+      "effectPlaceholder": "e.g. average drop of 15 mg/dL",
+
+      "secondary": "Secondary outcomes you also want to look at",
+      "secondaryHelp": "Add them if any; not required for the calculation.",
+      "secondaryPlaceholder": "e.g. Weight change, blood pressure.",
+
+      "references": "Reference studies",
+      "referencesWarning": "Please share only studies that closely match yours. Studies with a different population, measurement method, or outcome can't be used reliably in the power calculation and may skew the result.",
+      "referenceFilesHelp": "Upload the 1-3 closest papers as PDF or Word.",
+      "referenceFilesPlaceholder": "Choose PDF / Word",
+      "filesSelected": "{n} files selected",
+      "filesTooMany": "You can upload at most 5 files.",
+
+      "dataFile": "Your pilot / preliminary data",
+      "dataFileHelp": "If you have pilot or preliminary data, upload it — we'll estimate the variability for you.",
+      "dataFilePlaceholder": "CSV, Excel, SPSS, Stata…",
+
+      "optional": "optional",
+      "submit": "Send Request",
+      "success": "Your request has been received! We'll get back to you shortly.",
       "error": "Something went wrong. Please try again."
     }
   },
