@@ -11,8 +11,7 @@ import type { Metadata } from "next";
 const baseUrl = "https://getbayes.me";
 const featureIcons = [Target, TrendingUp, Clock];
 
-// TODO: replace with the real "how to fill the form" video URL once recorded.
-const VIDEO_GUIDE_URL = "https://youtu.be/VIDEO_ID";
+const VIDEO_GUIDE_URL = "https://youtu.be/dnHaOcJRN1k";
 
 export async function generateStaticParams() {
   return [{ lang: "en" }, { lang: "tr" }];
