@@ -232,8 +232,8 @@
       "comparisonHelp": "How does the comparison work? How many groups are there, or will you measure the same people before and after?",
       "comparisonPlaceholder": "e.g. I'll compare a group on the diet with a group that isn't. / I'll look at the same patients before and after treatment.",
 
-      "primary": "Main outcome — separate multiple with commas",
-      "primaryHelp": "The measurement that best shows whether your study succeeded; ideally one, more isn't advised.",
+      "primary": "Main outcome — your study's core objective",
+      "primaryHelp": "The one core measurement your study is really built to answer — the one that shows whether it succeeded. Ideally one; separate multiple with commas.",
       "primaryPlaceholder": "e.g. Fasting blood glucose (mg/dL). Multiple: Fasting glucose, HbA1c",
 
       "effect": "Expected difference / effect",

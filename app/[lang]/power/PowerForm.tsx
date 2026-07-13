@@ -55,13 +55,10 @@ function FileField({
   const [tooMany, setTooMany] = useState(false);
   return (
     <div className="flex flex-col">
-      <label
-        htmlFor={id}
-        className="block text-sm font-sans font-medium text-foreground mb-1"
-      >
+      <span className="block text-sm font-sans font-medium text-foreground mb-1">
         {label}
         <OptionalTag label={optionalLabel} />
-      </label>
+      </span>
       {help && (
         <p className="text-xs font-sans text-foreground-muted mb-1.5 min-h-[2.5rem]">
           {help}

@@ -240,8 +240,8 @@
       "comparisonHelp": "Çalışmanızda karşılaştırma nasıl olacak? Kaç grup var, ya da aynı kişileri öncesi–sonrası mı ölçeceksiniz?",
       "comparisonPlaceholder": "Örn. Diyet uygulayan grup ile uygulamayan grubu karşılaştıracağım. / Aynı hastaların tedavi öncesi ve sonrası değerlerine bakacağım.",
 
-      "primary": "Asıl sonuç — birden fazlaysa virgülle ayırın",
-      "primaryHelp": "Çalışmanın başarısını gösteren en önemli ölçüm; ideali tektir, fazlasını önermeyiz.",
+      "primary": "Asıl ölçüm — çalışmanın ana amacı",
+      "primaryHelp": "Çalışmanızın ana amacı, yani başarısını gösteren o tek asıl ölçüm nedir? İdeali tektir; birden fazlaysa virgülle ayırın.",
       "primaryPlaceholder": "Örn. Açlık kan şekeri (mg/dL). Birden fazlaysa: Açlık kan şekeri, HbA1c",
 
       "effect": "Beklediğiniz fark / etki",
