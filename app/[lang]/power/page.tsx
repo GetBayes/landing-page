@@ -4,11 +4,15 @@ import { notFound } from "next/navigation";
 import { Target, TrendingUp, Clock, Mail, MessageCircle } from "lucide-react";
 import ScrollReveal from "../components/ScrollReveal";
 import InstagramIcon from "../components/InstagramIcon";
+import YouTubeIcon from "../components/YouTubeIcon";
 import PowerForm from "./PowerForm";
 import type { Metadata } from "next";
 
 const baseUrl = "https://getbayes.me";
 const featureIcons = [Target, TrendingUp, Clock];
+
+// TODO: replace with the real "how to fill the form" video URL once recorded.
+const VIDEO_GUIDE_URL = "https://youtu.be/VIDEO_ID";
 
 export async function generateStaticParams() {
   return [{ lang: "en" }, { lang: "tr" }];
@@ -183,6 +187,23 @@ export default async function PowerPage({
                 );
               })}
             </ul>
+          </ScrollReveal>
+
+          {/* How-to video guide */}
+          <ScrollReveal>
+            <div className="mb-8 flex justify-center">
+              <a
+                href={VIDEO_GUIDE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 px-5 py-3 bg-[#FF0000]/5 border border-[#FF0000]/25 rounded-xl hover:border-[#FF0000] hover:shadow-sm transition-all group"
+              >
+                <YouTubeIcon size={28} className="shrink-0 group-hover:scale-110 transition-transform" />
+                <span className="text-sm font-sans font-medium text-foreground">
+                  {power.videoGuide}
+                </span>
+              </a>
+            </div>
           </ScrollReveal>
 
           {/* Form */}

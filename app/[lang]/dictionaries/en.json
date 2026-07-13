@@ -215,6 +215,7 @@
       "Power validation with your existing data",
       "Delivered within hours, even minutes"
     ],
+    "videoGuide": "Feeling stuck or need a hand? Let's fill the form out together in a short video",
     "directContact": "Prefer to reach us directly?",
     "calculatorLink": "Calculate it yourself",
     "form": {
@@ -231,9 +232,9 @@
       "comparisonHelp": "How does the comparison work? How many groups are there, or will you measure the same people before and after?",
       "comparisonPlaceholder": "e.g. I'll compare a group on the diet with a group that isn't. / I'll look at the same patients before and after treatment.",
 
-      "primary": "What's the main outcome you want to measure?",
-      "primaryHelp": "Which single measurement best shows whether your study succeeded?",
-      "primaryPlaceholder": "e.g. Fasting blood glucose (mg/dL).",
+      "primary": "Main outcome — separate multiple with commas",
+      "primaryHelp": "The measurement that best shows whether your study succeeded; ideally one, more isn't advised.",
+      "primaryPlaceholder": "e.g. Fasting blood glucose (mg/dL). Multiple: Fasting glucose, HbA1c",
 
       "effect": "Expected difference / effect",
       "effectHelp": "Pick one if you have a sense of it; if not, we'll estimate it for you.",

@@ -223,6 +223,7 @@
       "Mevcut verilerinizle güç doğrulama",
       "Teslim saatler, hatta dakikalar içinde"
     ],
+    "videoGuide": "Kafanız mı karıştı, yardıma mı ihtiyacınız var? Kısa videoda formu birlikte dolduralım",
     "directContact": "Doğrudan ulaşmayı mı tercih edersiniz?",
     "calculatorLink": "Kendim hesaplayayım",
     "form": {
@@ -239,9 +240,9 @@
       "comparisonHelp": "Çalışmanızda karşılaştırma nasıl olacak? Kaç grup var, ya da aynı kişileri öncesi–sonrası mı ölçeceksiniz?",
       "comparisonPlaceholder": "Örn. Diyet uygulayan grup ile uygulamayan grubu karşılaştıracağım. / Aynı hastaların tedavi öncesi ve sonrası değerlerine bakacağım.",
 
-      "primary": "Asıl ölçmek istediğiniz sonuç nedir?",
-      "primaryHelp": "Çalışmanızın başarısını gösterecek en önemli ölçüm hangisi?",
-      "primaryPlaceholder": "Örn. Açlık kan şekeri değeri (mg/dL).",
+      "primary": "Asıl sonuç — birden fazlaysa virgülle ayırın",
+      "primaryHelp": "Çalışmanın başarısını gösteren en önemli ölçüm; ideali tektir, fazlasını önermeyiz.",
+      "primaryPlaceholder": "Örn. Açlık kan şekeri (mg/dL). Birden fazlaysa: Açlık kan şekeri, HbA1c",
 
       "effect": "Beklediğiniz fark / etki",
       "effectHelp": "Bir fikriniz varsa seçin; emin değilseniz sizin için biz tahmin ederiz.",
