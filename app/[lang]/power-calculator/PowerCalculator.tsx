@@ -25,8 +25,10 @@ import { exportSvgToPng, pageBackground } from "./exportPng";
 type Lang = "en" | "tr";
 type Mode = "size" | "power";
 
+// text-base (16px) on mobile prevents iOS Safari from auto-zooming on focus;
+// sm:text-sm keeps the original 14px sizing on larger screens.
 const fieldClass =
-  "w-full px-3 py-2.5 bg-background border border-border rounded-lg font-sans text-sm text-foreground placeholder:text-foreground-muted/50 focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition-colors";
+  "w-full px-3 py-2.5 bg-background border border-border rounded-lg font-sans text-base sm:text-sm text-foreground placeholder:text-foreground-muted/50 focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition-colors";
 
 const num = (s: string) => {
   const v = parseFloat(s.replace(",", "."));

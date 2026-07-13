@@ -21,8 +21,10 @@ function OptionalTag({ label }: { label: string }) {
   );
 }
 
+// text-base (16px) on mobile prevents iOS Safari from auto-zooming on focus;
+// sm:text-sm keeps the original 14px sizing on larger screens.
 const fieldClass =
-  "w-full px-4 py-3 bg-background border border-border rounded-lg font-sans text-sm text-foreground placeholder:text-foreground-muted/50 focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition-colors";
+  "w-full px-4 py-3 bg-background border border-border rounded-lg font-sans text-base sm:text-sm text-foreground placeholder:text-foreground-muted/50 focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition-colors";
 
 function FileField({
   id,
