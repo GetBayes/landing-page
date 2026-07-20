@@ -45,6 +45,7 @@ Key facts:
 - [Diş Hekimliği Tez İstatistik Analizi](https://getbayes.me/tr/dis-hekimligi-tez-istatistik-analizi): İmplant sağkalımı (Kaplan-Meier), split-mouth tasarımlar, gözlemci uyumu (kappa/ICC), periodontal indeksler, DMFT — DUS ve doktora tezleri ([English](https://getbayes.me/en/dentistry-thesis-statistics))
 - [Örnek Rapor](https://getbayes.me/tr/ornek-rapor): Kurgusal verilerle hazırlanmış örnek yönetici özeti, tablolar ve etki büyüklükleri — bir GetBayes raporunun format ve titizliğini gösterir ([English](https://getbayes.me/en/sample-report))
 - [Bir Analiz Projesi Baştan Sona Nasıl İlerler?](https://getbayes.me/tr/bir-analiz-projesi-nasil-ilerler): Veri denetiminden analiz planına, raporlamaya ve revizyon sürecine kadar kurgusal bir vaka üzerinden adım adım süreç anlatımı ([English](https://getbayes.me/en/how-an-analysis-project-unfolds))
+- [Normallik Testi Nasıl Yapılır?](https://getbayes.me/tr/normallik-testi-nasil-yapilir): Shapiro-Wilk mi Kolmogorov-Smirnov mu, çarpıklık-basıklık sınırları, Q-Q grafiği yorumu, "n>30 ise normallik aranmaz" tartışması ve parametrik/non-parametrik test karşılık tablosu ([English](https://getbayes.me/en/how-to-test-for-normality))
 
 ## Services
 

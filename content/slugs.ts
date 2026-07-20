@@ -106,6 +106,10 @@ export const topicSlugs = {
     en: "how-an-analysis-project-unfolds",
     tr: "bir-analiz-projesi-nasil-ilerler",
   },
+  "normality-test": {
+    en: "how-to-test-for-normality",
+    tr: "normallik-testi-nasil-yapilir",
+  },
 } as const;
 
 export type TopicKey = keyof typeof topicSlugs;
@@ -210,6 +214,10 @@ export const topicLabels: Record<TopicKey, Record<Locale, string>> = {
   "analysis-process-case": {
     en: "How an Analysis Project Unfolds",
     tr: "Bir Analiz Projesi Nasıl İlerler?",
+  },
+  "normality-test": {
+    en: "Testing for Normality",
+    tr: "Normallik Testi Nasıl Yapılır?",
   },
 };
 

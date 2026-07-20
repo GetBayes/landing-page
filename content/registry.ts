@@ -28,6 +28,7 @@ import educationStatistics from "./topics/education-statistics";
 import dentistryStatistics from "./topics/dentistry-statistics";
 import sampleReport from "./topics/sample-report";
 import analysisProcessCase from "./topics/analysis-process-case";
+import normalityTest from "./topics/normality-test";
 
 export const topics: Record<TopicKey, Topic> = {
   "thesis-statistics": thesisStatistics,
@@ -55,6 +56,7 @@ export const topics: Record<TopicKey, Topic> = {
   "dentistry-statistics": dentistryStatistics,
   "sample-report": sampleReport,
   "analysis-process-case": analysisProcessCase,
+  "normality-test": normalityTest,
 };
 
 export const allTopics: Topic[] = Object.values(topics);

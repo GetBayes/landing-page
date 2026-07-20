@@ -4,8 +4,8 @@ const regressionInterpretation: Topic = {
   key: "regression-interpretation",
   kind: "guide",
   datePublished: "2026-07-10",
-  dateModified: "2026-07-10",
-  related: ["which-test", "reporting-results", "sample-size"],
+  dateModified: "2026-07-20",
+  related: ["which-test", "normality-test", "reporting-results", "sample-size"],
   locales: {
     tr: {
       metaTitle:

@@ -4,8 +4,8 @@ const reliabilityAnalysis: Topic = {
   key: "reliability-analysis",
   kind: "guide",
   datePublished: "2026-07-10",
-  dateModified: "2026-07-10",
-  related: ["survey-analysis", "sample-size", "which-test", "psychology-statistics", "analysis-process-case"],
+  dateModified: "2026-07-20",
+  related: ["survey-analysis", "sample-size", "which-test", "normality-test", "psychology-statistics", "analysis-process-case"],
   locales: {
     tr: {
       metaTitle:
