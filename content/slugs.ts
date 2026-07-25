@@ -110,6 +110,10 @@ export const topicSlugs = {
     en: "how-to-test-for-normality",
     tr: "normallik-testi-nasil-yapilir",
   },
+  "factor-analysis": {
+    en: "exploratory-and-confirmatory-factor-analysis",
+    tr: "faktor-analizi-nasil-yapilir",
+  },
 } as const;
 
 export type TopicKey = keyof typeof topicSlugs;
@@ -218,6 +222,10 @@ export const topicLabels: Record<TopicKey, Record<Locale, string>> = {
   "normality-test": {
     en: "Testing for Normality",
     tr: "Normallik Testi Nasıl Yapılır?",
+  },
+  "factor-analysis": {
+    en: "Factor Analysis (EFA & CFA)",
+    tr: "Faktör Analizi ve Ölçek Geçerliği",
   },
 };
 

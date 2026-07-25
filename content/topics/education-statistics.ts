@@ -4,9 +4,9 @@ const educationStatistics: Topic = {
   key: "education-statistics",
   kind: "service",
   datePublished: "2026-07-10",
-  dateModified: "2026-07-10",
+  dateModified: "2026-07-25",
   serviceType: "Education Thesis Statistical Analysis",
-  related: ["thesis-statistics", "which-test", "reliability-analysis", "spss-analysis"],
+  related: ["thesis-statistics", "which-test", "reliability-analysis", "factor-analysis", "spss-analysis"],
   locales: {
     tr: {
       metaTitle: "Eğitim Bilimleri Tez İstatistik Analizi — Yüksek Lisans ve Doktora | GetBayes",

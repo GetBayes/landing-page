@@ -4,9 +4,9 @@ const psychologyStatistics: Topic = {
   key: "psychology-statistics",
   kind: "service",
   datePublished: "2026-07-10",
-  dateModified: "2026-07-10",
+  dateModified: "2026-07-25",
   serviceType: "Psychology Dissertation Statistical Analysis",
-  related: ["thesis-statistics", "sample-size", "reliability-analysis", "regression-interpretation"],
+  related: ["thesis-statistics", "sample-size", "reliability-analysis", "factor-analysis", "regression-interpretation"],
   locales: {
     tr: {
       metaTitle: "Psikoloji Tez İstatistik Analizi — Yüksek Lisans ve Doktora | GetBayes",
