@@ -30,6 +30,7 @@ import sampleReport from "./topics/sample-report";
 import analysisProcessCase from "./topics/analysis-process-case";
 import normalityTest from "./topics/normality-test";
 import factorAnalysis from "./topics/factor-analysis";
+import mediationModeration from "./topics/mediation-moderation";
 
 export const topics: Record<TopicKey, Topic> = {
   "thesis-statistics": thesisStatistics,
@@ -59,6 +60,7 @@ export const topics: Record<TopicKey, Topic> = {
   "analysis-process-case": analysisProcessCase,
   "normality-test": normalityTest,
   "factor-analysis": factorAnalysis,
+  "mediation-moderation": mediationModeration,
 };
 
 export const allTopics: Topic[] = Object.values(topics);

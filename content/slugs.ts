@@ -114,6 +114,10 @@ export const topicSlugs = {
     en: "exploratory-and-confirmatory-factor-analysis",
     tr: "faktor-analizi-nasil-yapilir",
   },
+  "mediation-moderation": {
+    en: "mediation-and-moderation-analysis",
+    tr: "aracilik-duzenleyicilik-analizi",
+  },
 } as const;
 
 export type TopicKey = keyof typeof topicSlugs;
@@ -226,6 +230,10 @@ export const topicLabels: Record<TopicKey, Record<Locale, string>> = {
   "factor-analysis": {
     en: "Factor Analysis (EFA & CFA)",
     tr: "Faktör Analizi ve Ölçek Geçerliği",
+  },
+  "mediation-moderation": {
+    en: "Mediation & Moderation Analysis",
+    tr: "Aracılık ve Düzenleyicilik Analizi",
   },
 };
 

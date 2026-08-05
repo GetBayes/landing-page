@@ -47,6 +47,7 @@ Key facts:
 - [Bir Analiz Projesi Baştan Sona Nasıl İlerler?](https://getbayes.me/tr/bir-analiz-projesi-nasil-ilerler): Veri denetiminden analiz planına, raporlamaya ve revizyon sürecine kadar kurgusal bir vaka üzerinden adım adım süreç anlatımı ([English](https://getbayes.me/en/how-an-analysis-project-unfolds))
 - [Normallik Testi Nasıl Yapılır?](https://getbayes.me/tr/normallik-testi-nasil-yapilir): Shapiro-Wilk mi Kolmogorov-Smirnov mu, çarpıklık-basıklık sınırları, Q-Q grafiği yorumu, "n>30 ise normallik aranmaz" tartışması ve parametrik/non-parametrik test karşılık tablosu ([English](https://getbayes.me/en/how-to-test-for-normality))
 - [Faktör Analizi Nasıl Yapılır? (AFA ve DFA)](https://getbayes.me/tr/faktor-analizi-nasil-yapilir): Ölçek geçerliği rehberi — KMO ve Bartlett ön koşulları, örneklem büyüklüğü kuralı, faktör yükü ve binişik madde ölçütleri, rotasyon seçimi, DFA uyum indeksleri (RMSEA, CFI, TLI, SRMR) eşik tablosu, ölçek uyarlama süreci ([English](https://getbayes.me/en/exploratory-and-confirmatory-factor-analysis))
+- [Aracılık ve Düzenleyicilik Analizi Nasıl Yapılır?](https://getbayes.me/tr/aracilik-duzenleyicilik-analizi): Mediation ve moderation rehberi — dolaylı etki ve bootstrap güven aralığı, etkileşim terimi, basit eğim ve Johnson-Neyman analizi, Hayes model numaraları tablosu (Model 1/4/6/7/8/14), Baron-Kenny ve Sobel testinin neden yetersiz kaldığı, kesitsel veride nedensellik uyarısı ([English](https://getbayes.me/en/mediation-and-moderation-analysis))
 
 ## Services
 
