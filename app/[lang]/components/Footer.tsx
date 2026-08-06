@@ -20,9 +20,21 @@ type FooterProps = {
   lang: Locale;
   nav: Dictionary["nav"];
   footer: Dictionary["footer"];
+  // The section links point at homepage anchors. On the homepage they stay
+  // bare fragments so the browser scrolls instead of navigating; everywhere
+  // else they need the homepage path in front of them to resolve at all.
+  onHomepage?: boolean;
 };
 
-export default function Footer({ lang, nav, footer }: FooterProps) {
+export default function Footer({
+  lang,
+  nav,
+  footer,
+  onHomepage = false,
+}: FooterProps) {
+  const section = (anchor: string) =>
+    onHomepage ? anchor : `/${lang}${anchor}`;
+
   return (
     <footer className="bg-foreground text-accent-foreground" role="contentinfo">
       <div className="max-w-6xl mx-auto px-6 py-12">
@@ -37,16 +49,16 @@ export default function Footer({ lang, nav, footer }: FooterProps) {
 
           {/* Nav links */}
           <nav aria-label="Footer navigation" className="flex flex-col gap-3">
-            <a href="#how-it-works" className="text-sm font-sans text-accent-foreground/60 hover:text-accent-foreground transition-colors">
+            <a href={section("#how-it-works")} className="text-sm font-sans text-accent-foreground/60 hover:text-accent-foreground transition-colors">
               {nav.howItWorks}
             </a>
-            <a href="#services" className="text-sm font-sans text-accent-foreground/60 hover:text-accent-foreground transition-colors">
+            <a href={section("#services")} className="text-sm font-sans text-accent-foreground/60 hover:text-accent-foreground transition-colors">
               {nav.services}
             </a>
-            <a href="#faq" className="text-sm font-sans text-accent-foreground/60 hover:text-accent-foreground transition-colors">
+            <a href={section("#faq")} className="text-sm font-sans text-accent-foreground/60 hover:text-accent-foreground transition-colors">
               {nav.faq}
             </a>
-            <a href="#contact" className="text-sm font-sans text-accent-foreground/60 hover:text-accent-foreground transition-colors">
+            <a href={section("#contact")} className="text-sm font-sans text-accent-foreground/60 hover:text-accent-foreground transition-colors">
               {nav.contact}
             </a>
           </nav>
@@ -65,6 +77,21 @@ export default function Footer({ lang, nav, footer }: FooterProps) {
                 {topicLabels[key][lang]}
               </a>
             ))}
+            {/* Not topic-registry entries, so they miss featuredTopics above —
+                but they target the power/sample-size queries and were sitting
+                on a single inbound link each. */}
+            <a
+              href={localizedPath("power", lang)}
+              className="text-sm font-sans text-accent-foreground/60 hover:text-accent-foreground transition-colors"
+            >
+              {footer.powerAnalysis}
+            </a>
+            <a
+              href={localizedPath("powerCalculator", lang)}
+              className="text-sm font-sans text-accent-foreground/60 hover:text-accent-foreground transition-colors"
+            >
+              {footer.powerCalculator}
+            </a>
             <a
               href={localizedPath("guides", lang)}
               className="text-sm font-sans font-semibold text-accent-foreground/80 hover:text-accent-foreground transition-colors"

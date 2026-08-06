@@ -1,4 +1,4 @@
-import { hasLocale, type Locale } from "../dictionaries";
+import { getDictionary, hasLocale, type Locale } from "../dictionaries";
 import { localizedPath } from "../slugs";
 import { topicSlugs, topicLabels, topicPath } from "../../../content/slugs";
 import {
@@ -10,6 +10,7 @@ import type { Section } from "../../../content/types";
 import { notFound, permanentRedirect } from "next/navigation";
 import { MessageCircle } from "lucide-react";
 import ScrollReveal from "../components/ScrollReveal";
+import Footer from "../components/Footer";
 import type { Metadata } from "next";
 
 const baseUrl = "https://getbayes.me";
@@ -227,6 +228,7 @@ export default async function TopicPage({
   }
 
   const content = topic.locales[locale];
+  const dict = await getDictionary(locale);
   const canonicalUrl = `${baseUrl}${topicPath(topic.key, locale)}`;
 
   // Structured data built from our own static registry content — no
@@ -459,6 +461,8 @@ export default async function TopicPage({
           </p>
         </article>
       </main>
+
+      <Footer lang={locale} nav={dict.nav} footer={dict.footer} />
     </div>
   );
 }

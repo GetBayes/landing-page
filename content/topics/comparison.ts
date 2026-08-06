@@ -12,7 +12,7 @@ const comparison: Topic = {
   kind: "guide",
   datePublished: "2026-07-08",
   dateModified: "2026-07-10",
-  related: ["find-statistician", "pricing", "why-getbayes"],
+  related: ["find-statistician", "pricing", "why-getbayes", "ai-statistics"],
   locales: {
     tr: {
       metaTitle:

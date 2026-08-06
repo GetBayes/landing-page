@@ -1,7 +1,8 @@
-import { hasLocale, type Locale } from "../dictionaries";
+import { getDictionary, hasLocale, type Locale } from "../dictionaries";
 import { localizedPath } from "../slugs";
 import { notFound } from "next/navigation";
 import PowerCalculator from "./PowerCalculator";
+import Footer from "../components/Footer";
 import type { Metadata } from "next";
 
 const baseUrl = "https://getbayes.me";
@@ -124,7 +125,8 @@ export async function generateMetadata({
   return {
     title: m.title,
     description: m.description,
-    keywords: [...m.keywords],
+    // m.keywords stays as the record of this page's target terms for content
+    // work, but is no longer emitted — search engines ignore meta keywords.
     alternates: {
       canonical: canonicalUrl,
       languages: {
@@ -158,6 +160,7 @@ export default async function PowerCalculatorPage({
   if (!hasLocale(lang)) notFound();
   const locale = lang as Locale;
   const m = META[locale];
+  const dict = await getDictionary(locale);
   const powerHref = localizedPath("power", locale);
   const canonical = `${baseUrl}${localizedPath("powerCalculator", locale)}`;
 
@@ -255,6 +258,8 @@ export default async function PowerCalculatorPage({
           </section>
         </div>
       </main>
+
+      <Footer lang={locale} nav={dict.nav} footer={dict.footer} />
     </div>
   );
 }

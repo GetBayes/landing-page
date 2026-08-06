@@ -1,4 +1,5 @@
 import { getDictionary, hasLocale, type Locale } from "../dictionaries";
+import Footer from "../components/Footer";
 import { localizedPath } from "../slugs";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
@@ -251,6 +252,8 @@ export default async function PrivacyPage({
           </div>
         </article>
       </main>
+
+      <Footer lang={lang as Locale} nav={dict.nav} footer={dict.footer} />
     </div>
   );
 }

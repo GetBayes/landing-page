@@ -88,49 +88,10 @@ export async function generateMetadata({
         "max-snippet": -1,
       },
     },
-    keywords:
-      lang === "tr"
-        ? [
-            "istatistik analiz hizmeti",
-            "tez istatistik yapan yerler",
-            "akademik veri analizi",
-            "SPSS analiz yaptırma",
-            "örneklem büyüklüğü hesaplama",
-            "güç analizi hesaplama",
-            "istatistiksel analiz",
-            "tez istatistik",
-            "doktora tezi istatistik analizi",
-            "yüksek lisans tezi istatistik",
-            "tıpta uzmanlık tezi istatistik",
-            "diş hekimliği tez istatistiği",
-            "psikoloji istatistik analizi",
-            "hemşirelik tezi istatistik",
-            "makale istatistik analizi",
-            "biyoistatistik danışmanlık",
-            "istatistik danışmanlık hizmeti",
-            "ücretli istatistik analizi",
-            "etik kurul örneklem hesaplama",
-            "akademik araştırma",
-            "Ankara istatistik",
-          ]
-        : [
-            "statistical analysis",
-            "academic research",
-            "data analysis",
-            "power analysis",
-            "sample size calculation",
-            "publication ready results",
-            "statistical consulting",
-            "research statistics",
-            "academic publication",
-            "statistical report",
-            "dissertation statistics help",
-            "thesis statistical analysis",
-            "biostatistics consulting",
-            "SPSS analysis service",
-            "medical research statistics",
-            "psychology research statistics",
-          ],
+    // No `keywords`: Google and Bing have both ignored meta keywords for
+    // years. This tag inherited from the layout put the same 21 terms on
+    // every URL — dead bytes on each crawl, and a keyword-stuffing footprint
+    // on pages the terms have nothing to do with (privacy, terms, guides).
     authors: [{ name: "GetBayes" }],
     creator: "GetBayes",
     publisher: "GetBayes",
@@ -196,6 +157,21 @@ function buildStructuredData(lang: string, dict: Awaited<ReturnType<typeof getDi
     },
   };
 
+  // Only the site-wide identity schemas belong in the layout. ProfessionalService
+  // and the Service list describe the homepage's offering; emitting them from
+  // here put three generic Service entities on /privacy, /terms, the guides
+  // hub, and — worst — on service topic pages that already emit their own, more
+  // specific Service. buildOfferingSchemas below covers those, and only the
+  // homepage calls it.
+  return [organizationSchema, websiteSchema];
+}
+
+export function buildOfferingSchemas(
+  lang: string,
+  dict: Awaited<ReturnType<typeof getDictionary>>
+) {
+  const isEn = lang === "en";
+
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
@@ -259,15 +235,7 @@ function buildStructuredData(lang: string, dict: Awaited<ReturnType<typeof getDi
     },
   ];
 
-  // FAQPage and BreadcrumbList are page-level schemas: the homepage emits
-  // them from app/[lang]/page.tsx, and sub-pages emit their own — a URL must
-  // not carry two FAQPage entities.
-  return [
-    organizationSchema,
-    websiteSchema,
-    localBusinessSchema,
-    ...serviceSchemas,
-  ];
+  return [localBusinessSchema, ...serviceSchemas];
 }
 
 export default async function RootLayout({

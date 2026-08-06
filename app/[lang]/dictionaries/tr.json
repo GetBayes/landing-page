@@ -231,19 +231,15 @@
       "emailPlaceholder": "email@adresiniz.com",
       "contact": "Instagram / WhatsApp",
       "contactPlaceholder": "@kullaniciadi veya telefon numarası",
-
       "summary": "Neyi araştırıyorsunuz?",
       "summaryHelp": "Çalışmanızı kısaca, kendi cümlelerinizle anlatın. Amaç nedir, kimlerle çalışıyorsunuz?",
       "summaryPlaceholder": "Örn. Diyabet hastalarında yeni bir diyet programının kan şekeri üzerindeki etkisini araştırıyorum.",
-
       "comparison": "Kimi kimle / neyi neyle karşılaştıracaksınız?",
       "comparisonHelp": "Çalışmanızda karşılaştırma nasıl olacak? Kaç grup var, ya da aynı kişileri öncesi–sonrası mı ölçeceksiniz?",
       "comparisonPlaceholder": "Örn. Diyet uygulayan grup ile uygulamayan grubu karşılaştıracağım. / Aynı hastaların tedavi öncesi ve sonrası değerlerine bakacağım.",
-
       "primary": "Asıl ölçüm — çalışmanın ana amacı",
       "primaryHelp": "Çalışmanızın ana amacı, yani başarısını gösteren o tek asıl ölçüm nedir? İdeali tektir; birden fazlaysa virgülle ayırın.",
       "primaryPlaceholder": "Örn. Açlık kan şekeri (mg/dL). Birden fazlaysa: Açlık kan şekeri, HbA1c",
-
       "effect": "Beklediğiniz fark / etki",
       "effectHelp": "Bir fikriniz varsa seçin; emin değilseniz sizin için biz tahmin ederiz.",
       "effectUnknown": "Bilmiyorum",
@@ -252,22 +248,18 @@
       "effectLarge": "Büyük",
       "effectCustom": "Kendim belirteceğim…",
       "effectPlaceholder": "Örn. ortalama 15 mg/dL düşüş",
-
       "secondary": "Ayrıca bakmak istediğiniz yan sonuçlar",
       "secondaryHelp": "Varsa yazın; hesaplama için zorunlu değil.",
       "secondaryPlaceholder": "Örn. Kilo değişimi, tansiyon.",
-
       "references": "Referans çalışmalar",
       "referencesWarning": "Lütfen yalnızca çalışmanızla en yakından örtüşen çalışmaları paylaşın. Popülasyonu, ölçüm yöntemi veya sonucu farklı çalışmalar güç hesabında güvenilir şekilde kullanılamaz ve sonucu yanıltabilir.",
       "referenceFilesHelp": "En yakın 1-3 makaleyi PDF veya Word olarak yükleyin.",
       "referenceFilesPlaceholder": "PDF / Word seçin",
       "filesSelected": "{n} dosya seçildi",
       "filesTooMany": "En fazla 5 dosya yükleyebilirsiniz.",
-
       "dataFile": "Pilot / ön veriniz",
       "dataFileHelp": "Elinizde pilot veya ön çalışma verisi varsa yükleyin — değişkenliği sizin yerinize hesaplarız.",
       "dataFilePlaceholder": "CSV, Excel, SPSS, Stata…",
-
       "optional": "opsiyonel",
       "submit": "Talebi Gönder",
       "success": "Talebiniz alındı! En kısa sürede size dönüş yapacağız.",
@@ -377,6 +369,8 @@
     "allResources": "Tümünü Gör",
     "copyright": "© 2026 GetBayes. Tüm hakları saklıdır.",
     "privacy": "Gizlilik Politikası",
-    "terms": "Kullanım Koşulları"
+    "terms": "Kullanım Koşulları",
+    "powerAnalysis": "Güç Analizi Hesaplama",
+    "powerCalculator": "Ücretsiz Power Analizi Hesaplayıcı"
   }
 }

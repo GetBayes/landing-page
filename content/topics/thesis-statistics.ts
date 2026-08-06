@@ -6,7 +6,7 @@ const thesisStatistics: Topic = {
   datePublished: "2026-07-08",
   dateModified: "2026-07-08",
   serviceType: "Thesis & Dissertation Statistical Analysis",
-  related: ["spss-analysis", "find-statistician", "article-statistics"],
+  related: ["spss-analysis", "find-statistician", "article-statistics", "which-test", "pricing", "data-visualization"],
   locales: {
     tr: {
       metaTitle: "Tez İstatistik Analizi Yaptırma — Yayına Hazır Rapor | GetBayes",

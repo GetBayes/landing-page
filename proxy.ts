@@ -29,7 +29,16 @@ export function proxy(request: NextRequest) {
   if (!pathnameHasLocale) {
     const locale = getLocale(request);
     request.nextUrl.pathname = `/${locale}${pathname}`;
-    return NextResponse.redirect(request.nextUrl);
+    // 308, not the default 307: the bare domain collects most external links,
+    // and a temporary redirect makes Google keep "/" as its own indexing
+    // candidate ("Page with redirect") instead of passing the signals through
+    // to /tr. Crawlers send no Accept-Language, so they always land on the
+    // default locale.
+    const response = NextResponse.redirect(request.nextUrl, 308);
+    // The target is content-negotiated, so shared caches must not hand one
+    // visitor's locale to the next.
+    response.headers.set("Vary", "Accept-Language");
+    return response;
   }
 
   // Localized slugs: public URLs use per-locale slugs while route folders

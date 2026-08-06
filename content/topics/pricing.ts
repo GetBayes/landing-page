@@ -10,7 +10,7 @@ const pricing: Topic = {
   kind: "guide",
   datePublished: "2026-07-08",
   dateModified: "2026-07-10",
-  related: ["find-statistician", "thesis-statistics", "spss-analysis"],
+  related: ["find-statistician", "thesis-statistics", "spss-analysis", "comparison", "ai-statistics", "data-visualization"],
   locales: {
     tr: {
       metaTitle:

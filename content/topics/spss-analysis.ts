@@ -6,7 +6,7 @@ const spssAnalysis: Topic = {
   datePublished: "2026-07-08",
   dateModified: "2026-07-10",
   serviceType: "SPSS Data Analysis Service",
-  related: ["thesis-statistics", "article-statistics", "find-statistician", "reliability-analysis"],
+  related: ["thesis-statistics", "article-statistics", "find-statistician", "reliability-analysis", "which-test", "normality-test"],
   locales: {
     tr: {
       metaTitle: "SPSS Analizi Yaptırma — Tez ve Makale Veri Analizi | GetBayes",

@@ -9,6 +9,7 @@ import FAQ from "./components/FAQ";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { buildOfferingSchemas } from "./layout";
 
 
 const baseUrl = "https://getbayes.me";
@@ -25,6 +26,8 @@ export default async function Home({
   // Homepage-level schemas (moved out of the layout so sub-pages can emit
   // their own FAQPage/BreadcrumbList without duplicates). Built from our own
   // dictionary strings only — safe to serialize.
+  const offeringSchemas = buildOfferingSchemas(lang, dict);
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -63,6 +66,13 @@ export default async function Home({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      {offeringSchemas.map((schema, index) => (
+        <script
+          key={index}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
       <Navbar lang={lang as Locale} nav={dict.nav} />
       <main id="main-content">
         <Hero
@@ -78,7 +88,7 @@ export default async function Home({
         <Testimonials testimonials={dict.testimonials} />
         <Contact contact={dict.contact} />
       </main>
-      <Footer lang={lang as Locale} nav={dict.nav} footer={dict.footer} />
+      <Footer lang={lang as Locale} nav={dict.nav} footer={dict.footer} onHomepage />
     </>
   );
 }

@@ -1,4 +1,5 @@
 import { getDictionary, hasLocale, type Locale } from "../dictionaries";
+import Footer from "../components/Footer";
 import { localizedPath } from "../slugs";
 import { notFound } from "next/navigation";
 import { FileSearch, BadgeDollarSign, Clock, Mail, MessageCircle } from "lucide-react";
@@ -54,6 +55,11 @@ export async function generateMetadata({
         },
       ],
     },
+    // Pure lead-capture form: ~50-160 words of body copy, no standalone
+    // informational value. Bing treats thin pages like this as a site-wide
+    // quality signal, so keep it crawlable and link-passing but out of the
+    // index (and out of sitemap.ts).
+    robots: { index: false, follow: true },
     twitter: {
       card: "summary_large_image",
       title: `${dict.stats.headline} | GetBayes`,
@@ -228,6 +234,8 @@ export default async function StatsRequestPage({
           </ScrollReveal>
         </div>
       </main>
+
+      <Footer lang={lang as Locale} nav={dict.nav} footer={dict.footer} />
     </div>
   );
 }

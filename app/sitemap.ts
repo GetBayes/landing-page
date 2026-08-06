@@ -27,7 +27,12 @@ function entry(
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date("2026-07-08");
+  // Static pages carry no per-page date, so they inherit the freshest topic
+  // date in the registry. A hardcoded constant never moves, which leaves Bing
+  // and Google with no reason to schedule a recrawl after a deploy.
+  const lastModified = new Date(
+    Math.max(...topicKeys.map((key) => Date.parse(topics[key].dateModified)))
+  );
 
   const home = { en: "/en", tr: "/tr" };
   const routePaths = (route: RouteKey) => ({
@@ -47,10 +52,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry(routePaths("power"), "en", lastModified, "monthly", 0.8),
     entry(routePaths("powerCalculator"), "tr", lastModified, "monthly", 0.7),
     entry(routePaths("powerCalculator"), "en", lastModified, "monthly", 0.7),
-    entry(routePaths("stats"), "tr", lastModified, "monthly", 0.8),
-    entry(routePaths("stats"), "en", lastModified, "monthly", 0.8),
-    entry(routePaths("info"), "tr", lastModified, "monthly", 0.7),
-    entry(routePaths("info"), "en", lastModified, "monthly", 0.7),
+    // "stats" and "info" are lead-capture forms carrying a noindex — a
+    // sitemap entry for a noindexed URL is a contradictory signal, so they
+    // stay out. They remain reachable through the footer and page CTAs.
     entry(routePaths("guides"), "tr", lastModified, "weekly", 0.8),
     entry(routePaths("guides"), "en", lastModified, "weekly", 0.8),
     ...topicKeys.flatMap((key) => {

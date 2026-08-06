@@ -5,7 +5,7 @@ const findStatistician: Topic = {
   kind: "guide",
   datePublished: "2026-07-08",
   dateModified: "2026-07-08",
-  related: ["thesis-statistics", "spss-analysis", "article-statistics"],
+  related: ["thesis-statistics", "spss-analysis", "article-statistics", "ai-statistics", "comparison", "pricing"],
   locales: {
     tr: {
       metaTitle: "Tezim İçin İstatistikçi Arıyorum: Nereden, Nasıl Bulunur? | GetBayes",

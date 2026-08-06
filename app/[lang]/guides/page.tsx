@@ -1,9 +1,10 @@
-import { hasLocale, type Locale } from "../dictionaries";
+import { getDictionary, hasLocale, type Locale } from "../dictionaries";
 import { localizedPath } from "../slugs";
 import { topicLabels, topicPath } from "../../../content/slugs";
 import { allTopics } from "../../../content/registry";
 import { notFound } from "next/navigation";
 import ScrollReveal from "../components/ScrollReveal";
+import Footer from "../components/Footer";
 import type { Metadata } from "next";
 
 const baseUrl = "https://getbayes.me";
@@ -92,6 +93,7 @@ export default async function GuidesPage({
   if (!hasLocale(lang)) notFound();
   const locale = lang as Locale;
   const c = copy[locale];
+  const dict = await getDictionary(locale);
 
   const guides = allTopics.filter((t) => t.kind === "guide");
   const services = allTopics.filter((t) => t.kind === "service");
@@ -198,6 +200,8 @@ export default async function GuidesPage({
           </div>
         </div>
       </main>
+
+      <Footer lang={locale} nav={dict.nav} footer={dict.footer} />
     </div>
   );
 }

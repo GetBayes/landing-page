@@ -38,11 +38,12 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
-  experimental: {
-    // Small Tailwind bundle + landing page = mostly first-time visitors.
-    // Inlining the CSS removes the render-blocking stylesheet request.
-    inlineCss: true,
-  },
+  // inlineCss was enabled to drop the render-blocking stylesheet request for
+  // first-time visitors. It was costing ~46 KB of byte-identical CSS on every
+  // one of ~70 URLs (~3 MB of redundant transfer per full crawl) and pushed
+  // the <h1> to byte 60,000, which works against the crawl-capacity and
+  // indexing problems this site actually has. As an external stylesheet the
+  // CSS is fetched once and cached for the rest of the crawl.
   async headers() {
     return [
       {
