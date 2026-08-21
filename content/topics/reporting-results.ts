@@ -4,8 +4,8 @@ const reportingResults: Topic = {
   key: "reporting-results",
   kind: "guide",
   datePublished: "2026-07-08",
-  dateModified: "2026-08-05",
-  related: ["which-test", "normality-test", "mediation-moderation", "article-statistics", "sample-size", "data-visualization"],
+  dateModified: "2026-08-21",
+  related: ["which-test", "normality-test", "ancova", "mediation-moderation", "article-statistics", "data-visualization"],
   locales: {
     tr: {
       metaTitle:

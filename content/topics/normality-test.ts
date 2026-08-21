@@ -4,9 +4,10 @@ const normalityTest: Topic = {
   key: "normality-test",
   kind: "guide",
   datePublished: "2026-07-20",
-  dateModified: "2026-07-20",
+  dateModified: "2026-08-21",
   related: [
     "which-test",
+    "ancova",
     "reporting-results",
     "spss-analysis",
     "regression-interpretation",

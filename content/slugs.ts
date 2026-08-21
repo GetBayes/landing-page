@@ -118,6 +118,10 @@ export const topicSlugs = {
     en: "mediation-and-moderation-analysis",
     tr: "aracilik-duzenleyicilik-analizi",
   },
+  ancova: {
+    en: "ancova-pretest-posttest-analysis",
+    tr: "ancova-on-test-son-test-analizi",
+  },
 } as const;
 
 export type TopicKey = keyof typeof topicSlugs;
@@ -234,6 +238,10 @@ export const topicLabels: Record<TopicKey, Record<Locale, string>> = {
   "mediation-moderation": {
     en: "Mediation & Moderation Analysis",
     tr: "Aracılık ve Düzenleyicilik Analizi",
+  },
+  ancova: {
+    en: "ANCOVA & Pretest-Posttest",
+    tr: "ANCOVA ve Ön Test-Son Test",
   },
 };
 
