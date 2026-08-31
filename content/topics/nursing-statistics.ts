@@ -4,9 +4,9 @@ const nursingStatistics: Topic = {
   key: "nursing-statistics",
   kind: "service",
   datePublished: "2026-07-10",
-  dateModified: "2026-07-10",
+  dateModified: "2026-08-31",
   serviceType: "Nursing Thesis Statistical Analysis",
-  related: ["thesis-statistics", "biostatistics", "spss-analysis", "reliability-analysis"],
+  related: ["nursing-find-service", "thesis-statistics", "biostatistics", "spss-analysis", "reliability-analysis"],
   locales: {
     tr: {
       metaTitle: "Hemşirelik Tez İstatistik Analizi — Yüksek Lisans ve Doktora | GetBayes",

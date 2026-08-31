@@ -32,6 +32,10 @@ import normalityTest from "./topics/normality-test";
 import factorAnalysis from "./topics/factor-analysis";
 import mediationModeration from "./topics/mediation-moderation";
 import ancova from "./topics/ancova";
+import psychologyFindService from "./topics/psychology-find-service";
+import medicalFindService from "./topics/medical-find-service";
+import dentistryFindService from "./topics/dentistry-find-service";
+import nursingFindService from "./topics/nursing-find-service";
 
 export const topics: Record<TopicKey, Topic> = {
   "thesis-statistics": thesisStatistics,
@@ -63,6 +67,10 @@ export const topics: Record<TopicKey, Topic> = {
   "factor-analysis": factorAnalysis,
   "mediation-moderation": mediationModeration,
   ancova: ancova,
+  "psychology-find-service": psychologyFindService,
+  "medical-find-service": medicalFindService,
+  "dentistry-find-service": dentistryFindService,
+  "nursing-find-service": nursingFindService,
 };
 
 export const allTopics: Topic[] = Object.values(topics);

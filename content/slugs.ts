@@ -122,6 +122,22 @@ export const topicSlugs = {
     en: "ancova-pretest-posttest-analysis",
     tr: "ancova-on-test-son-test-analizi",
   },
+  "psychology-find-service": {
+    en: "where-to-get-psychology-thesis-statistics",
+    tr: "psikoloji-tez-analizi-nereden-yaptirilir",
+  },
+  "medical-find-service": {
+    en: "where-to-get-medical-thesis-statistics",
+    tr: "tip-tezi-istatistik-analizi-nereden-yaptirilir",
+  },
+  "dentistry-find-service": {
+    en: "where-to-get-dental-thesis-statistics",
+    tr: "dis-hekimligi-tez-analizi-nereden-yaptirilir",
+  },
+  "nursing-find-service": {
+    en: "where-to-get-nursing-thesis-statistics",
+    tr: "hemsirelik-tez-analizi-nereden-yaptirilir",
+  },
 } as const;
 
 export type TopicKey = keyof typeof topicSlugs;
@@ -242,6 +258,22 @@ export const topicLabels: Record<TopicKey, Record<Locale, string>> = {
   ancova: {
     en: "ANCOVA & Pretest-Posttest",
     tr: "ANCOVA ve Ön Test-Son Test",
+  },
+  "psychology-find-service": {
+    en: "Where to Get a Psychology Thesis Analysed",
+    tr: "Psikoloji Tezi: Analizi Nereden Yaptırmalı?",
+  },
+  "medical-find-service": {
+    en: "Where to Get a Medical Thesis Analysed",
+    tr: "Tıp Tezi: İstatistiği Nereden Yaptırmalı?",
+  },
+  "dentistry-find-service": {
+    en: "Where to Get a Dental Thesis Analysed",
+    tr: "Diş Hekimliği Tezi: Analizi Nereden Yaptırmalı?",
+  },
+  "nursing-find-service": {
+    en: "Where to Get a Nursing Thesis Analysed",
+    tr: "Hemşirelik Tezi: Analizi Nereden Yaptırmalı?",
   },
 };
 

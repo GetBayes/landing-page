@@ -4,9 +4,9 @@ const dentistryStatistics: Topic = {
   key: "dentistry-statistics",
   kind: "service",
   datePublished: "2026-07-12",
-  dateModified: "2026-07-12",
+  dateModified: "2026-08-31",
   serviceType: "Dentistry Thesis Statistical Analysis",
-  related: ["biostatistics", "sample-size", "thesis-statistics", "which-test"],
+  related: ["dentistry-find-service", "biostatistics", "sample-size", "thesis-statistics", "which-test"],
   locales: {
     tr: {
       metaTitle: "Diş Hekimliği Tez İstatistik Analizi — DUS ve Doktora | GetBayes",
